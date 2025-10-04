@@ -1,4 +1,4 @@
-// Auto-generated on 2025-10-04T01:02:20.405Z by scripts/generate-projects.js
+// Auto-generated on 2025-10-04T21:47:06.261Z by scripts/generate-projects.js
 export const CATEGORY_MAP = {
   "showcase": {
     "title": "Showcase",
@@ -18,18 +18,25 @@ export const PROJECTS = [
     "title": "Link Hover Effect",
     "category": "showcase",
     "relativePath": "Showcase/01.%20link%20hover%20effect/",
-    "previewUrl": "Showcase/01.%20link%20hover%20effect/index.html",
+    "previewUrl": "index-assets/01/index.html",
     "tags": [
       "animation",
       "css",
       "effect",
+      "gsap",
       "hover",
       "html",
       "javascript",
+      "json",
       "link",
       "project",
-      "static"
-    ]
+      "react",
+      "static",
+      "typescript",
+      "vite"
+    ],
+    "requiresServer": true,
+    "framework": "React + Vite"
   },
   {
     "id": "02",
@@ -52,7 +59,8 @@ export const PROJECTS = [
       "scroll",
       "slider",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "03",
@@ -71,7 +79,8 @@ export const PROJECTS = [
       "portfolio",
       "project",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "04",
@@ -89,7 +98,8 @@ export const PROJECTS = [
       "scroll",
       "shrink",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "05",
@@ -107,7 +117,8 @@ export const PROJECTS = [
       "page",
       "project",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "06",
@@ -128,7 +139,8 @@ export const PROJECTS = [
       "reveal",
       "static",
       "video"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "07",
@@ -148,7 +160,8 @@ export const PROJECTS = [
       "project",
       "remake",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "08",
@@ -169,7 +182,8 @@ export const PROJECTS = [
       "slider",
       "static",
       "using"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "09",
@@ -189,7 +203,8 @@ export const PROJECTS = [
       "project",
       "remake",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "10",
@@ -208,7 +223,8 @@ export const PROJECTS = [
       "page",
       "project",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "11",
@@ -227,7 +243,8 @@ export const PROJECTS = [
       "screen",
       "slider",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "12",
@@ -246,7 +263,8 @@ export const PROJECTS = [
       "navigation",
       "project",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "13",
@@ -264,7 +282,8 @@ export const PROJECTS = [
       "reveal",
       "static",
       "website"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "14",
@@ -284,7 +303,8 @@ export const PROJECTS = [
       "scrolltrigger",
       "slider",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "15",
@@ -303,7 +323,8 @@ export const PROJECTS = [
       "rebuild",
       "slider",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "16",
@@ -322,7 +343,8 @@ export const PROJECTS = [
       "offcanvas",
       "project",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "17",
@@ -340,7 +362,8 @@ export const PROJECTS = [
       "responsive",
       "slider",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "18",
@@ -360,7 +383,8 @@ export const PROJECTS = [
       "refix",
       "static",
       "studio"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "19",
@@ -378,7 +402,8 @@ export const PROJECTS = [
       "slider",
       "static",
       "video"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "20",
@@ -398,7 +423,8 @@ export const PROJECTS = [
       "page",
       "project",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "21",
@@ -420,7 +446,8 @@ export const PROJECTS = [
       "reveal",
       "static",
       "website"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "22",
@@ -439,7 +466,8 @@ export const PROJECTS = [
       "project",
       "responsive",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "23",
@@ -458,7 +486,8 @@ export const PROJECTS = [
       "project",
       "static",
       "vaayu"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "24",
@@ -477,7 +506,8 @@ export const PROJECTS = [
       "page",
       "project",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "25",
@@ -496,7 +526,8 @@ export const PROJECTS = [
       "project",
       "slider",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "26",
@@ -515,7 +546,8 @@ export const PROJECTS = [
       "play",
       "project",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "27",
@@ -532,7 +564,8 @@ export const PROJECTS = [
       "project",
       "slider",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "28",
@@ -550,7 +583,8 @@ export const PROJECTS = [
       "project",
       "showcase",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "29",
@@ -568,7 +602,8 @@ export const PROJECTS = [
       "product",
       "project",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "30",
@@ -588,7 +623,8 @@ export const PROJECTS = [
       "project",
       "static",
       "vanilla"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "31",
@@ -607,7 +643,8 @@ export const PROJECTS = [
       "scroll",
       "slider",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "32",
@@ -626,7 +663,8 @@ export const PROJECTS = [
       "static",
       "toggle",
       "view"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "33",
@@ -644,7 +682,8 @@ export const PROJECTS = [
       "project",
       "responsive",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "34",
@@ -662,7 +701,8 @@ export const PROJECTS = [
       "page",
       "project",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "35",
@@ -680,7 +720,8 @@ export const PROJECTS = [
       "reveal",
       "static",
       "website"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "36",
@@ -698,7 +739,8 @@ export const PROJECTS = [
       "project",
       "static",
       "video"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "37",
@@ -718,7 +760,8 @@ export const PROJECTS = [
       "slider",
       "static",
       "svg"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "38",
@@ -738,7 +781,8 @@ export const PROJECTS = [
       "scrolltrigger",
       "static",
       "text"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "39",
@@ -756,7 +800,8 @@ export const PROJECTS = [
       "project",
       "static",
       "subscription"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "40",
@@ -774,7 +819,8 @@ export const PROJECTS = [
       "link",
       "project",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "41",
@@ -793,7 +839,8 @@ export const PROJECTS = [
       "navigation",
       "project",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "42",
@@ -812,7 +859,8 @@ export const PROJECTS = [
       "project",
       "static",
       "svg"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "43",
@@ -830,7 +878,8 @@ export const PROJECTS = [
       "project",
       "slider",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "44",
@@ -851,7 +900,8 @@ export const PROJECTS = [
       "rebuild",
       "reveal",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "45",
@@ -869,7 +919,8 @@ export const PROJECTS = [
       "project",
       "static",
       "vrtlvrld"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "46",
@@ -886,7 +937,8 @@ export const PROJECTS = [
       "javascript",
       "project",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "47",
@@ -905,7 +957,8 @@ export const PROJECTS = [
       "project",
       "salvador",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "48",
@@ -923,7 +976,8 @@ export const PROJECTS = [
       "project",
       "static",
       "text"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "49",
@@ -942,7 +996,8 @@ export const PROJECTS = [
       "project",
       "reveal",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "50",
@@ -961,7 +1016,8 @@ export const PROJECTS = [
       "portfolio",
       "project",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "51",
@@ -981,14 +1037,15 @@ export const PROJECTS = [
       "project",
       "static",
       "website"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "52",
     "title": "React Responsive Full Screen Navigation Main",
     "category": "showcase",
     "relativePath": "Showcase/52.%20react-responsive-full-screen-navigation-main/",
-    "previewUrl": "index-assets/showcase-52-react-responsive-full-screen-navigation-main/index.html",
+    "previewUrl": "index-assets/52/index.html",
     "tags": [
       "animation",
       "css",
@@ -1004,7 +1061,9 @@ export const PROJECTS = [
       "screen",
       "static",
       "typescript"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "React"
   },
   {
     "id": "53",
@@ -1020,14 +1079,15 @@ export const PROJECTS = [
       "page",
       "project",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "54",
     "title": "React Page Transition",
     "category": "showcase",
     "relativePath": "Showcase/54.%20react-page-transition/",
-    "previewUrl": "index-assets/showcase-54-react-page-transition/index.html",
+    "previewUrl": "index-assets/54/index.html",
     "tags": [
       "animation",
       "css",
@@ -1040,7 +1100,9 @@ export const PROJECTS = [
       "static",
       "transition",
       "typescript"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "React"
   },
   {
     "id": "55",
@@ -1058,7 +1120,8 @@ export const PROJECTS = [
       "project",
       "shooting",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "56",
@@ -1076,7 +1139,8 @@ export const PROJECTS = [
       "preloader",
       "project",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "57",
@@ -1095,7 +1159,8 @@ export const PROJECTS = [
       "project",
       "static",
       "vanilla"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "58",
@@ -1113,7 +1178,8 @@ export const PROJECTS = [
       "scroll",
       "slider",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "59",
@@ -1132,7 +1198,8 @@ export const PROJECTS = [
       "navigation",
       "project",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "60",
@@ -1149,7 +1216,8 @@ export const PROJECTS = [
       "page",
       "project",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "61",
@@ -1166,7 +1234,8 @@ export const PROJECTS = [
       "physics",
       "project",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "62",
@@ -1184,7 +1253,8 @@ export const PROJECTS = [
       "portfolio",
       "project",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "63",
@@ -1204,7 +1274,8 @@ export const PROJECTS = [
       "project",
       "slider",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "64",
@@ -1224,7 +1295,8 @@ export const PROJECTS = [
       "slider",
       "static",
       "trail"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "65",
@@ -1245,7 +1317,8 @@ export const PROJECTS = [
       "static",
       "threejs",
       "webgl"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "66",
@@ -1262,14 +1335,15 @@ export const PROJECTS = [
       "javascript",
       "project",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "67",
     "title": "Next Transitions",
     "category": "showcase",
     "relativePath": "Showcase/67.%20next-transitions/",
-    "previewUrl": "index-assets/showcase-67-next-transitions/index.html",
+    "previewUrl": "index-assets/67/index.html",
     "tags": [
       "animation",
       "css",
@@ -1284,7 +1358,9 @@ export const PROJECTS = [
       "transition",
       "transitions",
       "typescript"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Next.js"
   },
   {
     "id": "68",
@@ -1303,7 +1379,8 @@ export const PROJECTS = [
       "project",
       "slider",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "69",
@@ -1320,7 +1397,8 @@ export const PROJECTS = [
       "macos",
       "project",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "70",
@@ -1338,7 +1416,8 @@ export const PROJECTS = [
       "layout",
       "project",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "71",
@@ -1355,7 +1434,8 @@ export const PROJECTS = [
       "project",
       "static",
       "verse"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "72",
@@ -1374,7 +1454,8 @@ export const PROJECTS = [
       "shuffle",
       "static",
       "text"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "73",
@@ -1391,7 +1472,8 @@ export const PROJECTS = [
       "page",
       "project",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "74",
@@ -1409,7 +1491,8 @@ export const PROJECTS = [
       "project",
       "reveal",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "75",
@@ -1426,7 +1509,8 @@ export const PROJECTS = [
       "project",
       "slider",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "76",
@@ -1445,7 +1529,8 @@ export const PROJECTS = [
       "project",
       "reveal",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "77",
@@ -1464,7 +1549,8 @@ export const PROJECTS = [
       "scrolltrigger",
       "slider",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "78",
@@ -1481,7 +1567,8 @@ export const PROJECTS = [
       "javascript",
       "project",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "79",
@@ -1497,7 +1584,8 @@ export const PROJECTS = [
       "project",
       "static",
       "takepill"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "80",
@@ -1513,7 +1601,8 @@ export const PROJECTS = [
       "project",
       "slider",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "81",
@@ -1531,7 +1620,8 @@ export const PROJECTS = [
       "navigation",
       "project",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "82",
@@ -1549,7 +1639,8 @@ export const PROJECTS = [
       "scale",
       "scroll",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "83",
@@ -1567,7 +1658,8 @@ export const PROJECTS = [
       "screen",
       "slider",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "84",
@@ -1584,7 +1676,8 @@ export const PROJECTS = [
       "page",
       "project",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "85",
@@ -1601,7 +1694,8 @@ export const PROJECTS = [
       "project",
       "reveal",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "86",
@@ -1618,7 +1712,8 @@ export const PROJECTS = [
       "javascript",
       "project",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "87",
@@ -1638,7 +1733,8 @@ export const PROJECTS = [
       "project",
       "scroll",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "88",
@@ -1656,7 +1752,8 @@ export const PROJECTS = [
       "project",
       "slider",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "89",
@@ -1674,7 +1771,8 @@ export const PROJECTS = [
       "reveal",
       "scroll",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "90",
@@ -1694,7 +1792,8 @@ export const PROJECTS = [
       "sidebar",
       "static",
       "sticky"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "91",
@@ -1712,7 +1811,8 @@ export const PROJECTS = [
       "project",
       "scroll",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "92",
@@ -1731,7 +1831,8 @@ export const PROJECTS = [
       "static",
       "transition",
       "transitions"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "93",
@@ -1750,7 +1851,8 @@ export const PROJECTS = [
       "sotd",
       "static",
       "text"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "94",
@@ -1768,7 +1870,8 @@ export const PROJECTS = [
       "static",
       "text",
       "updated"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "95",
@@ -1786,7 +1889,8 @@ export const PROJECTS = [
       "project",
       "rejoice",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "96",
@@ -1805,7 +1909,8 @@ export const PROJECTS = [
       "scroll",
       "slider",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "97",
@@ -1824,7 +1929,8 @@ export const PROJECTS = [
       "project",
       "slider",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "98",
@@ -1844,7 +1950,8 @@ export const PROJECTS = [
       "sidebar",
       "slide",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "99",
@@ -1863,7 +1970,8 @@ export const PROJECTS = [
       "scroll",
       "scrolltrigger",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "100",
@@ -1881,7 +1989,8 @@ export const PROJECTS = [
       "responsive",
       "static",
       "team"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "101",
@@ -1900,7 +2009,8 @@ export const PROJECTS = [
       "project",
       "slider",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "102",
@@ -1920,7 +2030,8 @@ export const PROJECTS = [
       "static",
       "threejs",
       "webgl"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "103",
@@ -1939,7 +2050,8 @@ export const PROJECTS = [
       "scroll",
       "static",
       "sticky"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "104",
@@ -1957,7 +2069,8 @@ export const PROJECTS = [
       "project",
       "responsive",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "105",
@@ -1975,7 +2088,8 @@ export const PROJECTS = [
       "project",
       "responsive",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "106",
@@ -1992,7 +2106,8 @@ export const PROJECTS = [
       "reveal",
       "shuffle",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "107",
@@ -2010,7 +2125,8 @@ export const PROJECTS = [
       "navigation",
       "project",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "108",
@@ -2028,7 +2144,8 @@ export const PROJECTS = [
       "javascript",
       "project",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "109",
@@ -2047,7 +2164,8 @@ export const PROJECTS = [
       "responsive",
       "static",
       "video"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "110",
@@ -2064,7 +2182,8 @@ export const PROJECTS = [
       "preloader",
       "project",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "111",
@@ -2082,7 +2201,8 @@ export const PROJECTS = [
       "project",
       "static",
       "text"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "112",
@@ -2101,7 +2221,8 @@ export const PROJECTS = [
       "project",
       "static",
       "tech"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "113",
@@ -2117,7 +2238,8 @@ export const PROJECTS = [
       "lightbox",
       "project",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "114",
@@ -2134,7 +2256,8 @@ export const PROJECTS = [
       "project",
       "search",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "115",
@@ -2152,7 +2275,8 @@ export const PROJECTS = [
       "project",
       "reveal",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "116",
@@ -2169,7 +2293,8 @@ export const PROJECTS = [
       "javascript",
       "project",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "117",
@@ -2186,7 +2311,8 @@ export const PROJECTS = [
       "javascript",
       "project",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "118",
@@ -2204,7 +2330,8 @@ export const PROJECTS = [
       "reveal",
       "scroll",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "119",
@@ -2220,7 +2347,8 @@ export const PROJECTS = [
       "mormal",
       "project",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "120",
@@ -2238,7 +2366,8 @@ export const PROJECTS = [
       "monks",
       "project",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "121",
@@ -2256,7 +2385,8 @@ export const PROJECTS = [
       "project",
       "rebuild",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "122",
@@ -2273,7 +2403,8 @@ export const PROJECTS = [
       "project",
       "revolution",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "123",
@@ -2292,7 +2423,8 @@ export const PROJECTS = [
       "static",
       "toggle",
       "view"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "124",
@@ -2310,7 +2442,8 @@ export const PROJECTS = [
       "static",
       "threejs",
       "webgl"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "125",
@@ -2329,7 +2462,8 @@ export const PROJECTS = [
       "scroll",
       "scrolltrigger",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "126",
@@ -2346,7 +2480,8 @@ export const PROJECTS = [
       "project",
       "rebuild",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "127",
@@ -2365,14 +2500,15 @@ export const PROJECTS = [
       "static",
       "threejs",
       "webgl"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "128",
     "title": "Cg Next Navigation",
     "category": "showcase",
     "relativePath": "Showcase/128.%20cg-next-navigation/",
-    "previewUrl": "index-assets/showcase-128-cg-next-navigation/index.html",
+    "previewUrl": "index-assets/128/index.html",
     "tags": [
       "animation",
       "css",
@@ -2387,7 +2523,9 @@ export const PROJECTS = [
       "react",
       "static",
       "typescript"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Next.js"
   },
   {
     "id": "129",
@@ -2404,7 +2542,8 @@ export const PROJECTS = [
       "project",
       "reveal",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "130",
@@ -2423,7 +2562,8 @@ export const PROJECTS = [
       "project",
       "slider",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "131",
@@ -2441,7 +2581,8 @@ export const PROJECTS = [
       "project",
       "scroll",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "132",
@@ -2459,7 +2600,8 @@ export const PROJECTS = [
       "savoirfaire",
       "static",
       "video"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "133",
@@ -2476,7 +2618,8 @@ export const PROJECTS = [
       "javascript",
       "project",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "134",
@@ -2493,7 +2636,8 @@ export const PROJECTS = [
       "project",
       "scroll",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "135",
@@ -2512,7 +2656,8 @@ export const PROJECTS = [
       "static",
       "svg",
       "trail"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "136",
@@ -2530,7 +2675,8 @@ export const PROJECTS = [
       "responsive",
       "static",
       "video"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "137",
@@ -2551,7 +2697,8 @@ export const PROJECTS = [
       "scroll",
       "scrolltrigger",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "138",
@@ -2572,7 +2719,8 @@ export const PROJECTS = [
       "static",
       "threejs",
       "webgl"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "139",
@@ -2589,7 +2737,8 @@ export const PROJECTS = [
       "physics",
       "project",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "140",
@@ -2606,7 +2755,8 @@ export const PROJECTS = [
       "minimap",
       "project",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "141",
@@ -2623,7 +2773,8 @@ export const PROJECTS = [
       "project",
       "static",
       "yard"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "142",
@@ -2640,7 +2791,8 @@ export const PROJECTS = [
       "neoculture",
       "project",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "143",
@@ -2658,7 +2810,8 @@ export const PROJECTS = [
       "slider",
       "static",
       "trail"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "144",
@@ -2676,7 +2829,8 @@ export const PROJECTS = [
       "project",
       "scroll",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "145",
@@ -2695,7 +2849,8 @@ export const PROJECTS = [
       "project",
       "slider",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "146",
@@ -2712,7 +2867,8 @@ export const PROJECTS = [
       "project",
       "static",
       "video"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "147",
@@ -2727,14 +2883,15 @@ export const PROJECTS = [
       "javascript",
       "project",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "148",
     "title": "Cg React Pan Canvas",
     "category": "showcase",
     "relativePath": "Showcase/148.%20cg-react-pan-canvas/",
-    "previewUrl": "index-assets/showcase-148-cg-react-pan-canvas/index.html",
+    "previewUrl": "index-assets/148/index.html",
     "tags": [
       "animation",
       "canvas",
@@ -2748,14 +2905,16 @@ export const PROJECTS = [
       "static",
       "typescript",
       "vite"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "React + Vite"
   },
   {
     "id": "149",
     "title": "Cg React Cards",
     "category": "showcase",
     "relativePath": "Showcase/149.%20cg-react-cards/",
-    "previewUrl": "index-assets/showcase-149-cg-react-cards/index.html",
+    "previewUrl": "index-assets/149/index.html",
     "tags": [
       "animation",
       "cards",
@@ -2768,7 +2927,9 @@ export const PROJECTS = [
       "static",
       "typescript",
       "vite"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "React + Vite"
   },
   {
     "id": "150",
@@ -2786,14 +2947,15 @@ export const PROJECTS = [
       "scroll",
       "static",
       "sticky"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "151",
     "title": "Cg Page Transitions",
     "category": "showcase",
     "relativePath": "Showcase/151.%20cg-page-transitions/",
-    "previewUrl": "index-assets/showcase-151-cg-page-transitions/index.html",
+    "previewUrl": "index-assets/151/index.html",
     "tags": [
       "animation",
       "css",
@@ -2808,7 +2970,9 @@ export const PROJECTS = [
       "transitions",
       "typescript",
       "vite"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "React + Vite"
   },
   {
     "id": "152",
@@ -2825,7 +2989,8 @@ export const PROJECTS = [
       "project",
       "scroll",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "153",
@@ -2842,7 +3007,8 @@ export const PROJECTS = [
       "qindustrial",
       "scroll",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "154",
@@ -2860,7 +3026,8 @@ export const PROJECTS = [
       "navigation",
       "project",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "155",
@@ -2878,7 +3045,8 @@ export const PROJECTS = [
       "project",
       "scroll",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "156",
@@ -2897,7 +3065,8 @@ export const PROJECTS = [
       "static",
       "text",
       "texts"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "157",
@@ -2914,7 +3083,8 @@ export const PROJECTS = [
       "project",
       "slider",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "158",
@@ -2932,7 +3102,8 @@ export const PROJECTS = [
       "project",
       "responsive",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "159",
@@ -2949,7 +3120,8 @@ export const PROJECTS = [
       "scroll",
       "static",
       "villainy"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "160",
@@ -2968,7 +3140,8 @@ export const PROJECTS = [
       "static",
       "story",
       "world"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "161",
@@ -2986,7 +3159,8 @@ export const PROJECTS = [
       "navigation",
       "project",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "162",
@@ -3004,7 +3178,8 @@ export const PROJECTS = [
       "project",
       "static",
       "var"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "163",
@@ -3023,7 +3198,8 @@ export const PROJECTS = [
       "project",
       "root",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "164",
@@ -3042,7 +3218,8 @@ export const PROJECTS = [
       "slider",
       "static",
       "vanilla"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "165",
@@ -3062,7 +3239,8 @@ export const PROJECTS = [
       "scroll",
       "scrolltrigger",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "166",
@@ -3079,7 +3257,8 @@ export const PROJECTS = [
       "project",
       "slider",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "167",
@@ -3096,7 +3275,8 @@ export const PROJECTS = [
       "project",
       "reveal",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "168",
@@ -3112,7 +3292,8 @@ export const PROJECTS = [
       "project",
       "static",
       "stories"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "169",
@@ -3130,7 +3311,8 @@ export const PROJECTS = [
       "project",
       "scroll",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "170",
@@ -3150,7 +3332,8 @@ export const PROJECTS = [
       "project",
       "slider",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "171",
@@ -3168,7 +3351,8 @@ export const PROJECTS = [
       "page",
       "project",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "172",
@@ -3184,14 +3368,15 @@ export const PROJECTS = [
       "javascript",
       "project",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "173",
     "title": "Cg Next Vinyl Cover",
     "category": "showcase",
     "relativePath": "Showcase/173.%20cg-next-vinyl-cover/",
-    "previewUrl": "index-assets/showcase-173-cg-next-vinyl-cover/index.html",
+    "previewUrl": "index-assets/173/index.html",
     "tags": [
       "animation",
       "cover",
@@ -3207,7 +3392,9 @@ export const PROJECTS = [
       "static",
       "typescript",
       "vinyl"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Next.js"
   },
   {
     "id": "174",
@@ -3228,14 +3415,15 @@ export const PROJECTS = [
       "shader",
       "static",
       "webgl"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "175",
     "title": "Cg Next Carousel",
     "category": "showcase",
     "relativePath": "Showcase/175.%20cg-next-carousel/",
-    "previewUrl": "index-assets/showcase-175-cg-next-carousel/index.html",
+    "previewUrl": "index-assets/175/index.html",
     "tags": [
       "animation",
       "carousel",
@@ -3251,7 +3439,9 @@ export const PROJECTS = [
       "slider",
       "static",
       "typescript"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Next.js"
   },
   {
     "id": "176",
@@ -3271,7 +3461,8 @@ export const PROJECTS = [
       "static",
       "text",
       "webgl"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "177",
@@ -3290,14 +3481,15 @@ export const PROJECTS = [
       "reveal",
       "static",
       "webgl"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "178",
     "title": "Cg Next Scrolltrigger",
     "category": "showcase",
     "relativePath": "Showcase/178.%20cg-next-scrolltrigger/",
-    "previewUrl": "index-assets/showcase-178-cg-next-scrolltrigger/index.html",
+    "previewUrl": "index-assets/178/index.html",
     "tags": [
       "animation",
       "css",
@@ -3313,7 +3505,9 @@ export const PROJECTS = [
       "scrolltrigger",
       "static",
       "typescript"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Next.js"
   },
   {
     "id": "179",
@@ -3329,7 +3523,8 @@ export const PROJECTS = [
       "project",
       "static",
       "zajno"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "180",
@@ -3346,7 +3541,8 @@ export const PROJECTS = [
       "project",
       "static",
       "toyfight"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "181",
@@ -3365,14 +3561,15 @@ export const PROJECTS = [
       "shader",
       "static",
       "webgl"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "182",
     "title": "Next Cards",
     "category": "showcase",
     "relativePath": "Showcase/182.%20next-cards/",
-    "previewUrl": "index-assets/showcase-182-next-cards/index.html",
+    "previewUrl": "index-assets/182/index.html",
     "tags": [
       "animation",
       "cards",
@@ -3387,7 +3584,9 @@ export const PROJECTS = [
       "react",
       "static",
       "typescript"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Next.js"
   },
   {
     "id": "183",
@@ -3405,7 +3604,8 @@ export const PROJECTS = [
       "project",
       "slider",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "184",
@@ -3422,14 +3622,15 @@ export const PROJECTS = [
       "scroll",
       "static",
       "zentry"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "185",
     "title": "Cg Akura Menu Nextjs",
     "category": "showcase",
     "relativePath": "Showcase/185.%20cg-akura-menu-nextjs/",
-    "previewUrl": "index-assets/showcase-185-cg-akura-menu-nextjs/index.html",
+    "previewUrl": "index-assets/185/index.html",
     "tags": [
       "akura",
       "animation",
@@ -3446,7 +3647,9 @@ export const PROJECTS = [
       "static",
       "typescript",
       "video"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Next.js"
   },
   {
     "id": "186",
@@ -3462,7 +3665,8 @@ export const PROJECTS = [
       "javascript",
       "project",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "187",
@@ -3477,14 +3681,15 @@ export const PROJECTS = [
       "javascript",
       "project",
       "tunnel"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "188",
     "title": "Cg Nextjs Absolute Cards",
     "category": "showcase",
     "relativePath": "Showcase/188.%20cg-nextjs-absolute-cards/",
-    "previewUrl": "index-assets/showcase-188-cg-nextjs-absolute-cards/index.html",
+    "previewUrl": "index-assets/188/index.html",
     "tags": [
       "absolute",
       "animation",
@@ -3499,7 +3704,9 @@ export const PROJECTS = [
       "react",
       "static",
       "typescript"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Next.js"
   },
   {
     "id": "189",
@@ -3517,14 +3724,15 @@ export const PROJECTS = [
       "scroll",
       "static",
       "zetr"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "190",
     "title": "Cg Samuelsiebler Next",
     "category": "showcase",
     "relativePath": "Showcase/190.%20cg-samuelsiebler-next/",
-    "previewUrl": "index-assets/showcase-190-cg-samuelsiebler-next/index.html",
+    "previewUrl": "index-assets/190/index.html",
     "tags": [
       "animation",
       "css",
@@ -3539,7 +3747,9 @@ export const PROJECTS = [
       "samuelsiebler",
       "static",
       "typescript"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Next.js"
   },
   {
     "id": "191",
@@ -3555,7 +3765,8 @@ export const PROJECTS = [
       "junni",
       "project",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "192",
@@ -3572,7 +3783,8 @@ export const PROJECTS = [
       "project",
       "rebuild",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "193",
@@ -3589,7 +3801,8 @@ export const PROJECTS = [
       "project",
       "slider",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "194",
@@ -3608,7 +3821,8 @@ export const PROJECTS = [
       "project",
       "slider",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "195",
@@ -3625,7 +3839,8 @@ export const PROJECTS = [
       "project",
       "sarah",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "196",
@@ -3641,7 +3856,8 @@ export const PROJECTS = [
       "javascript",
       "project",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "197",
@@ -3657,7 +3873,8 @@ export const PROJECTS = [
       "javascript",
       "project",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "198",
@@ -3674,7 +3891,8 @@ export const PROJECTS = [
       "project",
       "silenceo",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "199",
@@ -3692,7 +3910,8 @@ export const PROJECTS = [
       "static",
       "transition",
       "transitions"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "200",
@@ -3708,7 +3927,8 @@ export const PROJECTS = [
       "html",
       "javascript",
       "project"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "201",
@@ -3726,7 +3946,8 @@ export const PROJECTS = [
       "static",
       "threejs",
       "webgl"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "202",
@@ -3744,7 +3965,8 @@ export const PROJECTS = [
       "project",
       "static",
       "the"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "203",
@@ -3762,14 +3984,15 @@ export const PROJECTS = [
       "particles",
       "project",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "204",
     "title": "Next Js Parallax Scroll",
     "category": "showcase",
     "relativePath": "Showcase/204.%20next-js-parallax-scroll/",
-    "previewUrl": "index-assets/showcase-204-next-js-parallax-scroll/index.html",
+    "previewUrl": "index-assets/204/index.html",
     "tags": [
       "animation",
       "css",
@@ -3784,7 +4007,9 @@ export const PROJECTS = [
       "scroll",
       "static",
       "typescript"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Next.js"
   },
   {
     "id": "205",
@@ -3800,7 +4025,8 @@ export const PROJECTS = [
       "offficestud",
       "project",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "206",
@@ -3820,7 +4046,8 @@ export const PROJECTS = [
       "slider",
       "threejs",
       "webgl"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "207",
@@ -3836,7 +4063,8 @@ export const PROJECTS = [
       "javascript",
       "project",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "208",
@@ -3857,7 +4085,8 @@ export const PROJECTS = [
       "slider",
       "static",
       "webgl"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "209",
@@ -3875,14 +4104,15 @@ export const PROJECTS = [
       "static",
       "threejs",
       "webgl"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "210",
     "title": "Heurebleue Scroll Animation Nextjs",
     "category": "showcase",
     "relativePath": "Showcase/210.%20heurebleue-scroll-animation-nextjs/",
-    "previewUrl": "index-assets/showcase-210-heurebleue-scroll-animation-nextjs/index.html",
+    "previewUrl": "index-assets/210/index.html",
     "tags": [
       "animation",
       "css",
@@ -3897,7 +4127,9 @@ export const PROJECTS = [
       "scroll",
       "static",
       "typescript"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Next.js"
   },
   {
     "id": "211",
@@ -3917,7 +4149,8 @@ export const PROJECTS = [
       "threejs",
       "video",
       "webgl"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "212",
@@ -3933,7 +4166,8 @@ export const PROJECTS = [
       "javascript",
       "project",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "213",
@@ -3951,7 +4185,8 @@ export const PROJECTS = [
       "page",
       "project",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "214",
@@ -3971,7 +4206,8 @@ export const PROJECTS = [
       "project",
       "slider",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "215",
@@ -3989,7 +4225,8 @@ export const PROJECTS = [
       "scroll",
       "static",
       "world"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "216",
@@ -4008,7 +4245,8 @@ export const PROJECTS = [
       "scroll",
       "snap",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "217",
@@ -4026,7 +4264,8 @@ export const PROJECTS = [
       "radga",
       "scroll",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "218",
@@ -4045,7 +4284,8 @@ export const PROJECTS = [
       "static",
       "threejs",
       "webgl"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "219",
@@ -4064,14 +4304,15 @@ export const PROJECTS = [
       "reveal",
       "savoirfaire",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "220",
     "title": "Cg Next Sticky Cards",
     "category": "showcase",
     "relativePath": "Showcase/220.%20cg-next-sticky-cards/",
-    "previewUrl": "index-assets/showcase-220-cg-next-sticky-cards/index.html",
+    "previewUrl": "index-assets/220/index.html",
     "tags": [
       "animation",
       "cards",
@@ -4087,7 +4328,9 @@ export const PROJECTS = [
       "static",
       "sticky",
       "typescript"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Next.js"
   },
   {
     "id": "221",
@@ -4104,7 +4347,8 @@ export const PROJECTS = [
       "scroll",
       "static",
       "thefirstthelast"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "222",
@@ -4124,7 +4368,8 @@ export const PROJECTS = [
       "transition",
       "transitions",
       "view"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "223",
@@ -4142,7 +4387,8 @@ export const PROJECTS = [
       "scroll",
       "static",
       "voyce"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "224",
@@ -4161,14 +4407,15 @@ export const PROJECTS = [
       "scroll",
       "static",
       "text"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "225",
     "title": "Cg Next Minimap",
     "category": "showcase",
     "relativePath": "Showcase/225.%20cg-next-minimap/",
-    "previewUrl": "index-assets/showcase-225-cg-next-minimap/index.html",
+    "previewUrl": "index-assets/225/index.html",
     "tags": [
       "animation",
       "css",
@@ -4182,7 +4429,9 @@ export const PROJECTS = [
       "react",
       "static",
       "typescript"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Next.js"
   },
   {
     "id": "226",
@@ -4200,7 +4449,8 @@ export const PROJECTS = [
       "section",
       "wodniack",
       "work"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "227",
@@ -4217,14 +4467,15 @@ export const PROJECTS = [
       "javascript",
       "project",
       "static"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "228",
     "title": "Nextjs View Transitions",
     "category": "showcase",
     "relativePath": "Showcase/228.%20nextjs-view-transitions/",
-    "previewUrl": "index-assets/showcase-228-nextjs-view-transitions/index.html",
+    "previewUrl": "index-assets/228/index.html",
     "tags": [
       "animation",
       "css",
@@ -4239,14 +4490,16 @@ export const PROJECTS = [
       "transition",
       "transitions",
       "view"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Next.js"
   },
   {
     "id": "229",
     "title": "Cg Asset Orb Next",
     "category": "showcase",
     "relativePath": "Showcase/229.%20cg-asset-orb-next/",
-    "previewUrl": "index-assets/showcase-229-cg-asset-orb-next/index.html",
+    "previewUrl": "index-assets/229/index.html",
     "tags": [
       "animation",
       "asset",
@@ -4261,14 +4514,16 @@ export const PROJECTS = [
       "react",
       "static",
       "typescript"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Next.js"
   },
   {
     "id": "230",
     "title": "Infinite Horizontal Scroll Codegrid",
     "category": "showcase",
     "relativePath": "Showcase/230.%20infinite-horizontal-scroll-codegrid/",
-    "previewUrl": "index-assets/showcase-230-infinite-horizontal-scroll-codegrid/index.html",
+    "previewUrl": "index-assets/230/index.html",
     "tags": [
       "animation",
       "codegrid",
@@ -4283,14 +4538,16 @@ export const PROJECTS = [
       "static",
       "typescript",
       "vite"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Vite"
   },
   {
     "id": "231",
     "title": "Next Gsap Landing Page Reveal Codegrid",
     "category": "showcase",
     "relativePath": "Showcase/231.%20next-gsap-landing-page-reveal-codegrid/",
-    "previewUrl": "index-assets/showcase-231-next-gsap-landing-page-reveal-codegrid/index.html",
+    "previewUrl": "index-assets/231/index.html",
     "tags": [
       "animation",
       "codegrid",
@@ -4309,14 +4566,16 @@ export const PROJECTS = [
       "static",
       "typescript",
       "video"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Next.js"
   },
   {
     "id": "232",
     "title": "Codegrid Menuxl Text Displacement Animation Nextjs",
     "category": "showcase",
     "relativePath": "Showcase/232.%20codegrid-menuxl-text-displacement-animation-nextjs/",
-    "previewUrl": "index-assets/showcase-232-codegrid-menuxl-text-displacement-animation-nextjs/index.html",
+    "previewUrl": "index-assets/232/index.html",
     "tags": [
       "animation",
       "codegrid",
@@ -4333,14 +4592,16 @@ export const PROJECTS = [
       "static",
       "text",
       "typescript"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Next.js"
   },
   {
     "id": "233",
     "title": "Codegrid Fiddle Digital Scroll Animation",
     "category": "showcase",
     "relativePath": "Showcase/233.%20codegrid-fiddle-digital-scroll-animation/",
-    "previewUrl": "index-assets/showcase-233-codegrid-fiddle-digital-scroll-animation/index.html",
+    "previewUrl": "index-assets/233/index.html",
     "tags": [
       "animation",
       "codegrid",
@@ -4356,14 +4617,16 @@ export const PROJECTS = [
       "static",
       "typescript",
       "vite"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Vite"
   },
   {
     "id": "234",
     "title": "Codegrid Burocratik Image Trail Nextjs",
     "category": "showcase",
     "relativePath": "Showcase/234.%20codegrid-burocratik-image-trail-nextjs/",
-    "previewUrl": "index-assets/showcase-234-codegrid-burocratik-image-trail-nextjs/index.html",
+    "previewUrl": "index-assets/234/index.html",
     "tags": [
       "animation",
       "burocratik",
@@ -4380,14 +4643,16 @@ export const PROJECTS = [
       "static",
       "trail",
       "typescript"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Next.js"
   },
   {
     "id": "235",
     "title": "Codegrid Image Explosion Scroll Animation Nextjs",
     "category": "showcase",
     "relativePath": "Showcase/235.%20codegrid-image-explosion-scroll-animation-nextjs/",
-    "previewUrl": "index-assets/showcase-235-codegrid-image-explosion-scroll-animation-nextjs/index.html",
+    "previewUrl": "index-assets/235/index.html",
     "tags": [
       "animation",
       "codegrid",
@@ -4403,14 +4668,16 @@ export const PROJECTS = [
       "scroll",
       "static",
       "typescript"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Next.js"
   },
   {
     "id": "236",
     "title": "Codegrid Nextjs Scroll Driven Page Transitions",
     "category": "showcase",
     "relativePath": "Showcase/236.%20codegrid-nextjs-scroll-driven-page-transitions/",
-    "previewUrl": "index-assets/showcase-236-codegrid-nextjs-scroll-driven-page-transitions/index.html",
+    "previewUrl": "index-assets/236/index.html",
     "tags": [
       "animation",
       "codegrid",
@@ -4429,14 +4696,16 @@ export const PROJECTS = [
       "transition",
       "transitions",
       "typescript"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Next.js"
   },
   {
     "id": "237",
     "title": "Codegrid Vucko Scroll Animation Javascript",
     "category": "showcase",
     "relativePath": "Showcase/237.%20codegrid-vucko-scroll-animation-javascript/",
-    "previewUrl": "index-assets/showcase-237-codegrid-vucko-scroll-animation-javascript/index.html",
+    "previewUrl": "index-assets/237/index.html",
     "tags": [
       "animation",
       "codegrid",
@@ -4451,14 +4720,16 @@ export const PROJECTS = [
       "typescript",
       "vite",
       "vucko"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Vite"
   },
   {
     "id": "238",
     "title": "Codegrid Sticky Cards Ashfall Rebuild Nextjs",
     "category": "showcase",
     "relativePath": "Showcase/238.%20codegrid-sticky-cards-ashfall-rebuild-nextjs/",
-    "previewUrl": "index-assets/showcase-238-codegrid-sticky-cards-ashfall-rebuild-nextjs/index.html",
+    "previewUrl": "index-assets/238/index.html",
     "tags": [
       "animation",
       "ashfall",
@@ -4477,14 +4748,16 @@ export const PROJECTS = [
       "static",
       "sticky",
       "typescript"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Next.js"
   },
   {
     "id": "239",
     "title": "Codegrid Threejs Slider Final",
     "category": "showcase",
     "relativePath": "Showcase/239.%20codegrid-threejs-slider-final/",
-    "previewUrl": "index-assets/showcase-239-codegrid-threejs-slider-final/index.html",
+    "previewUrl": "index-assets/239/index.html",
     "tags": [
       "animation",
       "codegrid",
@@ -4500,14 +4773,16 @@ export const PROJECTS = [
       "typescript",
       "vite",
       "webgl"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Vite"
   },
   {
     "id": "240",
     "title": "Codegrid Turbulent Inversion Lens Hover Effect Nextjs",
     "category": "showcase",
     "relativePath": "Showcase/240.%20codegrid-turbulent-inversion-lens-hover-effect-nextjs/",
-    "previewUrl": "index-assets/showcase-240-codegrid-turbulent-inversion-lens-hover-effect-nextjs/index.html",
+    "previewUrl": "index-assets/240/index.html",
     "tags": [
       "animation",
       "codegrid",
@@ -4525,14 +4800,16 @@ export const PROJECTS = [
       "static",
       "turbulent",
       "typescript"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Next.js"
   },
   {
     "id": "241",
     "title": "Codegrid Nite Riot Landing Page Reveal Javascript",
     "category": "showcase",
     "relativePath": "Showcase/241.%20codegrid-nite-riot-landing-page-reveal-javascript/",
-    "previewUrl": "index-assets/showcase-241-codegrid-nite-riot-landing-page-reveal-javascript/index.html",
+    "previewUrl": "index-assets/241/index.html",
     "tags": [
       "animation",
       "codegrid",
@@ -4550,14 +4827,16 @@ export const PROJECTS = [
       "static",
       "typescript",
       "vite"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Vite"
   },
   {
     "id": "242",
     "title": "Codegrid Cielrose Threejs Slider Nextjs",
     "category": "showcase",
     "relativePath": "Showcase/242.%20codegrid-cielrose-threejs-slider-nextjs/",
-    "previewUrl": "index-assets/showcase-242-codegrid-cielrose-threejs-slider-nextjs/index.html",
+    "previewUrl": "index-assets/242/index.html",
     "tags": [
       "animation",
       "cielrose",
@@ -4574,14 +4853,16 @@ export const PROJECTS = [
       "threejs",
       "typescript",
       "webgl"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Next.js"
   },
   {
     "id": "243",
     "title": "Codegrid Infinite Draggable Image Gallery Nextjs",
     "category": "showcase",
     "relativePath": "Showcase/243.%20codegrid-infinite-draggable-image-gallery-nextjs/",
-    "previewUrl": "index-assets/showcase-243-codegrid-infinite-draggable-image-gallery-nextjs/index.html",
+    "previewUrl": "index-assets/243/index.html",
     "tags": [
       "animation",
       "codegrid",
@@ -4600,14 +4881,16 @@ export const PROJECTS = [
       "slider",
       "static",
       "typescript"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Next.js"
   },
   {
     "id": "244",
     "title": "Codegrid Elementis Scroll Animation Javascript",
     "category": "showcase",
     "relativePath": "Showcase/244.%20codegrid-elementis-scroll-animation-javascript/",
-    "previewUrl": "index-assets/showcase-244-codegrid-elementis-scroll-animation-javascript/index.html",
+    "previewUrl": "index-assets/244/index.html",
     "tags": [
       "animation",
       "codegrid",
@@ -4622,14 +4905,16 @@ export const PROJECTS = [
       "static",
       "typescript",
       "vite"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Vite"
   },
   {
     "id": "245",
     "title": "Codegrid Truekindskincare Landing Page Reveal Nextjs",
     "category": "showcase",
     "relativePath": "Showcase/245.%20codegrid-truekindskincare-landing-page-reveal-nextjs/",
-    "previewUrl": "index-assets/showcase-245-codegrid-truekindskincare-landing-page-reveal-nextjs/index.html",
+    "previewUrl": "index-assets/245/index.html",
     "tags": [
       "animation",
       "codegrid",
@@ -4647,14 +4932,16 @@ export const PROJECTS = [
       "static",
       "truekindskincare",
       "typescript"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Next.js"
   },
   {
     "id": "246",
     "title": "Codegrid Direction Aware Hover Effect Nextjs",
     "category": "showcase",
     "relativePath": "Showcase/246.%20codegrid-direction-aware-hover-effect-nextjs/",
-    "previewUrl": "index-assets/showcase-246-codegrid-direction-aware-hover-effect-nextjs/index.html",
+    "previewUrl": "index-assets/246/index.html",
     "tags": [
       "animation",
       "aware",
@@ -4671,14 +4958,16 @@ export const PROJECTS = [
       "react",
       "static",
       "typescript"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Next.js"
   },
   {
     "id": "247",
     "title": "Codegrid Eseagency Scroll Carousel Javascript",
     "category": "showcase",
     "relativePath": "Showcase/247.%20codegrid-eseagency-scroll-carousel-javascript/",
-    "previewUrl": "index-assets/showcase-247-codegrid-eseagency-scroll-carousel-javascript/index.html",
+    "previewUrl": "index-assets/247/index.html",
     "tags": [
       "animation",
       "carousel",
@@ -4696,14 +4985,16 @@ export const PROJECTS = [
       "static",
       "typescript",
       "vite"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Vite"
   },
   {
     "id": "248",
     "title": "Codegrid Nextjs Text Reveal Animation",
     "category": "showcase",
     "relativePath": "Showcase/248.%20codegrid-nextjs-text-reveal-animation/",
-    "previewUrl": "index-assets/showcase-248-codegrid-nextjs-text-reveal-animation/index.html",
+    "previewUrl": "index-assets/248/index.html",
     "tags": [
       "animation",
       "codegrid",
@@ -4719,14 +5010,16 @@ export const PROJECTS = [
       "static",
       "text",
       "typescript"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Next.js"
   },
   {
     "id": "249",
     "title": "Codegrid Interactive Team Section Nextjs",
     "category": "showcase",
     "relativePath": "Showcase/249.%20codegrid-interactive-team-section-nextjs/",
-    "previewUrl": "index-assets/showcase-249-codegrid-interactive-team-section-nextjs/index.html",
+    "previewUrl": "index-assets/249/index.html",
     "tags": [
       "animation",
       "codegrid",
@@ -4743,14 +5036,16 @@ export const PROJECTS = [
       "static",
       "team",
       "typescript"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Next.js"
   },
   {
     "id": "250",
     "title": "Codegrid Gta Vi Landing Page Scroll Final",
     "category": "showcase",
     "relativePath": "Showcase/250.%20codegrid-gta-vi-landing-page-scroll-final/",
-    "previewUrl": "index-assets/showcase-250-codegrid-gta-vi-landing-page-scroll-final/index.html",
+    "previewUrl": "index-assets/250/index.html",
     "tags": [
       "animation",
       "codegrid",
@@ -4768,14 +5063,16 @@ export const PROJECTS = [
       "static",
       "typescript",
       "vite"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Vite"
   },
   {
     "id": "251",
     "title": "Codegrid Zajno Page Transitions Nextjs",
     "category": "showcase",
     "relativePath": "Showcase/251.%20codegrid-zajno-page-transitions-nextjs/",
-    "previewUrl": "index-assets/showcase-251-codegrid-zajno-page-transitions-nextjs/index.html",
+    "previewUrl": "index-assets/251/index.html",
     "tags": [
       "animation",
       "codegrid",
@@ -4792,14 +5089,16 @@ export const PROJECTS = [
       "transition",
       "transitions",
       "zajno"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Next.js"
   },
   {
     "id": "252",
     "title": "Codegrid Inkwell Image Gallery Javascript",
     "category": "showcase",
     "relativePath": "Showcase/252.%20codegrid-inkwell-image-gallery-javascript/",
-    "previewUrl": "index-assets/showcase-252-codegrid-inkwell-image-gallery-javascript/index.html",
+    "previewUrl": "index-assets/252/index.html",
     "tags": [
       "animation",
       "codegrid",
@@ -4816,14 +5115,16 @@ export const PROJECTS = [
       "static",
       "typescript",
       "vite"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Vite"
   },
   {
     "id": "253",
     "title": "Codegrid Exoape Menu Javascript",
     "category": "showcase",
     "relativePath": "Showcase/253.%20codegrid-exoape-menu-javascript/",
-    "previewUrl": "index-assets/showcase-253-codegrid-exoape-menu-javascript/index.html",
+    "previewUrl": "index-assets/253/index.html",
     "tags": [
       "animation",
       "codegrid",
@@ -4839,14 +5140,16 @@ export const PROJECTS = [
       "static",
       "typescript",
       "vite"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Vite"
   },
   {
     "id": "254",
     "title": "Cg Capsules Sticky Cards Javascript",
     "category": "showcase",
     "relativePath": "Showcase/254.%20cg-capsules-sticky-cards-javascript/",
-    "previewUrl": "index-assets/showcase-254-cg-capsules-sticky-cards-javascript/index.html",
+    "previewUrl": "index-assets/254/index.html",
     "tags": [
       "animation",
       "capsules",
@@ -4862,14 +5165,16 @@ export const PROJECTS = [
       "sticky",
       "typescript",
       "vite"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Vite"
   },
   {
     "id": "255",
     "title": "Cg 247artists Trail Nextjs",
     "category": "showcase",
     "relativePath": "Showcase/255.%20cg-247artists-trail-nextjs/",
-    "previewUrl": "index-assets/showcase-255-cg-247artists-trail-nextjs/index.html",
+    "previewUrl": "index-assets/255/index.html",
     "tags": [
       "animation",
       "artists",
@@ -4884,14 +5189,16 @@ export const PROJECTS = [
       "static",
       "trail",
       "typescript"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Next.js"
   },
   {
     "id": "256",
     "title": "Cg P10 Landing Page Reveal Gsap",
     "category": "showcase",
     "relativePath": "Showcase/256.%20cg-p10-landing-page-reveal-gsap/",
-    "previewUrl": "index-assets/showcase-256-cg-p10-landing-page-reveal-gsap/index.html",
+    "previewUrl": "index-assets/256/index.html",
     "tags": [
       "animation",
       "css",
@@ -4906,14 +5213,16 @@ export const PROJECTS = [
       "static",
       "typescript",
       "vite"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Vite"
   },
   {
     "id": "257",
     "title": "Cg Navigate Scroll Animated Text Javascript",
     "category": "showcase",
     "relativePath": "Showcase/257.%20cg-navigate-scroll-animated-text-javascript/",
-    "previewUrl": "index-assets/showcase-257-cg-navigate-scroll-animated-text-javascript/index.html",
+    "previewUrl": "index-assets/257/index.html",
     "tags": [
       "animated",
       "animation",
@@ -4930,14 +5239,16 @@ export const PROJECTS = [
       "text",
       "typescript",
       "vite"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Vite"
   },
   {
     "id": "258",
     "title": "Cg Phantom Gallery Javascript",
     "category": "showcase",
     "relativePath": "Showcase/258.%20cg-phantom-gallery-javascript/",
-    "previewUrl": "index-assets/showcase-258-cg-phantom-gallery-javascript/index.html",
+    "previewUrl": "index-assets/258/index.html",
     "tags": [
       "animation",
       "css",
@@ -4952,14 +5263,16 @@ export const PROJECTS = [
       "static",
       "typescript",
       "vite"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Vite"
   },
   {
     "id": "259",
     "title": "Cg Bitkraft Menu Nextjs",
     "category": "showcase",
     "relativePath": "Showcase/259.%20cg-bitkraft-menu-nextjs/",
-    "previewUrl": "index-assets/showcase-259-cg-bitkraft-menu-nextjs/index.html",
+    "previewUrl": "index-assets/259/index.html",
     "tags": [
       "animation",
       "audio",
@@ -4976,14 +5289,16 @@ export const PROJECTS = [
       "react",
       "static",
       "typescript"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Next.js"
   },
   {
     "id": "260",
     "title": "Cg Sofihealth Product Scroll Animation",
     "category": "showcase",
     "relativePath": "Showcase/260.%20cg-sofihealth-product-scroll-animation/",
-    "previewUrl": "index-assets/showcase-260-cg-sofihealth-product-scroll-animation/index.html",
+    "previewUrl": "index-assets/260/index.html",
     "tags": [
       "animation",
       "css",
@@ -4998,14 +5313,16 @@ export const PROJECTS = [
       "static",
       "typescript",
       "vite"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Vite"
   },
   {
     "id": "261",
     "title": "Cg Eduardbodak Scroll Animation",
     "category": "showcase",
     "relativePath": "Showcase/261.%20cg-eduardbodak-scroll-animation/",
-    "previewUrl": "index-assets/showcase-261-cg-eduardbodak-scroll-animation/index.html",
+    "previewUrl": "index-assets/261/index.html",
     "tags": [
       "animation",
       "css",
@@ -5019,14 +5336,16 @@ export const PROJECTS = [
       "static",
       "typescript",
       "vite"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Vite"
   },
   {
     "id": "262",
     "title": "Cg Warp Slider Next",
     "category": "showcase",
     "relativePath": "Showcase/262.%20cg-warp-slider-next/",
-    "previewUrl": "index-assets/showcase-262-cg-warp-slider-next/index.html",
+    "previewUrl": "index-assets/262/index.html",
     "tags": [
       "animation",
       "css",
@@ -5042,14 +5361,16 @@ export const PROJECTS = [
       "static",
       "typescript",
       "warp"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Next.js"
   },
   {
     "id": "263",
     "title": "Cg Konpo Lp Reveal",
     "category": "showcase",
     "relativePath": "Showcase/263.%20cg-konpo-lp-reveal/",
-    "previewUrl": "index-assets/showcase-263-cg-konpo-lp-reveal/index.html",
+    "previewUrl": "index-assets/263/index.html",
     "tags": [
       "animation",
       "css",
@@ -5063,14 +5384,16 @@ export const PROJECTS = [
       "static",
       "typescript",
       "vite"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Vite"
   },
   {
     "id": "264",
     "title": "Cg Interactive Particle Logo Nextjs",
     "category": "showcase",
     "relativePath": "Showcase/264.%20cg-interactive-particle-logo-nextjs/",
-    "previewUrl": "index-assets/showcase-264-cg-interactive-particle-logo-nextjs/index.html",
+    "previewUrl": "index-assets/264/index.html",
     "tags": [
       "animation",
       "css",
@@ -5085,14 +5408,16 @@ export const PROJECTS = [
       "react",
       "static",
       "typescript"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Next.js"
   },
   {
     "id": "265",
     "title": "Cg Capsules Animated Columns Nextjs",
     "category": "showcase",
     "relativePath": "Showcase/265.%20cg-capsules-animated-columns-nextjs/",
-    "previewUrl": "index-assets/showcase-265-cg-capsules-animated-columns-nextjs/index.html",
+    "previewUrl": "index-assets/265/index.html",
     "tags": [
       "animated",
       "animation",
@@ -5108,14 +5433,16 @@ export const PROJECTS = [
       "react",
       "static",
       "typescript"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Next.js"
   },
   {
     "id": "266",
     "title": "Cg Nvg8 Scroll Animation",
     "category": "showcase",
     "relativePath": "Showcase/266.%20cg-nvg8-scroll-animation/",
-    "previewUrl": "index-assets/showcase-266-cg-nvg8-scroll-animation/index.html",
+    "previewUrl": "index-assets/266/index.html",
     "tags": [
       "animation",
       "css",
@@ -5129,14 +5456,16 @@ export const PROJECTS = [
       "static",
       "typescript",
       "vite"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Vite"
   },
   {
     "id": "267",
     "title": "Cg Webgl Interactive Background Nextjs",
     "category": "showcase",
     "relativePath": "Showcase/267.%20cg-webgl-interactive-background-nextjs/",
-    "previewUrl": "index-assets/showcase-267-cg-webgl-interactive-background-nextjs/index.html",
+    "previewUrl": "index-assets/267/index.html",
     "tags": [
       "animation",
       "background",
@@ -5151,14 +5480,16 @@ export const PROJECTS = [
       "static",
       "typescript",
       "webgl"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Next.js"
   },
   {
     "id": "268",
     "title": "Cg Telescope Scroll Animation",
     "category": "showcase",
     "relativePath": "Showcase/268.%20cg-telescope-scroll-animation/",
-    "previewUrl": "index-assets/showcase-268-cg-telescope-scroll-animation/index.html",
+    "previewUrl": "index-assets/268/index.html",
     "tags": [
       "animation",
       "css",
@@ -5172,14 +5503,16 @@ export const PROJECTS = [
       "telescope",
       "typescript",
       "vite"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Vite"
   },
   {
     "id": "269",
     "title": "Cg Infinite Horizontal Slider Nextjs",
     "category": "showcase",
     "relativePath": "Showcase/269.%20cg-infinite-horizontal-slider-nextjs/",
-    "previewUrl": "index-assets/showcase-269-cg-infinite-horizontal-slider-nextjs/index.html",
+    "previewUrl": "index-assets/269/index.html",
     "tags": [
       "animation",
       "css",
@@ -5194,14 +5527,16 @@ export const PROJECTS = [
       "slider",
       "static",
       "typescript"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Next.js"
   },
   {
     "id": "270",
     "title": "Cg Karim Saab Work Carousel Nextjs",
     "category": "showcase",
     "relativePath": "Showcase/270.%20cg-karim-saab-work-carousel-nextjs/",
-    "previewUrl": "index-assets/showcase-270-cg-karim-saab-work-carousel-nextjs/index.html",
+    "previewUrl": "index-assets/270/index.html",
     "tags": [
       "animation",
       "carousel",
@@ -5219,14 +5554,16 @@ export const PROJECTS = [
       "static",
       "typescript",
       "work"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Next.js"
   },
   {
     "id": "271",
     "title": "Cg Playable Objects",
     "category": "showcase",
     "relativePath": "Showcase/271.%20cg-playable-objects/",
-    "previewUrl": "index-assets/showcase-271-cg-playable-objects/index.html",
+    "previewUrl": "index-assets/271/index.html",
     "tags": [
       "animation",
       "css",
@@ -5240,14 +5577,16 @@ export const PROJECTS = [
       "static",
       "typescript",
       "vite"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Vite"
   },
   {
     "id": "272",
     "title": "Cg Karim Saab Scroll Animation",
     "category": "showcase",
     "relativePath": "Showcase/272.%20cg-karim-saab-scroll-animation/",
-    "previewUrl": "index-assets/showcase-272-cg-karim-saab-scroll-animation/index.html",
+    "previewUrl": "index-assets/272/index.html",
     "tags": [
       "animation",
       "css",
@@ -5262,14 +5601,16 @@ export const PROJECTS = [
       "static",
       "typescript",
       "vite"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Vite"
   },
   {
     "id": "273",
     "title": "Cg Push Over Overlay Menu",
     "category": "showcase",
     "relativePath": "Showcase/273.%20cg-push-over-overlay-menu/",
-    "previewUrl": "index-assets/showcase-273-cg-push-over-overlay-menu/index.html",
+    "previewUrl": "index-assets/273/index.html",
     "tags": [
       "animation",
       "css",
@@ -5286,14 +5627,16 @@ export const PROJECTS = [
       "static",
       "typescript",
       "vite"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Vite"
   },
   {
     "id": "274",
     "title": "Cg Telescope Img Scroll Animation Nextjs",
     "category": "showcase",
     "relativePath": "Showcase/274.%20cg-telescope-img-scroll-animation-nextjs/",
-    "previewUrl": "index-assets/showcase-274-cg-telescope-img-scroll-animation-nextjs/index.html",
+    "previewUrl": "index-assets/274/index.html",
     "tags": [
       "animation",
       "css",
@@ -5309,14 +5652,16 @@ export const PROJECTS = [
       "static",
       "telescope",
       "typescript"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Next.js"
   },
   {
     "id": "275",
     "title": "Cg Adaline Scroll Animation Nextjs",
     "category": "showcase",
     "relativePath": "Showcase/275.%20cg-adaline-scroll-animation-nextjs/",
-    "previewUrl": "index-assets/showcase-275-cg-adaline-scroll-animation-nextjs/index.html",
+    "previewUrl": "index-assets/275/index.html",
     "tags": [
       "adaline",
       "animation",
@@ -5331,14 +5676,16 @@ export const PROJECTS = [
       "scroll",
       "static",
       "typescript"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Next.js"
   },
   {
     "id": "276",
     "title": "Codegrid Madeinuxstudio Page Transition Nextjs",
     "category": "showcase",
     "relativePath": "Showcase/276.%20codegrid-madeinuxstudio-page-transition-nextjs/",
-    "previewUrl": "index-assets/showcase-276-codegrid-madeinuxstudio-page-transition-nextjs/index.html",
+    "previewUrl": "index-assets/276/index.html",
     "tags": [
       "animation",
       "codegrid",
@@ -5356,14 +5703,16 @@ export const PROJECTS = [
       "static",
       "transition",
       "typescript"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Next.js"
   },
   {
     "id": "277",
     "title": "Codegrid Clayboan Scroll Animation",
     "category": "showcase",
     "relativePath": "Showcase/277.%20codegrid-clayboan-scroll-animation/",
-    "previewUrl": "index-assets/showcase-277-codegrid-clayboan-scroll-animation/index.html",
+    "previewUrl": "index-assets/277/index.html",
     "tags": [
       "animation",
       "clayboan",
@@ -5378,14 +5727,16 @@ export const PROJECTS = [
       "static",
       "typescript",
       "vite"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Vite"
   },
   {
     "id": "278",
     "title": "Cg Phive Text Scroll Animation Nextjs",
     "category": "showcase",
     "relativePath": "Showcase/278.%20cg-phive-text-scroll-animation-nextjs/",
-    "previewUrl": "index-assets/showcase-278-cg-phive-text-scroll-animation-nextjs/index.html",
+    "previewUrl": "index-assets/278/index.html",
     "tags": [
       "animation",
       "css",
@@ -5401,14 +5752,16 @@ export const PROJECTS = [
       "static",
       "text",
       "typescript"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Next.js"
   },
   {
     "id": "279",
     "title": "Cg Phive Sticky Cards Nextjs",
     "category": "showcase",
     "relativePath": "Showcase/279.%20cg-phive-sticky-cards-nextjs/",
-    "previewUrl": "index-assets/showcase-279-cg-phive-sticky-cards-nextjs/index.html",
+    "previewUrl": "index-assets/279/index.html",
     "tags": [
       "animation",
       "cards",
@@ -5425,14 +5778,16 @@ export const PROJECTS = [
       "static",
       "sticky",
       "typescript"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Next.js"
   },
   {
     "id": "280",
     "title": "Cg Kaitonote 3d Gallery Showcase Scroll Animation Nextjs",
     "category": "showcase",
     "relativePath": "Showcase/280.%20cg-kaitonote-3d-gallery-showcase-scroll-animation-nextjs/",
-    "previewUrl": "index-assets/showcase-280-cg-kaitonote-3d-gallery-showcase-scroll-animation-nextjs/index.html",
+    "previewUrl": "index-assets/280/index.html",
     "tags": [
       "animation",
       "css",
@@ -5452,14 +5807,16 @@ export const PROJECTS = [
       "threejs",
       "typescript",
       "webgl"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Next.js"
   },
   {
     "id": "281",
     "title": "Cg Jamarea Menu Nextjs",
     "category": "showcase",
     "relativePath": "Showcase/281.%20cg-jamarea-menu-nextjs/",
-    "previewUrl": "index-assets/showcase-281-cg-jamarea-menu-nextjs/index.html",
+    "previewUrl": "index-assets/281/index.html",
     "tags": [
       "animation",
       "css",
@@ -5475,14 +5832,16 @@ export const PROJECTS = [
       "react",
       "static",
       "typescript"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Next.js"
   },
   {
     "id": "282",
     "title": "Cg Yzavoku Slider",
     "category": "showcase",
     "relativePath": "Showcase/282.%20cg-yzavoku-slider/",
-    "previewUrl": "index-assets/showcase-282-cg-yzavoku-slider/index.html",
+    "previewUrl": "index-assets/282/index.html",
     "tags": [
       "animation",
       "css",
@@ -5496,14 +5855,16 @@ export const PROJECTS = [
       "typescript",
       "vite",
       "yzavoku"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Vite"
   },
   {
     "id": "283",
     "title": "Codegrid Capsules Landing Page Reveal Animation",
     "category": "showcase",
     "relativePath": "Showcase/283.%20codegrid-capsules-landing-page-reveal-animation/",
-    "previewUrl": "index-assets/showcase-283-codegrid-capsules-landing-page-reveal-animation/index.html",
+    "previewUrl": "index-assets/283/index.html",
     "tags": [
       "animation",
       "capsules",
@@ -5520,14 +5881,16 @@ export const PROJECTS = [
       "static",
       "typescript",
       "vite"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Vite"
   },
   {
     "id": "284",
     "title": "Codegrid Terminal Text Reveal Animation",
     "category": "showcase",
     "relativePath": "Showcase/284.%20codegrid-terminal-text-reveal-animation/",
-    "previewUrl": "index-assets/showcase-284-codegrid-terminal-text-reveal-animation/index.html",
+    "previewUrl": "index-assets/284/index.html",
     "tags": [
       "animation",
       "codegrid",
@@ -5544,14 +5907,16 @@ export const PROJECTS = [
       "terminal",
       "text",
       "typescript"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Next.js"
   },
   {
     "id": "285",
     "title": "Codegrid Sticky Cards Nextjs",
     "category": "showcase",
     "relativePath": "Showcase/285.%20codegrid-sticky-cards-nextjs/",
-    "previewUrl": "index-assets/showcase-285-codegrid-sticky-cards-nextjs/index.html",
+    "previewUrl": "index-assets/285/index.html",
     "tags": [
       "animation",
       "cards",
@@ -5568,14 +5933,16 @@ export const PROJECTS = [
       "static",
       "sticky",
       "typescript"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Next.js"
   },
   {
     "id": "286",
     "title": "Codegrid Abetkaua Landing Page Reveal Animation",
     "category": "showcase",
     "relativePath": "Showcase/286.%20codegrid-abetkaua-landing-page-reveal-animation/",
-    "previewUrl": "index-assets/showcase-286-codegrid-abetkaua-landing-page-reveal-animation/index.html",
+    "previewUrl": "index-assets/286/index.html",
     "tags": [
       "abetkaua",
       "animation",
@@ -5592,14 +5959,16 @@ export const PROJECTS = [
       "static",
       "typescript",
       "vite"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Vite"
   },
   {
     "id": "287",
     "title": "Codegrid Mubien Scroll Animation Nextjs",
     "category": "showcase",
     "relativePath": "Showcase/287.%20codegrid-mubien-scroll-animation-nextjs/",
-    "previewUrl": "index-assets/showcase-287-codegrid-mubien-scroll-animation-nextjs/index.html",
+    "previewUrl": "index-assets/287/index.html",
     "tags": [
       "animation",
       "codegrid",
@@ -5615,14 +5984,16 @@ export const PROJECTS = [
       "scroll",
       "static",
       "typescript"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Next.js"
   },
   {
     "id": "288",
     "title": "Codegrid Wonjyou Horizontal Scroll",
     "category": "showcase",
     "relativePath": "Showcase/288.%20codegrid-wonjyou-horizontal-scroll/",
-    "previewUrl": "index-assets/showcase-288-codegrid-wonjyou-horizontal-scroll/index.html",
+    "previewUrl": "index-assets/288/index.html",
     "tags": [
       "animation",
       "codegrid",
@@ -5638,14 +6009,16 @@ export const PROJECTS = [
       "typescript",
       "vite",
       "wonjyou"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Vite"
   },
   {
     "id": "289",
     "title": "Codegrid Wonjyou Scroll Animation",
     "category": "showcase",
     "relativePath": "Showcase/289.%20codegrid-wonjyou-scroll-animation/",
-    "previewUrl": "index-assets/showcase-289-codegrid-wonjyou-scroll-animation/index.html",
+    "previewUrl": "index-assets/289/index.html",
     "tags": [
       "animation",
       "codegrid",
@@ -5660,14 +6033,16 @@ export const PROJECTS = [
       "typescript",
       "vite",
       "wonjyou"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Vite"
   },
   {
     "id": "290",
     "title": "Codegrid Wildyriftian Hover Effect",
     "category": "showcase",
     "relativePath": "Showcase/290.%20codegrid-wildyriftian-hover-effect/",
-    "previewUrl": "index-assets/showcase-290-codegrid-wildyriftian-hover-effect/index.html",
+    "previewUrl": "index-assets/290/index.html",
     "tags": [
       "animation",
       "codegrid",
@@ -5683,14 +6058,16 @@ export const PROJECTS = [
       "typescript",
       "vite",
       "wildyriftian"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Vite"
   },
   {
     "id": "291",
     "title": "Codegrid Damso Product Slider",
     "category": "showcase",
     "relativePath": "Showcase/291.%20codegrid-damso-product-slider/",
-    "previewUrl": "index-assets/showcase-291-codegrid-damso-product-slider/index.html",
+    "previewUrl": "index-assets/291/index.html",
     "tags": [
       "animation",
       "codegrid",
@@ -5706,14 +6083,16 @@ export const PROJECTS = [
       "static",
       "typescript",
       "vite"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Vite"
   },
   {
     "id": "april2025",
     "title": "CGMWTAPR2025",
     "category": "templates",
     "relativePath": "Templates/CGMWTAPR2025/",
-    "previewUrl": "index-assets/templates-cgmwtapr2025/index.html",
+    "previewUrl": "index-assets/april2025/index.html",
     "tags": [
       "animation",
       "cgmwtapr",
@@ -5727,14 +6106,16 @@ export const PROJECTS = [
       "react",
       "static",
       "template"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Next.js"
   },
   {
     "id": "april2024",
     "title": "CGMWTAPRIL2024",
     "category": "templates",
     "relativePath": "Templates/CGMWTAPRIL2024/",
-    "previewUrl": "index-assets/templates-cgmwtapril2024/index.html",
+    "previewUrl": "index-assets/april2024/index.html",
     "tags": [
       "cgmwtapril",
       "css",
@@ -5747,14 +6128,16 @@ export const PROJECTS = [
       "template",
       "typescript",
       "vite"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "React + Vite"
   },
   {
     "id": "august2024",
     "title": "CGMWTAUG2024",
     "category": "templates",
     "relativePath": "Templates/CGMWTAUG2024/",
-    "previewUrl": "index-assets/templates-cgmwtaug2024/index.html",
+    "previewUrl": "index-assets/august2024/index.html",
     "tags": [
       "animation",
       "audio",
@@ -5770,7 +6153,9 @@ export const PROJECTS = [
       "template",
       "typescript",
       "vite"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "React + Vite"
   },
   {
     "id": "august2023",
@@ -5786,14 +6171,15 @@ export const PROJECTS = [
       "project",
       "static",
       "template"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "august2025",
     "title": "CGMWTAUGUST2025",
     "category": "templates",
     "relativePath": "Templates/CGMWTAUGUST2025/",
-    "previewUrl": "index-assets/templates-cgmwtaugust2025/index.html",
+    "previewUrl": "index-assets/august2025/index.html",
     "tags": [
       "animation",
       "cgmwtaugust",
@@ -5807,14 +6193,16 @@ export const PROJECTS = [
       "react",
       "static",
       "template"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Next.js"
   },
   {
     "id": "december2023",
     "title": "CGMWTDEC2023",
     "category": "templates",
     "relativePath": "Templates/CGMWTDEC2023/",
-    "previewUrl": "index-assets/templates-cgmwtdec2023/index.html",
+    "previewUrl": "index-assets/december2023/index.html",
     "tags": [
       "cgmwtdec",
       "css",
@@ -5827,14 +6215,16 @@ export const PROJECTS = [
       "template",
       "typescript",
       "vite"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "React + Vite"
   },
   {
     "id": "december2024",
     "title": "CGMWTDEC2024",
     "category": "templates",
     "relativePath": "Templates/CGMWTDEC2024/",
-    "previewUrl": "index-assets/templates-cgmwtdec2024/index.html",
+    "previewUrl": "index-assets/december2024/index.html",
     "tags": [
       "animation",
       "cgmwtdec",
@@ -5849,7 +6239,9 @@ export const PROJECTS = [
       "template",
       "typescript",
       "vite"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "React + Vite"
   },
   {
     "id": "february2024",
@@ -5864,14 +6256,15 @@ export const PROJECTS = [
       "project",
       "static",
       "template"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "february2025",
     "title": "CGMWTFEB2025",
     "category": "templates",
     "relativePath": "Templates/CGMWTFEB2025/",
-    "previewUrl": "index-assets/templates-cgmwtfeb2025/index.html",
+    "previewUrl": "index-assets/february2025/index.html",
     "tags": [
       "animation",
       "cgmwtfeb",
@@ -5885,7 +6278,9 @@ export const PROJECTS = [
       "react",
       "static",
       "template"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Next.js"
   },
   {
     "id": "january2024",
@@ -5900,14 +6295,15 @@ export const PROJECTS = [
       "project",
       "static",
       "template"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "january2025",
     "title": "CGMWTJAN2025",
     "category": "templates",
     "relativePath": "Templates/CGMWTJAN2025/",
-    "previewUrl": "index-assets/templates-cgmwtjan2025/index.html",
+    "previewUrl": "index-assets/january2025/index.html",
     "tags": [
       "animation",
       "audio",
@@ -5923,7 +6319,9 @@ export const PROJECTS = [
       "static",
       "template",
       "typescript"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Next.js"
   },
   {
     "id": "july2024",
@@ -5939,14 +6337,15 @@ export const PROJECTS = [
       "project",
       "static",
       "template"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "july2025",
     "title": "CGMWTJULY2025",
     "category": "templates",
     "relativePath": "Templates/CGMWTJULY2025/",
-    "previewUrl": "index-assets/templates-cgmwtjuly2025/index.html",
+    "previewUrl": "index-assets/july2025/index.html",
     "tags": [
       "animation",
       "cgmwtjuly",
@@ -5960,7 +6359,9 @@ export const PROJECTS = [
       "template",
       "typescript",
       "vite"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Vite"
   },
   {
     "id": "june2024",
@@ -5976,14 +6377,15 @@ export const PROJECTS = [
       "project",
       "static",
       "template"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "june2025",
     "title": "CGMWTJUNE2025",
     "category": "templates",
     "relativePath": "Templates/CGMWTJUNE2025/",
-    "previewUrl": "index-assets/templates-cgmwtjune2025/index.html",
+    "previewUrl": "index-assets/june2025/index.html",
     "tags": [
       "animation",
       "cgmwtjune",
@@ -5997,14 +6399,16 @@ export const PROJECTS = [
       "react",
       "static",
       "template"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Next.js"
   },
   {
     "id": "march2024",
     "title": "CGMWTMAR2024",
     "category": "templates",
     "relativePath": "Templates/CGMWTMAR2024/",
-    "previewUrl": "index-assets/templates-cgmwtmar2024/index.html",
+    "previewUrl": "index-assets/march2024/index.html",
     "tags": [
       "cgmwtmar",
       "css",
@@ -6017,14 +6421,16 @@ export const PROJECTS = [
       "template",
       "typescript",
       "vite"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "React + Vite"
   },
   {
     "id": "march2025",
     "title": "CGMWTMAR2025",
     "category": "templates",
     "relativePath": "Templates/CGMWTMAR2025/",
-    "previewUrl": "index-assets/templates-cgmwtmar2025/index.html",
+    "previewUrl": "index-assets/march2025/index.html",
     "tags": [
       "animation",
       "cgmwtmar",
@@ -6039,14 +6445,16 @@ export const PROJECTS = [
       "template",
       "typescript",
       "vite"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "React + Vite"
   },
   {
     "id": "may2024",
     "title": "CGMWTMAY2024",
     "category": "templates",
     "relativePath": "Templates/CGMWTMAY2024/",
-    "previewUrl": "index-assets/templates-cgmwtmay2024/index.html",
+    "previewUrl": "index-assets/may2024/index.html",
     "tags": [
       "animation",
       "cgmwtmay",
@@ -6061,14 +6469,16 @@ export const PROJECTS = [
       "template",
       "typescript",
       "vite"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "React + Vite"
   },
   {
     "id": "may2025",
     "title": "CGMWTMAY2025",
     "category": "templates",
     "relativePath": "Templates/CGMWTMAY2025/",
-    "previewUrl": "index-assets/templates-cgmwtmay2025/index.html",
+    "previewUrl": "index-assets/may2025/index.html",
     "tags": [
       "animation",
       "cgmwtmay",
@@ -6082,7 +6492,9 @@ export const PROJECTS = [
       "template",
       "typescript",
       "vite"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Vite"
   },
   {
     "id": "november2023",
@@ -6097,14 +6509,15 @@ export const PROJECTS = [
       "project",
       "static",
       "template"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "november2024",
     "title": "CGMWTNOV2024",
     "category": "templates",
     "relativePath": "Templates/CGMWTNOV2024/",
-    "previewUrl": "index-assets/templates-cgmwtnov2024/index.html",
+    "previewUrl": "index-assets/november2024/index.html",
     "tags": [
       "animation",
       "audio",
@@ -6120,7 +6533,9 @@ export const PROJECTS = [
       "template",
       "typescript",
       "vite"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "React + Vite"
   },
   {
     "id": "october2024",
@@ -6136,14 +6551,15 @@ export const PROJECTS = [
       "project",
       "static",
       "template"
-    ]
+    ],
+    "requiresServer": false
   },
   {
     "id": "october2023",
     "title": "CGMWTOCTOBER2023",
     "category": "templates",
     "relativePath": "Templates/CGMWTOCTOBER2023/",
-    "previewUrl": "index-assets/templates-cgmwtoctober2023/index.html",
+    "previewUrl": "index-assets/october2023/index.html",
     "tags": [
       "cgmwtoctober",
       "css",
@@ -6156,14 +6572,16 @@ export const PROJECTS = [
       "template",
       "typescript",
       "vite"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "React + Vite"
   },
   {
     "id": "september2024",
     "title": "CGMWTSEPT2024",
     "category": "templates",
     "relativePath": "Templates/CGMWTSEPT2024/",
-    "previewUrl": "index-assets/templates-cgmwtsept2024/index.html",
+    "previewUrl": "index-assets/september2024/index.html",
     "tags": [
       "animation",
       "cgmwtsept",
@@ -6178,14 +6596,16 @@ export const PROJECTS = [
       "static",
       "template",
       "typescript"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Next.js"
   },
   {
     "id": "september2025",
     "title": "CGMWTSEPT2025",
     "category": "templates",
     "relativePath": "Templates/CGMWTSEPT2025/",
-    "previewUrl": "index-assets/templates-cgmwtsept2025/index.html",
+    "previewUrl": "index-assets/september2025/index.html",
     "tags": [
       "animation",
       "cgmwtsept",
@@ -6200,14 +6620,16 @@ export const PROJECTS = [
       "typescript",
       "video",
       "vite"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "Vite"
   },
   {
     "id": "july2023",
     "title": "MWTJULY2023",
     "category": "templates",
     "relativePath": "Templates/MWTJULY2023/",
-    "previewUrl": "index-assets/templates-mwtjuly2023/index.html",
+    "previewUrl": "index-assets/july2023/index.html",
     "tags": [
       "css",
       "html",
@@ -6220,7 +6642,9 @@ export const PROJECTS = [
       "template",
       "typescript",
       "vite"
-    ]
+    ],
+    "requiresServer": true,
+    "framework": "React + Vite"
   },
   {
     "id": "september2023",
@@ -6236,7 +6660,8 @@ export const PROJECTS = [
       "project",
       "static",
       "template"
-    ]
+    ],
+    "requiresServer": false
   }
 ];
 
@@ -6577,6 +7002,6 @@ export const TECHNOLOGY_TAGS = [
   "zetr"
 ];
 
-export const GENERATED_AT = "2025-10-04T01:02:20.405Z";
+export const GENERATED_AT = "2025-10-04T21:47:06.261Z";
 
 export default { CATEGORY_MAP, PROJECTS, TECHNOLOGY_TAGS, GENERATED_AT };

@@ -116,21 +116,28 @@ function main() {
       extractKeywords(displayName).forEach((token) => tags.add(token));
       extractKeywords(folderName).forEach((token) => tags.add(token));
 
-      const staticPreview = resolveStaticPreview(legacyId);
+  const staticPreview = resolveStaticPreview(projectId) ?? resolveStaticPreview(legacyId);
       const directPreview = framework ? null : resolveSourcePreview(relativePath, absPath);
       const previewUrl = staticPreview ?? directPreview;
       if (previewUrl) {
         tags.add('static');
       }
 
-      projects.push({
+      const projectRecord = {
         id: projectId,
         title: displayName,
         category: category.key,
         relativePath,
         previewUrl,
         tags: Array.from(tags).sort(),
-      });
+        requiresServer: Boolean(framework),
+      };
+
+      if (framework) {
+        projectRecord.framework = framework.name;
+      }
+
+      projects.push(projectRecord);
     });
   });
 

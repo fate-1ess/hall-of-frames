@@ -149,6 +149,7 @@ const filterMenuController = {
   closeButtons: [],
   menuItems: [],
   isOpen: false,
+  outsideHandler: null,
 };
 
 init();
@@ -713,6 +714,17 @@ function writeCount(node, value) {
     return;
   }
   node.textContent = formatted;
+
+  const menuHidden =
+    filterMenuController.root &&
+    filterMenuController.root.contains(node) &&
+    (filterMenuController.root.getAttribute("aria-hidden") !== "false" ||
+      !filterMenuController.isOpen);
+
+  if (menuHidden || typeof gsap === "undefined") {
+    return;
+  }
+
   gsap.fromTo(
     node,
     { y: 8, opacity: 0 },
@@ -1191,6 +1203,24 @@ function initFilterMenu() {
       closeFilterMenu();
     });
   });
+
+  const handlePointerDown = (event) => {
+    if (!filterMenuController.isOpen) return;
+    if (filterMenuController.timeline?.isActive()) return;
+    const target = event.target;
+    if (!target) return;
+    const clickedInsideMenu = filterMenuController.shell.contains(target);
+    const clickedToggle = filterMenuController.toggles.some((toggle) => toggle.contains(target));
+    if (!clickedInsideMenu && !clickedToggle) {
+      closeFilterMenu();
+    }
+  };
+
+  if (filterMenuController.outsideHandler) {
+    document.removeEventListener("pointerdown", filterMenuController.outsideHandler);
+  }
+  filterMenuController.outsideHandler = handlePointerDown;
+  document.addEventListener("pointerdown", handlePointerDown);
 }
 
 function openFilterMenu() {
