@@ -101,7 +101,7 @@ const state = {
   query: "",
 };
 
-const REPOSITORY_ROOT = "https://github.com/codegridweb/CODEGRID/tree/main/";
+const REPOSITORY_ROOT = "https://github.com/fate-1ess/hall-of-frames/tree/main/";
 
 const elements = {
   projectList: document.querySelector("[data-project-list]"),
