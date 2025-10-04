@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>verse-cards</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav">
+        <div class="nav-item drawer">
+          <div class="nav-icon">
+            <ion-icon name="layers-sharp"></ion-icon>
+          </div>
+          <div class="nav-icon-name">Work</div>
+        </div>
+        <div class="nav-item">
+          <div class="nav-icon">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </div>
+          <div class="nav-icon-name">Twitter</div>
+        </div>
+        <div class="nav-item">
+          <div class="nav-icon">
+            <ion-icon name="logo-twitch"></ion-icon>
+          </div>
+          <div class="nav-icon-name">Twitch</div>
+        </div>
+      </div>
+    </div>
+    <div class="cards">
+      <div class="close"><ion-icon name="close-sharp"></ion-icon></div>
+      <div class="card c1">Sonyverse</div>
+      <div class="card c2">Nota</div>
+      <div class="card c3">Blinder</div>
+      <div class="card c4">Cinovas</div>
+      <div class="card c5">Uito</div>
+      <div class="footer">Click on close to get rid of the cards.</div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const drawer = document.querySelector(".drawer");
+        const close = document.querySelector(".close");
+        const cardsContainer = document.querySelector(".cards");
+
+        const tl = gsap.timeline({
+          paused: true,
+          reversed: true,
+          onStart: function () {
+            cardsContainer.style.pointerEvents = "all";
+          },
+          onReverseComplete: function () {
+            cardsContainer.style.pointerEvents = "none";
+          },
+        });
+
+        tl.from(".cards .card", 1.5, {
+          y: 1000,
+          stagger: {
+            amount: 0.3,
+          },
+          ease: "power4.inOut",
+        })
+          .from(
+            ".close",
+            0.5,
+            {
+              scale: 0,
+              delay: 1,
+            },
+            "<"
+          )
+          .from(".footer", 0.5, {
+            opacity: 0,
+          });
+
+        drawer.addEventListener("click", function () {
+          if (tl.reversed()) {
+            tl.play();
+          } else {
+            tl.reverse();
+          }
+        });
+
+        close.addEventListener("click", function () {
+          tl.reverse();
+        });
+      });
+    </script>
+  </body>
+</html>

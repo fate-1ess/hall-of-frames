@@ -1,0 +1,320 @@
+section.hero {
+  height: 120vh;
+}
+
+.hero .container {
+  height: 100%;
+  background: linear-gradient(
+    to top,
+    rgba(114, 221, 255, 0.2),
+    rgba(114, 221, 255, 0)
+  );
+  border-radius: 5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4em;
+  margin-top: 4em;
+}
+
+.hero-copy {
+  text-align: center;
+}
+
+.hero-copy h1 {
+  margin-bottom: 26px;
+}
+
+.hero-copy p {
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 36px;
+}
+
+.hero-img {
+  width: 70%;
+}
+
+.clients {
+  text-align: center;
+  margin: 4em 0;
+}
+
+.clients p {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.client-logos {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+  margin: 3em 0;
+}
+
+.client-logos img {
+  width: 100px;
+}
+
+section.cta-1 .container {
+  background: linear-gradient(315deg, #401d78, rgba(26, 50, 49, 0.2));
+  border-radius: 5em;
+  display: flex;
+}
+
+.cta-1 .container .col {
+  flex: 1;
+}
+
+.cta-1 .container .col:nth-child(1) {
+  padding-top: 4em;
+}
+
+.cta-1 p.copy {
+  width: 60%;
+  margin-bottom: 3em;
+}
+
+.why-pro .copy {
+  width: 50%;
+  margin: 2em 0 4em 0;
+}
+
+.why-pro .benefits {
+  display: flex;
+  gap: 1em;
+}
+
+.why-pro .benefits .col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.why-pro .benefits .benefit {
+  padding: 2em 1em;
+  flex: 1;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.first-workflow .container .center {
+  text-align: center;
+  margin-bottom: 4em;
+}
+
+.first-workflow .copy {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.flows {
+  display: flex;
+  flex-direction: row;
+  gap: 4em;
+  margin: 4em 0 2em 0;
+}
+
+.flow {
+  flex: 1;
+  padding: 2em 2em 0 2em;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.075);
+  border-radius: 5em;
+}
+
+.flow.flow-lg {
+  position: relative;
+  padding: 2em 2em 10em 2em !important;
+  background-image: url("https://assets.website-files.com/64b936c88eb5ddace1f89459/64bae576a9843e2374f97902_operations-back-1.png"),
+    linear-gradient(315deg, #1a1d32, rgba(26, 29, 50, 0)) !important;
+  background-size: cover !important;
+}
+
+.flow.flow-lg .flow-copy {
+  width: 35%;
+}
+
+.flow.flow-lg .flow-copy p {
+  margin-bottom: 1em;
+}
+
+.flow.flow-lg .flow-copy button {
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.075);
+  padding: 8px 16px;
+  margin: 1em 0;
+}
+
+.flow.flow-lg .flow-copy button a {
+  color: #fff;
+}
+
+.flow:nth-child(1) {
+  background: linear-gradient(
+    to top,
+    rgba(13, 64, 92, 0.5),
+    rgba(63, 128, 156, 0)
+  );
+  background-clip: padding-box;
+}
+
+.flow:nth-child(2) {
+  background: linear-gradient(to top, #2c0c1a, rgba(169, 89, 124, 0));
+  background-clip: padding-box;
+}
+
+.flow-copy {
+  flex: 1;
+  padding: 2em;
+}
+
+.flow-copy h3 {
+  font-size: 30px;
+}
+
+.flow-img {
+  position: relative;
+  flex: 1;
+  padding: 1em 1em 0 1em;
+}
+
+.flow.flow-sm-img .flow-copy {
+  padding: 4em 4em 2em 4em;
+}
+
+.flow.flow-sm-rev .flow-copy {
+  padding: 2em 4em 4em 4em;
+}
+
+.flow.flow-sm-img,
+.flow.flow-sm-rev {
+  padding: 0;
+}
+
+.flow.flow-sm-img .flow-img,
+.flow.flow-sm-rev .flow-img {
+  padding: 0;
+}
+
+.flow.flow-sm-img .flow-img img {
+  bottom: 0;
+}
+
+.flow.flow-sm-rev .flow-img img {
+  top: 0;
+}
+
+.flow-img img {
+  position: relative;
+  bottom: -2em;
+}
+
+.flow.flow-sm-rev {
+  flex-direction: column-reverse;
+}
+
+.onebit {
+  text-align: center;
+}
+
+.ob-logo img {
+  width: 150px;
+  margin-bottom: 2em;
+}
+
+.ob-copy p {
+  font-size: 24px;
+  color: #fff;
+  margin: 0 auto;
+  width: 60%;
+}
+
+.ob-copy button {
+  margin: 3em;
+  background: rgba(255, 255, 255, 0.075);
+  border: 1px solid rgba(114, 221, 255, 0.2);
+  color: #fff;
+  padding: 8px 16px;
+}
+
+.cta-callout .container {
+  background: linear-gradient(315deg, #46dcf1, #2b00a7);
+  border-radius: 5em;
+  padding: 12em 6em;
+  text-align: center;
+}
+
+.callout-copy {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.callout-copy h2 {
+  margin-bottom: 0.5em;
+}
+
+.callout-copy button {
+  margin-top: 2em;
+}
+
+@media (max-width: 900px) {
+  .hero-copy p {
+    width: 75%;
+  }
+
+  .hero-img {
+    width: 90%;
+  }
+
+  .clients p {
+    width: 90%;
+  }
+
+  .client-logos {
+    flex-direction: column;
+  }
+
+  section.cta-1 .container {
+    flex-direction: column;
+  }
+
+  .cta-1 p.copy {
+    width: 90%;
+  }
+
+  .cta-1 img {
+    margin-top: 4em;
+  }
+
+  .why-pro .copy {
+    width: 100%;
+  }
+
+  .why-pro .benefits {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .first-workflow .copy,
+  .flow.flow-lg .flow-copy {
+    width: 100%;
+  }
+
+  .flows {
+    flex-direction: column;
+  }
+
+  .ob-copy p,
+  .callout-copy {
+    width: 100%;
+  }
+
+  .cta-callout .container {
+    padding: 6em 2em;
+  }
+}

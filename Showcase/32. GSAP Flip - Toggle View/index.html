@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>gsap flip layout</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
+  </head>
+  <body>
+    <div class="img-gallery" data-scroll-container>
+      <div class="img-gallery-container" data-scroll>
+        <div class="img">
+          <img src="./images/img-1.png" />
+        </div>
+        <div class="img">
+          <img src="./images/img-2.png" />
+        </div>
+        <div class="img">
+          <img src="./images/img-10.png" />
+        </div>
+        <div class="img">
+          <img src="./images/img-4.png" />
+        </div>
+        <div class="img">
+          <img src="./images/img-5.png" />
+        </div>
+        <div class="img">
+          <img src="./images/img-6.png" />
+        </div>
+        <div class="img">
+          <img src="./images/img-7.png" />
+        </div>
+        <div class="img">
+          <img src="./images/img-8.png" />
+        </div>
+        <div class="img">
+          <img src="./images/img-9.png" />
+        </div>
+        <div class="img">
+          <img src="./images/img-2.png" />
+        </div>
+      </div>
+    </div>
+
+    <div class="btn">Flip layout</div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+  <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://assets.codepen.io/16327/Flip.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/CustomEase.min.js"></script>
+  <script>
+    const scroller = new LocomotiveScroll({
+      el: document.querySelector("[data-scroll-container]"),
+      smooth: true,
+    });
+    gsap.registerPlugin(Flip);
+    CustomEase.create("cubic", "0.83, 0, 0.17, 1");
+    const gallery = document.querySelector(".img-gallery-container"),
+      images = gsap.utils.toArray(".img");
+
+    document.querySelector(".btn").addEventListener("click", () => {
+      let state = Flip.getState(".img-gallery-container, .img");
+
+      gallery.classList.toggle("order");
+      images.forEach((wr, i) => {
+        wr.classList.toggle("reorder");
+      });
+
+      Flip.from(state, {
+        absolute: true,
+        duration: 2,
+        stagger: 0.05,
+        ease: "cubic",
+      });
+    });
+  </script>
+</html>

@@ -1,0 +1,74 @@
+.case-study-page {
+  min-width: 100vw;
+  min-height: 100vh;
+  background: var(--color-bg);
+}
+
+.study-prev {
+  display: flex;
+  padding: 1em;
+  gap: 5em;
+  margin-bottom: 2em;
+}
+
+.study-prev > div {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.study-prev-img {
+  width: 100px;
+  height: 200px;
+}
+
+.study-subhero {
+  padding: 1em;
+}
+
+.study-shots-2 {
+  width: 100%;
+  padding: 1em;
+  height: 200vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.study-shots-2 > div {
+  flex: 1;
+}
+
+.shot-row {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  height: 90vh;
+}
+
+.show-row-row {
+  display: flex;
+  gap: 1em;
+  flex: 1;
+  height: 50vh;
+}
+
+@media (max-width: 900px) {
+  .study-prev {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .study-prev-img {
+    width: 100%;
+  }
+
+  .show-row-row {
+    flex-direction: column;
+  }
+
+  .study-shots-2 {
+    height: max-content;
+  }
+}

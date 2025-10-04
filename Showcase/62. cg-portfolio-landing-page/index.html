@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cg-portfolio landing page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="counter-wrap">
+      <h1 class="counter">0%</h1>
+      <div class="counter-revealer"></div>
+    </div>
+
+    <div class="container">
+      <div class="row row-1">
+        <div class="design col">
+          <div class="item">
+            <h1>3D</h1>
+            <div class="item-revealer"></div>
+          </div>
+          <div class="item">
+            <h1>User Interface</h1>
+            <div class="item-revealer"></div>
+          </div>
+          <div class="item">
+            <h1>User Experience</h1>
+            <div class="item-revealer"></div>
+          </div>
+          <div class="item">
+            <h1>Motion</h1>
+            <div class="item-revealer"></div>
+          </div>
+          <div class="item">
+            <h1>Interactions</h1>
+            <div class="item-revealer"></div>
+          </div>
+          <div class="item item-tag-1">
+            <p>Design</p>
+            <div class="item-revealer"></div>
+          </div>
+        </div>
+        <div class="dev col">
+          <div class="item item-tag-2">
+            <p>Developement</p>
+            <div class="item-revealer"></div>
+          </div>
+          <div class="item">
+            <h1>Backend</h1>
+            <div class="item-revealer"></div>
+          </div>
+          <div class="item">
+            <h1>Frontend</h1>
+            <div class="item-revealer"></div>
+          </div>
+          <div class="item">
+            <h1>Creative Web</h1>
+            <div class="item-revealer"></div>
+          </div>
+          <div class="item">
+            <h1>Webflow</h1>
+            <div class="item-revealer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row row-2">
+        <div class="logo">
+          <div class="item-main">
+            <h1>DD&copy;</h1>
+            <div class="item-main-revealer"></div>
+          </div>
+        </div>
+        <div class="arrow">
+          <div class="item-main">
+            <h1>&#8600;</h1>
+            <div class="item-main-revealer"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script>
+      function startLoader() {
+        let counterElement = document.querySelector(".counter");
+        let currentValue = 0;
+
+        function updateCounter() {
+          if (currentValue === 100) {
+            return;
+          }
+
+          currentValue += Math.floor(Math.random() * 10) + 1;
+
+          if (currentValue > 100) {
+            currentValue = 100;
+          }
+
+          counterElement.textContent = currentValue + "%";
+
+          let delay = Math.floor(Math.random() * 200) + 50;
+          setTimeout(updateCounter, delay);
+        }
+
+        updateCounter();
+      }
+
+      startLoader();
+
+      gsap.to(".counter-wrap h1", 1.5, {
+        delay: 3,
+        y: -280,
+        ease: "power4.inOut",
+        stagger: {
+          amount: 0.5,
+        },
+      });
+
+      gsap.to(".item h1, .item p", 1.5, {
+        delay: 3.25,
+        y: -40,
+        ease: "power4.inOut",
+        stagger: {
+          amount: 0.5,
+        },
+      });
+
+      gsap.to(".item-main h1", 2, {
+        delay: 3.25,
+        y: -280,
+        ease: "power4.inOut",
+        stagger: {
+          amount: 0.1,
+        },
+      });
+    </script>
+  </body>
+</html>

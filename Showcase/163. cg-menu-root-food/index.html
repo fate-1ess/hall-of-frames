@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Root Food Menu | Awwwards Rebuild | @Codegrid</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="menu">
+      <div class="menu-item">
+        <div class="menu-item-index">
+          <p>01</p>
+          <p>Why</p>
+        </div>
+        <div class="menu-link menu-link-main">
+          <p>Why</p>
+        </div>
+        <div class="menu-link menu-link-hover">
+          <p>Why</p>
+        </div>
+        <div class="menu-img">
+          <img src="./assets/img1.jpg" alt="" />
+        </div>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-index">
+          <p>02</p>
+          <p>Who</p>
+        </div>
+        <div class="menu-link menu-link-main">
+          <p>Who</p>
+        </div>
+        <div class="menu-link menu-link-hover">
+          <p>Who</p>
+        </div>
+        <div class="menu-img">
+          <img src="./assets/img2.jpg" alt="" />
+        </div>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-index">
+          <p>03</p>
+          <p>What</p>
+        </div>
+        <div class="menu-link menu-link-main">
+          <p>What</p>
+        </div>
+        <div class="menu-link menu-link-hover">
+          <p>What</p>
+        </div>
+        <div class="menu-img">
+          <img src="./assets/img3.jpg" alt="" />
+        </div>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-index">
+          <p>04</p>
+          <p>How</p>
+        </div>
+        <div class="menu-link menu-link-main">
+          <p>How</p>
+        </div>
+        <div class="menu-link menu-link-hover">
+          <p>How</p>
+        </div>
+        <div class="menu-img">
+          <img src="./assets/img4.jpg" alt="" />
+        </div>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-index">
+          <p>05</p>
+          <p>Join</p>
+        </div>
+        <div class="menu-link menu-link-main">
+          <p>Join</p>
+        </div>
+        <div class="menu-link menu-link-hover">
+          <p>Join</p>
+        </div>
+        <div class="menu-img">
+          <img src="./assets/img5.jpg" alt="" />
+        </div>
+      </div>
+
+      <div class="menu-close"><p>Close</p></div>
+    </div>
+
+    <div class="container">
+      <div class="menu-open"><p>Menu</p></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/CustomEase.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        gsap.registerPlugin(CustomEase);
+        CustomEase.create(
+          "hop",
+          "M0,0 C0.091,0.543 0.148,0.662 0.277,0.786 0.405,0.909 0.596,0.979 1,1 "
+        );
+
+        const menuOpen = document.querySelector(".menu-open");
+        const menuClose = document.querySelector(".menu-close");
+        const menu = document.querySelector(".menu");
+        const menuItems = document.querySelectorAll(".menu-item");
+        let isMenuOpen = false;
+
+        function splitTextIntoSpans(selector) {
+          let elements = document.querySelectorAll(selector);
+          elements.forEach((element) => {
+            let text = element.innerText;
+            let splitText = text
+              .split("")
+              .map(function (char) {
+                return `<span>${char === " " ? "&nbsp;&nbsp;" : char}</span>`;
+              })
+              .join("");
+            element.innerHTML = splitText;
+          });
+        }
+
+        splitTextIntoSpans(".menu-link p");
+
+        gsap.set(".menu-close p", { y: 40 });
+        gsap.set(".menu-link p span", { y: 250 });
+
+        const handleMenu = () => {
+          gsap.to(menu, {
+            width: isMenuOpen ? "20vw" : "100vw",
+            duration: 1,
+            ease: "hop",
+          });
+
+          gsap.to(".menu-item", {
+            justifyContent: isMenuOpen ? "center" : "flex-start",
+            duration: 1,
+            ease: "power3.out",
+          });
+
+          gsap.to(".menu-item-index", {
+            alignItems: isMenuOpen ? "center" : "flex-start",
+            duration: 1,
+            ease: "power3.out",
+            onComplete: () => {
+              isMenuOpen = !isMenuOpen;
+              menuItems.forEach((menuItem) => {
+                if (isMenuOpen) {
+                  menuItem.classList.add("menu-opened");
+                } else {
+                  menuItem.classList.remove("menu-opened");
+                }
+              });
+            },
+          });
+
+          gsap.to(".menu-close p", {
+            y: isMenuOpen ? 40 : 0,
+            duration: 1,
+            ease: "power3.out",
+          });
+
+          gsap.to(".menu-open p", {
+            y: isMenuOpen ? 0 : -40,
+            duration: 1,
+            ease: "power3.out",
+          });
+
+          menuItems.forEach((menuItem) => {
+            const menuItemLetters =
+              menuItem.querySelectorAll(".menu-link p span");
+            gsap.to(menuItemLetters, {
+              delay: isMenuOpen ? 0 : 0.25,
+              y: isMenuOpen ? 250 : 0,
+              duration: 1,
+              stagger: isMenuOpen ? -0.075 : 0.075,
+              ease: "power3.out",
+            });
+          });
+        };
+
+        menuOpen.addEventListener("click", handleMenu);
+        menuClose.addEventListener("click", handleMenu);
+      });
+    </script>
+  </body>
+</html>

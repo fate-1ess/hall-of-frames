@@ -1,0 +1,195 @@
+.about {
+  background: #000;
+  color: #fff;
+  min-height: 100vh;
+}
+
+.about section.about-us {
+  height: 600px;
+}
+
+.about section.about-us .about-us-copy {
+  width: 70%;
+  margin: 0 auto 2em auto;
+  display: flex;
+  gap: 12em;
+  align-items: flex-start;
+}
+
+.about section.about-us .about-us-copy > div {
+  flex: 1;
+}
+
+.about section.about-us .about-us-copy .about-us-copy-p span {
+  display: block;
+}
+
+.about section.about-us .about-us-copy .about-us-copy-p span a {
+  color: #fff;
+}
+
+#about-sticky-wrap {
+  position: relative;
+  padding: 0;
+}
+
+.about-sticky-1 {
+  width: 100vw;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  background: #fff;
+  color: #000;
+  padding: 4em 2em 4em 2em;
+}
+
+.about-sticky-2 {
+  width: 100vw;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  background: #000;
+  color: #fff;
+  padding: 4em 2em 4em 2em;
+}
+
+.about-sticky-3 {
+  width: 100vw;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  background: #fff;
+  color: #000;
+  padding: 4em 2em 4em 2em;
+}
+
+.about-sticky .sticky-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 4em 0 6em 0;
+}
+
+.sticky-content h1 {
+  font-size: 60px !important;
+}
+
+.sticky-content h1.num {
+  font-size: 120px !important;
+}
+
+.more-clients {
+  position: relative;
+  background: #aeaeae;
+  color: #000;
+  padding-top: 8em;
+}
+
+.more-clients h1 {
+  text-align: center;
+}
+
+.more-clients .more-clients-logos {
+  width: 80%;
+  margin: 4em auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.more-clients .more-clients-logos .more-clients-logo {
+  width: 30%;
+  height: 150px;
+  margin: 2em 0em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.more-clients .more-clients-logos .more-clients-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.office {
+  padding-top: 12em;
+  position: relative;
+  background: #000;
+  height: max-content !important;
+}
+
+.office .about-us-copy {
+  width: 100% !important;
+  justify-content: space-between;
+}
+
+.office .about-us-copy .about-us-copy-h1 {
+  flex: 2 !important;
+}
+
+.office .about-us-copy .about-us-copy-p {
+  flex: 1 !important;
+}
+
+.office h1#office {
+  font-size: 120px;
+  font-weight: 500;
+}
+
+.office .hero-img-container {
+  margin: 1em 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.office .hero-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.footer.footer-light {
+  position: relative;
+  background: #fff;
+  color: #000;
+}
+
+.footer.footer-light .footer-copy-h1 a h1 {
+  color: #000;
+}
+
+.footer.footer-light .footer-copy-text p a {
+  color: #000 !important;
+}
+
+@media (max-width: 900px) {
+  .about section.about-us .about-us-copy {
+    align-items: flex-start;
+    flex-direction: column-reverse;
+    gap: 2em;
+    width: 100%;
+  }
+
+  .sticky-content h1 {
+    font-size: 40px !important;
+  }
+
+  .sticky-content h1.num {
+    font-size: 80px !important;
+  }
+
+  .more-clients .more-clients-logos {
+    flex-direction: column;
+  }
+
+  .more-clients .more-clients-logos .more-clients-logo {
+    width: 100%;
+  }
+
+  .office h1#office {
+    font-size: 50px;
+  }
+}

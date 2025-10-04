@@ -1,0 +1,65 @@
+.footer .wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 12em;
+}
+
+.footer-row.contact {
+  display: flex;
+}
+
+.footer-col.email {
+  flex: 2;
+}
+
+.footer-col.email h2 {
+  font-size: 3rem;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.footer-col.email h2:nth-child(1) {
+  opacity: 0.35;
+}
+
+.footer-col.socials {
+  flex: 1;
+}
+
+.footer .social {
+  display: flex;
+  gap: 1em;
+  padding: 1em 0;
+  border-top: 1px solid var(--border-dark);
+}
+
+.footer h1 {
+  font-family: "Osgard Pro";
+  font-size: 39vw;
+  letter-spacing: -0.025em;
+  line-height: 100%;
+}
+
+@media (max-width: 900px) {
+  .footer-row.contact {
+    flex-direction: column;
+    gap: 4em;
+  }
+
+  .footer-col.email h2 {
+    font-size: 2rem;
+  }
+
+  .footer-row.outro {
+    text-align: center;
+  }
+
+  .footer h1 {
+    position: relative;
+    font-size: 35vw;
+    left: -0.05em;
+    line-height: 60%;
+  }
+}

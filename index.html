@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CODEGRID Catalogue</title>
+    <meta
+      name="description"
+      content="Browse every CODEGRID showcase and monthly web template with live previews, tech filters, and quick launch helpers."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="filter-menu" data-filter-menu>
+      <div class="filter-menu__topbar">
+        <div class="filter-menu__launcher">
+          <button type="button" class="filter-menu__launcher-button" data-filter-menu-toggle aria-expanded="false">Menu</button>
+        </div>
+      </div>
+      <aside class="filter-menu__panel" data-filter-menu-shell aria-labelledby="filter-menu-title">
+        <div class="filter-menu__inner">
+          <div class="filter-menu__status" data-menu-animate>
+            <div class="filter-menu__status-grid">
+              <div class="filter-menu__status-item">
+                <span class="filter-menu__status-value" data-filter-active-total>0</span>
+                <span class="filter-menu__status-label">Active</span>
+              </div>
+              <div class="filter-menu__status-item">
+                <span class="filter-menu__status-value" data-visible-count>000</span>
+                <span class="filter-menu__status-label">Showing</span>
+              </div>
+              <div class="filter-menu__status-item">
+                <span class="filter-menu__status-value" data-total-inline>000</span>
+                <span class="filter-menu__status-label">Total</span>
+              </div>
+            </div>
+            <p class="filter-menu__status-summary" data-filter-active-summary>No filters applied</p>
+          </div>
+
+          <form class="filter-menu__search" data-menu-animate>
+            <div class="filter-menu__search-field">
+              <svg class="filter-menu__search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none">
+                <circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="2"/>
+                <path d="m21 21-4.35-4.35" stroke="currentColor" stroke-width="2"/>
+              </svg>
+              <input
+                id="catalogue-search-inline"
+                type="search"
+                name="query"
+                placeholder="Search projects..."
+                autocomplete="off"
+                spellcheck="false"
+                data-search-input
+              />
+            </div>
+          </form>
+
+          <div class="filter-menu__content">
+            <div class="filter-menu__section" data-menu-animate>
+              <h3 class="filter-menu__section-title">Collections</h3>
+              <div class="filter-menu__chips" data-filter-category></div>
+            </div>
+            
+            <div class="filter-menu__section" data-menu-animate>
+              <h3 class="filter-menu__section-title">Technology Stack</h3>
+              <div class="filter-menu__chips" data-filter-stack></div>
+            </div>
+            
+            <div class="filter-menu__section" data-menu-animate>
+              <h3 class="filter-menu__section-title">Focus Areas</h3>
+              <div class="filter-menu__chips" data-filter-focus></div>
+            </div>
+          </div>
+
+          <footer class="filter-menu__footer" data-menu-animate>
+            <button type="button" class="filter-menu__reset" data-reset>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" stroke="currentColor" stroke-width="2"/>
+                <path d="M3 3v5h5" stroke="currentColor" stroke-width="2"/>
+              </svg>
+              Reset all filters
+            </button>
+          </footer>
+        </div>
+      </aside>
+    </div>
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="site-header__inner">
+          <div class="site-brand">
+            <span class="site-brand__mark" aria-hidden="true">◎</span>
+            <div class="site-brand__copy">
+              <p class="site-brand__eyebrow">Codegrid Directory</p>
+              <p class="site-brand__title">Showcases &amp; Templates</p>
+            </div>
+          </div>
+          <p class="site-meta" data-generated-at></p>
+        </div>
+      </header>
+
+      <main class="page-main">
+        <section class="hero" aria-labelledby="hero-title">
+          <div class="hero__background" aria-hidden="true"></div>
+          <div class="hero__grid">
+            <div class="hero__lead">
+              <p class="hero__kicker">Catalogue redesign &mdash; Oct 2025</p>
+              <h1 id="hero-title" data-hero-heading>
+                Build<br />
+                experiences<br />
+                at the speed<br />
+                of curiosity
+              </h1>
+              <p class="hero__body">
+                Blend the energy of our playground demos with the rigor of client-ready templates.
+                Curated layouts, quick tech pivots, and live previews help you scout the perfect starting point in seconds.
+              </p>
+              <div class="hero__actions">
+                <button type="button" class="pill pill--primary" data-filter-menu-toggle aria-expanded="false">Open filters</button>
+                <button type="button" class="pill pill--ghost" data-scroll-to="catalogue">Jump to results</button>
+              </div>
+            </div>
+            <div class="hero__insights">
+              <div class="hero-card hero-card--pulse">
+                <p class="hero-card__eyebrow">Live inventory</p>
+                <p class="hero-card__value" data-total-count>000</p>
+                <p class="hero-card__meta">Projects indexed</p>
+              </div>
+              <div class="hero-card hero-card--pillars">
+                <div>
+                  <p class="hero-card__eyebrow">Showcases</p>
+                  <p class="hero-card__value" data-category-count="showcase">000</p>
+                </div>
+                <div>
+                  <p class="hero-card__eyebrow">Templates</p>
+                  <p class="hero-card__value" data-category-count="templates">000</p>
+                </div>
+                <p class="hero-card__meta">Auto-synced from /Showcase &amp; /Templates</p>
+              </div>
+              <div class="hero-card hero-card--categories">
+                <p class="hero-card__eyebrow">Curated categories</p>
+                <p class="hero-card__value" data-category-total>00</p>
+                <p class="hero-card__meta">Focus filters to fast-track discovery</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="catalogue" class="catalogue" aria-live="polite">
+          <div class="catalogue__layout">
+            <div class="catalogue__grid" data-project-list>
+            </div>
+            <aside class="preview" data-preview-panel>
+              <div class="preview__header">
+                <div>
+                  <p class="preview__eyebrow">Live preview</p>
+                  <h3 class="preview__title" data-preview-title>Hover a project to load a preview</h3>
+                </div>
+                <button type="button" class="preview__close" data-preview-close aria-label="Close preview"></button>
+              </div>
+              <div class="preview__body">
+                <iframe
+                  title="Project preview"
+                  class="preview__frame"
+                  data-preview-frame
+                  loading="lazy"
+                  sandbox="allow-scripts allow-same-origin"
+                  hidden
+                ></iframe>
+                <div class="preview__instructions" data-preview-instructions hidden></div>
+              </div>
+            </aside>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="site-footer__inner">
+          <p>Crafted by remixing components from the 2023&ndash;2025 CODEGRID Monthly Web Template archive.</p>
+        </div>
+      </footer>
+    </div>
+
+    <template id="project-card-template">
+      <article class="project-card" data-project-card>
+        <div class="project-card__header">
+          <span class="project-card__collection" data-project-collection></span>
+          <span class="project-card__stack" data-project-stack></span>
+        </div>
+        <h3 class="project-card__title" data-project-title></h3>
+          <p class="project-card__slug" data-project-slug></p>
+          <p class="project-card__path" data-project-path></p>
+          <div class="project-card__footer">
+            <a class="project-card__button" data-project-open target="_blank" rel="noreferrer">
+              <span>Open project</span>
+              <span aria-hidden="true">↗</span>
+            </a>
+            <a class="project-card__button project-card__button--ghost" data-project-website target="_blank" rel="noreferrer">
+              <span>Open website</span>
+              <span aria-hidden="true">↗</span>
+            </a>
+        </div>
+      </article>
+    </template>
+
+    <dialog class="preview-dialog" data-preview-dialog>
+      <div class="preview-dialog__inner">
+        <button type="button" class="preview-dialog__close" data-dialog-close aria-label="Close preview">×</button>
+        <div class="preview-dialog__content"></div>
+      </div>
+    </dialog>
+
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>

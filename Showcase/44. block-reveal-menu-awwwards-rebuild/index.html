@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>vrtlworld-nav-reveal</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <div id="toggle"><ion-icon name="menu-sharp"></ion-icon></div>
+    <!-- nav -->
+    <nav>
+      <div>
+        <p>+</p>
+        <p>xrtl wrld</p>
+      </div>
+      <div>
+        <p>xrtl wrld</p>
+        <p>+</p>
+      </div>
+    </nav>
+
+    <!-- hero -->
+    <div class="hero">
+      <div class="header">
+        <h1>
+          w<span>e</span
+          ><br />help<br />br<span>a</span>nds<br />e<span>x</span>plore
+          <br />vi<span>b</span>es
+        </h1>
+      </div>
+    </div>
+
+    <!-- blocks -->
+    <div id="square-container"></div>
+
+    <!-- menu -->
+    <div class="content-overlay">
+      <div class="nav-header">
+        <h1>
+          wo<span>r</span>k wi<span>t</span><span>h</span> <span>u</span>s
+        </h1>
+      </div>
+      <div class="nav-links">
+        <div class="nav-link">
+          <span>(01)</span>
+          <a href="#">home</a>
+        </div>
+        <div class="nav-link">
+          <span>(02)</span>
+          <a href="#">our studio</a>
+        </div>
+        <div class="nav-link">
+          <span>(03)</span>
+          <a href="#">projects</a>
+        </div>
+        <div class="nav-link">
+          <span>(04)</span>
+          <a href="#">community</a>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        const menu = document.querySelector(".content-overlay");
+        gsap.set(menu, { opacity: 0 });
+        const squareContainer = document.getElementById("square-container");
+        const squareSize = 100;
+        const screenWidth = window.innerWidth;
+        const screenHeight = window.innerHeight;
+        const numCols = Math.ceil(screenWidth / squareSize);
+        const numRows = Math.ceil(screenHeight / squareSize);
+        const numSquares = numCols * numRows;
+
+        squareContainer.style.width = `${numCols * squareSize + 50}px`;
+        squareContainer.style.height = `${numRows * squareSize + 50}px`;
+
+        let squares = [];
+
+        function createSquares() {
+          for (let i = 0; i < numSquares; i++) {
+            const square = document.createElement("div");
+            square.classList.add("square");
+            squareContainer.appendChild(square);
+            squares.push(square);
+          }
+        }
+
+        function animateSquares() {
+          gsap.fromTo(
+            squares,
+            { opacity: 0 },
+            {
+              opacity: 1,
+              delay: 0.5,
+              duration: 0.0005,
+              stagger: {
+                each: 0.004,
+                from: "random",
+              },
+            }
+          );
+
+          gsap.to(squares, {
+            opacity: 0,
+            delay: 1.5,
+            duration: 0.0005,
+            stagger: {
+              each: 0.004,
+              from: "random",
+            },
+          });
+        }
+
+        let overlayVisible = false;
+
+        document.getElementById("toggle").addEventListener("click", () => {
+          squareContainer.innerHTML = "";
+          squares = [];
+          createSquares();
+          animateSquares();
+
+          gsap.to(menu, 0.025, {
+            opacity: overlayVisible ? 0 : 1,
+            visibility: overlayVisible ? "hidden" : "visible",
+            delay: 1.15,
+          });
+
+          gsap.to(menu, {
+            zIndex: overlayVisible ? -1 : 0,
+            delay: overlayVisible ? 0 : 2,
+          });
+
+          overlayVisible = !overlayVisible;
+        });
+      });
+    </script>
+  </body>
+</html>

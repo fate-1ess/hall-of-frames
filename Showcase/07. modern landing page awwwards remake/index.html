@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hotburo landing page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">hotburo</div>
+        <div class="dummy-info">13/1/2023 0:21 AM TORONTO</div>
+        <div class="link">contact</div>
+      </div>
+
+      <div class="hero-section">
+        <div class="copy">
+          <div class="row row-1">
+            <div class="h1">We are building</div>
+            <div class="p">from 2021&copy;</div>
+          </div>
+          <div class="row row-2">
+            <div></div>
+            <div class="h1">digital brands</div>
+            <div></div>
+          </div>
+          <div class="row row-3">
+            <div></div>
+            <div class="h1">differently</div>
+            <div class="span">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIMPLE WEBSITES AND SIMPLE
+              BRANDING STAY IN THE PAST. WE ARE TACKLING BUSINESS PROBLEMS
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="spline">
+      <iframe
+        src="https://my.spline.design/forhotburocopy-d8d6b1df53fea4cee2c21d09e6d7cb23/"
+        frameborder="0"
+        width="100%"
+        height="100%"
+      ></iframe>
+    </div>
+    <div class="pre-loader">
+      <div class="content">
+        <div class="text">Everyone uses a <span>preloader,</span> sorry :(</div>
+        <div class="loader"></div>
+      </div>
+    </div>
+  </body>
+  <script>
+    gsap.from(".text", 0.8, {
+      y: 40,
+      opacity: 0,
+      ease: "power2.inOut",
+      delay: 1,
+    });
+
+    gsap.from(".loader", 2, {
+      width: 0,
+      ease: "power4.inOut",
+      delay: 2,
+    });
+
+    gsap.to(".pre-loader", 2, {
+      top: "-100%",
+      ease: "power4.inOut",
+      delay: 4,
+    });
+
+    gsap.from(".row", 0.9, {
+      y: 50,
+      opacity: 0,
+      ease: "power4.inOut",
+      delay: 4.5,
+      stagger: {
+        amount: 0.3,
+      },
+    });
+  </script>
+</html>

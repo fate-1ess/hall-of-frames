@@ -1,0 +1,253 @@
+.back-btn {
+  position: fixed;
+  top: -25px;
+  left: -25px;
+  width: 175px;
+  height: 175px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.back-btn a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+
+.back-btn-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 100%;
+  clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
+}
+
+.back-btn-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: center center;
+  color: #fff;
+}
+
+.sp-title {
+  height: max-content;
+  padding: 6em 0;
+}
+
+.sp-title h1 {
+  font-size: 5rem;
+  line-height: 1.125;
+}
+
+.sp-banner {
+  height: 75vh;
+}
+
+.sp-details {
+  height: max-content;
+  padding: 2em 0;
+}
+
+.sp-details .container {
+  display: flex;
+}
+
+.sp-details .container > div {
+  flex: 1;
+  gap: 2em;
+}
+
+p.sp-details-name {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 2em;
+}
+
+.sp-tags {
+  margin-bottom: 2em;
+}
+
+.sp-tags p {
+  line-height: 1.65;
+}
+
+.sp-date p {
+  margin-bottom: 4em;
+  color: var(--light2);
+}
+
+.sp-link button {
+  outline: none;
+  color: var(--light);
+  background-color: transparent;
+  padding: 1em 2em 1.25em 1.75em;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 2em;
+  font-family: "Roobert";
+  font-size: 300;
+}
+
+.sp-link .icon {
+  position: relative;
+  top: 2px;
+  color: var(--light2);
+}
+
+.sp-link a {
+  text-decoration: none;
+  line-height: 1;
+}
+
+.sp-details-col:nth-child(2) p:nth-child(1) {
+  margin-bottom: 2em;
+}
+
+.sp-details-col:nth-child(2) p:nth-child(2) {
+  font-size: 1rem;
+  font-weight: lighter;
+  line-height: 1.65;
+}
+
+.sp-info {
+  height: max-content;
+  padding: 4em 0;
+}
+
+.sp-info .container {
+  display: flex;
+  gap: 2em;
+}
+
+.sp-info .container > div {
+  flex: 1;
+}
+
+.sp-info-title h3 {
+  font-size: 1.75rem;
+  font-weight: 400;
+}
+
+.sp-info-desc p {
+  font-size: 1rem;
+  font-weight: lighter;
+  line-height: 1.65;
+}
+
+.sp-img {
+  height: max-content;
+}
+
+.sp-img .container {
+  padding: 1em 1em;
+}
+
+.credits {
+  height: max-content;
+}
+
+.credits h2 {
+  font-size: 1.75rem;
+  margin-bottom: 2em;
+}
+
+.credits-row {
+  display: flex;
+  gap: 1em;
+  padding: 1em 0;
+}
+
+.credits-col {
+  flex: 1;
+}
+
+.credits-header p {
+  font-weight: bolder;
+  margin-bottom: 1em;
+}
+
+.credits-copy p {
+  font-size: 0.95rem;
+}
+
+.credits .divider {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.15);
+  margin: 2.5em 0;
+}
+
+.next-project {
+  position: relative;
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.next-project-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.next-project .container {
+  position: relative;
+  padding: 0 1em;
+  z-index: 1;
+}
+
+.next-project-header {
+  width: 75%;
+  display: flex;
+  gap: 0.75em;
+}
+
+.next-project-title h1 {
+  line-height: 1.25;
+}
+
+.next-project-icon {
+  position: relative;
+  top: 8px;
+}
+
+@media (max-width: 900px) {
+  .sp-title .container h1 {
+    font-size: 3rem;
+  }
+
+  .sp-details {
+    padding: 4em 0;
+  }
+
+  .sp-details .container {
+    flex-direction: column-reverse;
+    gap: 4em;
+  }
+
+  .sp-info .container {
+    flex-direction: column;
+  }
+
+  .credits-row {
+    flex-direction: column;
+    gap: 2em;
+  }
+
+  .next-project-header {
+    width: 100%;
+  }
+}

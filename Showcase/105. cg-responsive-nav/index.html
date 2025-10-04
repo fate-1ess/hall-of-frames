@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navigation Menu | @Codegrid</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <body>
+    <div class="container">
+        <div class="logo-container">
+            <div class="logo">XXXX</div>
+            <div class="logo-bar">
+                <div class="tagline">your awakening journey</div>
+                <div class="toggle"><button>menu</button></div>
+            </div>
+        </div>
+        <div class="overlay">
+            <div class="whitespace"></div>
+            <div class="discover item">
+                <div class="col-1"><p>// &nbsp;&nbsp; discover</p></div>
+                <div class="col-2">
+                    <div class="link"><a href="#">drops</a></div>
+                    <div class="link"><a href="#">finery</a></div>
+                    <div class="link"><a href="#">experiences</a></div>
+                    <div class="link"><a href="#">marketplace</a></div>
+                    <div class="link"><a href="#">journal</a></div>
+                    <div class="link"><a href="#">gallery</a></div>
+                    <div class="link"><a href="#">stacking</a></div>
+                    <div class="link"><a href="#">about</a></div>
+                </div>
+            </div>
+            <div class="buy item">
+                <div class="col-1"><p>// &nbsp;&nbsp; buy</p></div>
+                <div class="col-2">
+                    <div class="btn">
+                        <button>crystal</button><span><i class="ph-bold ph-arrow-square-out"></i></span>
+                    </div>
+                    <div class="btn">
+                        <button>avatars</button><span><i class="ph-bold ph-arrow-square-out"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="connect item">
+                <div class="col-1"><p>// &nbsp;&nbsp; connect</p></div>
+                <div class="col-2">
+                    <span><a href="#">twitter</a></span>
+                    <span>&nbsp;/&nbsp;</span>
+                    <span><a href="#">discord</a></span>
+                    <span>&nbsp;/&nbsp;</span>
+                    <span><a href="#">instagram</a></span>
+                    <span>&nbsp;/&nbsp;</span>
+                    <span><a href="#">youtube</a></span>
+                </div>
+            </div>
+            <div class="legal item">
+                <div class="col-1"><p>// &nbsp;&nbsp; legal</p></div>
+                <div class="col-2">
+                    <span><a href="#">terms & conditions</a></span>
+                    <span>&nbsp;/&nbsp;</span>
+                    <span><a href="#">privacy policy</a></span>
+                </div>
+            </div>
+            <div class="newsletter item">
+                <div class="col-1"><p>// &nbsp;&nbsp; newsletter</p></div>
+                <div class="col-2">
+                    <form action="">
+                        <input type="text" placeholder="enter your email" />
+                        <button>submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const toggleButton = document.querySelector('.toggle button');
+            const container = document.querySelector('.container');
+            const links = document.querySelectorAll('.link');
+            let isOpen = false;
+
+            const timeline = gsap.timeline({ paused: true });
+
+            timeline.to(container, {
+                duration: 1,
+                ease: "power3.inOut",
+                clipPath: 'polygon(0 0, 0 100%, 100% 100%, 100% 0)',
+            });
+
+            timeline.to(links, {
+                duration: 1,
+                top: 0,
+                opacity: 1,
+                stagger: 0.05,
+                ease: "power3.inOut",
+            }, "-=1"); 
+
+            toggleButton.addEventListener('click', function() {
+                if (isOpen) {
+                    timeline.reverse();
+                } else {
+                    timeline.play();
+                }
+            isOpen = !isOpen;
+            });
+        });
+    </script>
+  </body>
+</html>

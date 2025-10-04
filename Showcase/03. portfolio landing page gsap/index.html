@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portfolio-landing-page-reveal (FT. CODEGRID)</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="reveal">
+          <div class="h1 primary">C<span>o</span>nst<span>a</span>nce</div>
+        </div>
+
+        <div class="reveal">
+          <div class="h1 primary">
+            So<span>u</span>ville &nbsp;&nbsp;&nbsp;&nbsp;
+          </div>
+        </div>
+      </div>
+
+      <div class="hr"></div>
+
+      <div class="row intro">
+        <div class="p">front-end deveveloper</div>
+        <div class="p">available for freelance</div>
+        <div class="p">email</div>
+        <div class="p">montreal, canada</div>
+      </div>
+
+      <div class="white-space"></div>
+
+      <div class="row">
+        <div class="nav-item about">
+          <div>About</div>
+          <div class="id">01</div>
+        </div>
+
+        <div class="reveal">
+          <div class="h1 secondary">French</div>
+        </div>
+
+        <div class="nav-item projects">
+          <div>Projects</div>
+          <div class="id">02</div>
+        </div>
+      </div>
+
+      <div class="hr"></div>
+
+      <div class="row">
+        <div class="reveal">
+          <div class="h1 secondary">Frontend</div>
+        </div>
+
+        <div class="reveal">
+          <div class="h1 secondary">Developer &nbsp;&nbsp;</div>
+        </div>
+      </div>
+
+      <div class="hr"></div>
+
+      <div class="row">
+        <div class="reveal">
+          <div class="h1 secondary">Based</div>
+        </div>
+
+        <div class="nav-item contact">
+          <div>Contact</div>
+          <div class="id">03</div>
+        </div>
+
+        <div class="reveal">
+          <div class="h1 secondary">in Montreal</div>
+        </div>
+      </div>
+
+      <div class="hr"></div>
+    </div>
+    <script>
+      const tl = gsap.timeline();
+
+      tl.from(".intro > div", 1.8, {
+        opacity: 0,
+        y: -100,
+        ease: "power4.out",
+        delay: 1,
+        stagger: {
+          amount: 0.3,
+        },
+      });
+
+      tl.from(
+        ".hr",
+        1.8,
+        {
+          width: 0,
+          ease: "power4.out",
+          delay: 1,
+          stagger: {
+            amount: 0.3,
+          },
+        },
+        "-=1.5"
+      );
+
+      tl.from(
+        ".reveal div",
+        1.8,
+        {
+          y: 200,
+          ease: "power4.out",
+          stagger: {
+            amount: 0.8,
+          },
+        },
+        "-=2"
+      );
+
+      tl.from(
+        ".nav-item",
+        1.8,
+        {
+          opacity: 0,
+          y: 100,
+          ease: "power4.out",
+          stagger: {
+            amount: 0.3,
+          },
+        },
+        "-=2"
+      );
+    </script>
+  </body>
+</html>

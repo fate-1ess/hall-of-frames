@@ -1,0 +1,157 @@
+:root {
+  --bg: #0c0c0c;
+  --border: #303030;
+  --color: #7e7e7e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  font-family: "Acid Grotesk";
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  background: var(--bg);
+  color: var(--color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  gap: 25px;
+  cursor: pointer;
+}
+
+.nav .nav-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav .nav-item .nav-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background: rgb(40, 40, 40);
+  background: linear-gradient(
+    180deg,
+    rgba(40, 40, 40, 1) 0%,
+    rgba(20, 20, 20, 1) 100%
+  );
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+
+.nav .nav-item .nav-icon ion-icon {
+  color: #fff;
+}
+
+.nav .nav-item .nav-icon-name {
+  position: relative;
+  top: 10px;
+  font-size: 12.5px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.nav .nav-item:hover .nav-icon-name {
+  top: 0;
+  opacity: 1;
+}
+
+.drawer::after {
+  content: "";
+  position: absolute;
+  top: -2.5px;
+  right: -2.5px;
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  border-radius: 100%;
+}
+
+.cards {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
+
+.cards .card {
+  position: relative;
+  width: 200px;
+  height: 300px;
+  border-radius: 10px;
+  background: #ececec;
+  box-shadow: 0 0 50px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 17.5px;
+  font-weight: 500;
+  letter-spacing: 0.25px;
+}
+
+.c1 {
+  transform: translate(50px, 20px) rotate(5deg);
+}
+.c2 {
+  transform: translate(-5px, -10px) rotate(-2.5deg);
+}
+.c3 {
+  transform: translate(-25px, 20px) rotate(2deg);
+}
+.c4 {
+  transform: translate(-40px, -10px) rotate(7.5deg);
+}
+.c5 {
+  transform: translate(-70px, 30px) rotate(-7.5deg);
+}
+
+.close {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.footer {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  color: #575757;
+  font-weight: 500;
+  letter-spacing: 0.25px;
+}

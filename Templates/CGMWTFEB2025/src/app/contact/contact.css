@@ -1,0 +1,76 @@
+.contact-hero {
+  position: relative;
+  width: 100vw;
+  height: 90svh;
+  overflow: hidden;
+  background-color: var(--bg);
+}
+
+.contact-hero .container {
+  display: flex;
+  align-items: flex-end;
+}
+
+.contact-details {
+  padding: 8em 0;
+}
+
+.contact-details .container {
+  display: flex;
+  flex-direction: column;
+  gap: 4em;
+}
+
+.contact-details .row:not(:last-child) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.contact-details .row {
+  display: flex;
+  gap: 2em;
+  padding-bottom: 4em;
+}
+
+.contact-details .row:last-child {
+  padding-bottom: 2em;
+}
+
+.contact-details .row .col {
+  flex: 1;
+  display: flex;
+  gap: 2em;
+}
+
+.contact-details .row .col .sub-col {
+  flex: 1;
+}
+
+.contact-banner {
+  position: relative;
+  width: 100vw;
+  height: 100svh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-banner-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 900px) {
+  .contact-details .row,
+  .contact-details .row .col {
+    flex-direction: column;
+  }
+
+  .contact-details .row .col {
+    gap: 1em;
+  }
+}

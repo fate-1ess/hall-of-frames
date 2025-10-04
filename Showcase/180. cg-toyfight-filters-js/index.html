@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToyFight Filters | @Codegrid</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <div class="nav-items">
+          <a href="#">Codegrid</a>
+        </div>
+        <div class="nav-items">
+          <a href="#">Services</a>
+          <a href="#">Work</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="nav-items">
+          <a href="#">Press for ?</a>
+        </div>
+      </nav>
+
+      <div class="filters">
+        <button data-filter="featured" class="active">featured</button>
+        <button data-filter="branding">branding</button>
+        <button data-filter="marketing">marketing</button>
+        <button data-filter="website">website</button>
+        <button data-filter="content">content</button>
+        <button data-filter="ecommerce">ecommerce</button>
+      </div>
+
+      <div class="items"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/CustomEase.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

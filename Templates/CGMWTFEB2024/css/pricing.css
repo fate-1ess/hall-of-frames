@@ -1,0 +1,162 @@
+.section-pricing-hero .container {
+  padding: 8em 6em 4em 6em;
+}
+
+.section-pricing-hero .container .p-header-copy {
+  width: 30%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.p-cards .container {
+  display: flex;
+  padding: 1em 6em 4em 8em;
+  gap: 1em;
+}
+
+.p-card {
+  background-clip: padding-box;
+  height: 600px;
+  flex: 1;
+  flex-direction: column;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 2em;
+  border-radius: 2em;
+  display: flex;
+  gap: 1em;
+  background-image: linear-gradient(314deg, #1a1d32, rgba(26, 29, 50, 0));
+}
+
+.p-card#p-main {
+  position: relative;
+  background-image: linear-gradient(
+    314deg,
+    rgba(252, 255, 102, 0.2),
+    rgba(252, 255, 102, 0)
+  ) !important;
+  background-clip: padding-box;
+}
+
+.p-tag {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 1.5em;
+  color: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(252, 255, 102, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+  padding: 4px 12px 3px 12px;
+  border-radius: 20px;
+}
+
+.p-tag p {
+  font-size: 10px;
+}
+
+.p-card#p-main i {
+  color: #fcff66;
+}
+
+.p-card#p-main button {
+  background: #fcff66;
+  color: #000;
+}
+
+.p-card h3 {
+  font-size: 22px;
+  margin-bottom: 1.5em;
+}
+
+p.price {
+  margin-bottom: 0.5em;
+}
+
+p.price span {
+  font-size: 40px;
+  color: #fff;
+}
+
+span.dl {
+  font-size: 24px !important;
+}
+
+.p-card-intro {
+  flex: 3;
+}
+
+.p-card-info {
+  flex: 5;
+}
+
+.p-card-cta {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+}
+
+.p-card-info p {
+  display: flex;
+  align-items: center;
+  gap: 0.65em;
+  padding: 0.55em 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.p-card-info p i {
+  color: rgb(57, 181, 234);
+  font-size: 22px;
+}
+
+.p-card button {
+  background: #fff;
+}
+
+.accordion {
+  padding: 1.5em;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+  font-weight: 400;
+  transition: 0.4s;
+  font-family: "Inter";
+}
+
+.panel {
+  padding: 0 1.5em;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.panel p {
+  padding-bottom: 1.5em;
+}
+
+.faq .container {
+  padding: 2em 6em 4em 6em;
+}
+
+.faq h2 {
+  margin-bottom: 1em;
+}
+
+.faq button {
+  background: none;
+  color: #fff;
+}
+
+.faq-item {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.1);
+  margin: 1em 0;
+  border-radius: 20px;
+}
+
+@media (max-width: 900px) {
+  .section-pricing-hero .container .p-header-copy {
+    width: 100%;
+  }
+}

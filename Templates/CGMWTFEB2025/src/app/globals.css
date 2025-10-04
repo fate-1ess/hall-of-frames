@@ -1,0 +1,145 @@
+:root {
+  --bg: #1a1a1a;
+  --copy: #bac4b8;
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none !important;
+}
+
+::view-transition-group(root) {
+  z-index: auto !important;
+}
+
+::view-transition-image-pair(root) {
+  isolation: isolate;
+  will-change: transform, opacity, clip-path;
+  z-index: 1;
+}
+
+::view-transition-new(root) {
+  z-index: 999;
+  animation: none !important;
+}
+
+::view-transition-old(root) {
+  z-index: 1;
+  animation: none !important;
+}
+
+@font-face {
+  font-family: "am";
+  src: url(/fonts/akkuratmono.ttf);
+}
+
+@font-face {
+  font-family: "db";
+  src: url(/fonts/druk-bold.otf);
+}
+
+@font-face {
+  font-family: "dh";
+  src: url(/fonts/druk-heavy.otf);
+}
+
+@font-face {
+  font-family: "dm";
+  src: url(/fonts/druk-medium.otf);
+}
+
+@font-face {
+  font-family: "ds";
+  src: url(/fonts/druk-super.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "am";
+  background-color: #000;
+  color: var(--copy);
+}
+
+.page {
+  width: 100%;
+  height: 100%;
+  min-height: 100svh;
+  background-color: var(--bg);
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  will-change: transform;
+}
+
+a,
+p {
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: var(--copy);
+  will-change: transform;
+}
+
+h1 {
+  position: relative;
+  text-transform: uppercase;
+  font-family: "dh";
+  font-weight: lighter;
+  font-size: 7.5vw;
+  line-height: 0.85;
+  color: var(--copy);
+  will-change: transform;
+}
+
+h2 {
+  position: relative;
+  text-transform: uppercase;
+  font-family: "dh";
+  font-weight: lighter;
+  font-size: 4vw;
+  line-height: 0.85;
+  color: var(--copy);
+  will-change: transform;
+}
+
+h3 {
+  position: relative;
+  text-transform: uppercase;
+  font-family: "dm";
+  font-weight: lighter;
+  font-size: 2.25vw;
+  line-height: 0.85;
+  color: var(--copy);
+  will-change: transform;
+}
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 12vw;
+  }
+
+  h2 {
+    font-size: 10vw;
+  }
+
+  h3 {
+    font-size: 8vw;
+  }
+}

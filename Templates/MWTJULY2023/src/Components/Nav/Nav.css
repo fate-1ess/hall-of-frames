@@ -1,0 +1,40 @@
+.nav {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+  mix-blend-mode: difference;
+  z-index: 100;
+}
+
+.nav .nav-items {
+  display: flex;
+}
+
+.nav .nav-items .nav-item {
+  padding: 0.125em;
+  margin-right: 0.5em;
+}
+
+.nav .logo {
+  padding: 0.125em;
+}
+
+.nav .logo a,
+.nav .nav-items .nav-item a {
+  font-size: 12px;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+@media (max-width: 900px) {
+  .nav .nav-items {
+    flex-direction: column;
+  }
+  .nav .logo a,
+  .nav .nav-items .nav-item a {
+    font-size: 14px;
+  }
+}

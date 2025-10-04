@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>gsap landing page animation | @codegrid</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <div class="x">
+            <div class="nav-items">
+                  <div id="logo">
+                    <a href="#">Nicescal</a>
+                  </div>
+                  <div>
+                    <a href="#">Shop</a>
+                  </div>
+                  <div>
+                    <a href="#">Portfolio</a>
+                  </div>
+                  <div>
+                    <a href="#">About us</a>
+                  </div>
+                </div>
+        </div>
+        <div class="menu-toggle">Menu</div>
+      </nav>
+      <div class="header">
+        <div class="letter-wrap">
+          <div class="letter v"><span>v</span></div>
+          <div class="letter-reveal"></div>
+        </div>
+        <div class="letter-wrap">
+          <div class="letter a">
+            <span>a</span>
+            <div class="circle"></div>
+          </div>
+          <div class="letter-reveal"></div>
+        </div>
+        <div class="letter-wrap">
+          <div class="letter a2">
+            <span>a</span>
+            <div class="circle"></div>
+          </div>
+          <div class="letter-reveal"></div>
+        </div>
+        <div class="letter-wrap">
+          <div class="letter y">
+            <span>y</span>
+            <div class="circle"></div>
+          </div>
+          <div class="letter-reveal"></div>
+        </div>
+        <div class="letter-wrap">
+          <div class="letter u"><span>u</span></div>
+          <div class="letter-reveal"></div>
+        </div>
+      </div>
+      <section class="bottom-nav">
+        <div class="about">
+          <div href="#"></div>
+            Login to the <br />
+            customer panel
+          </div>
+          <p id="about">
+            This is a scientific platform showing interesting documentaries in
+            the world. A collection of inspirations. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic, magni!
+          </p>
+        </div>
+ 
+      </section>
+    </div>
+    <script>
+
+      gsap.from(".letter", 2, {
+        top: "100px",
+        ease: "power4.inOut",
+        stagger: {
+          amount: 0.5,
+        },
+      });
+      gsap.to(".a2", 1, {
+        top: "20px",
+        ease: "power2.inOut",
+        delay: 3,
+      });
+
+      gsap.to(".header", 4, {
+        scale: "2",
+        ease: "power2.inOut",
+        delay: 4,
+      });
+
+      gsap.to(".circle", 1, {
+        opacity: 1,
+        ease: "power1.inOut",
+        delay: 4,
+      });
+
+      gsap.to("span", 2, {
+        opacity: 0,
+        ease: "power1.inOut",
+        delay: 4.5,
+      });
+
+      gsap.to(".circle", 3, {
+        scale: 10,
+        ease: "power1.inOut",
+        backgroundColor: "#aac728",
+        stagger: {
+          amount: 0.75,
+        },
+        delay: 6,
+      });
+
+      gsap.to(".a .circle", 3, {
+        top: "48px",
+        left: "-180px",
+        ease: "power1.inOut",
+        delay: 6,
+      });
+
+      gsap.to(".y .circle", 3, {
+        top: "48px",
+        left: "180px",
+        ease: "power1.inOut",
+        delay: 6.5,
+      });
+
+      // extra stuff 
+
+      gsap.from(".nav-items > *, .menu-toggle, .bottom-nav > *", 1.4, {
+      opacity: 0,
+      x: 40,
+      ease: "power3.inOut",
+      delay: 7,
+      stagger: 0.2,
+    });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fix studio lp</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  </head>
+  <body>
+    <div id="overlay-light" class="overlay"></div>
+    <div class="marquee">
+      <span>
+        Creative &nbsp;
+        <img src="./projects-preview.gif" alt="" /> &nbsp; Media Technology
+        &nbsp; <img src="./projects-preview.gif" alt="" /> &nbsp; Creative
+        &nbsp; <img src="./projects-preview.gif" alt="" /> &nbsp; Media
+        Technology &nbsp; <img src="./projects-preview.gif" alt="" /> &nbsp;
+        Creative &nbsp; <img src="./projects-preview.gif" alt="" /> &nbsp; Media
+      </span>
+    </div>
+    <div id="overlay-dark" class="overlay"></div>
+    <div class="content">
+      <div class="nav row">
+        <div class="col">(refix studio)</div>
+        <div class="col">(contact)</div>
+        <div class="col">(services)</div>
+        <div class="col">(selected clients)</div>
+        <div class="col">(members)</div>
+      </div>
+      <div class="divider nav-divider"></div>
+      <div class="row">
+        <div class="col">A collective of creative thinkers making things</div>
+        <div class="col">+212 457 3035</div>
+        <div class="col">Art Direction</div>
+        <div class="col">NBC Sports</div>
+        <div class="col">Alejandro Torres Viera</div>
+      </div>
+      <div class="divider"></div>
+      <div class="row">
+        <div class="col">smarter, newer, and more memorable.</div>
+        <div class="col"></div>
+        <div class="col">Brand Positioning</div>
+        <div class="col">Dona Chai</div>
+        <div class="col">Annie Panousopoulos</div>
+      </div>
+      <div class="divider"></div>
+      <div class="row">
+        <div class="col"></div>
+        <div class="col">USA</div>
+        <div class="col">Brand & Identity Design</div>
+        <div class="col">Equinox</div>
+        <div class="col">Konstantinos Riginos</div>
+      </div>
+      <div class="divider"></div>
+      <div class="row">
+        <div class="col">We believe that function is the substance of</div>
+        <div class="col">214 Sullivan St #3B</div>
+        <div class="col">Creative Direction</div>
+        <div class="col">Giant</div>
+        <div class="col">Ryan Levitan</div>
+      </div>
+      <div class="divider"></div>
+      <div class="row">
+        <div class="col">
+          aesthetic experience. This principle guides clearer
+        </div>
+        <div class="col">New York, NY 10012</div>
+        <div class="col">Design Direction</div>
+        <div class="col">KPRS</div>
+        <div class="col">Tucker Shanley</div>
+      </div>
+      <div class="divider"></div>
+      <div class="row">
+        <div class="col">user interfaces, stronger branding devices and</div>
+        <div class="col"></div>
+        <div class="col">Packaging</div>
+        <div class="col">microDrive</div>
+        <div class="col">Zachary Ruden</div>
+      </div>
+      <div class="divider"></div>
+      <div class="row">
+        <div class="col">more cohesive design systems. Whether</div>
+        <div class="col">For Job, Press and</div>
+        <div class="col">Motion</div>
+        <div class="col">Union</div>
+        <div class="col"></div>
+      </div>
+      <div class="divider"></div>
+      <div class="row">
+        <div class="col">designing multi-platform experiences or building</div>
+        <div class="col">General inquiries:</div>
+        <div class="col">Prototyping</div>
+        <div class="col">Univision</div>
+        <div class="col"></div>
+      </div>
+      <div class="divider"></div>
+      <div class="row">
+        <div class="col">enterprise applications, we make things to solve</div>
+        <div class="col"></div>
+        <div class="col">Product Strategy</div>
+        <div class="col">ProVen</div>
+        <div class="col"></div>
+      </div>
+      <div class="divider"></div>
+      <div class="row">
+        <div class="col">problems.</div>
+        <div class="col">hello@fix.studio</div>
+        <div class="col">Testing & Research</div>
+        <div class="col">Social Studies</div>
+        <div class="col"></div>
+      </div>
+      <div class="divider"></div>
+      <div class="row">
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col">UX/UI Design</div>
+        <div class="col">Study Hall</div>
+        <div class="col"></div>
+      </div>
+      <div class="divider"></div>
+      <div class="row">
+        <div class="col"></div>
+        <div class="col">Instagram</div>
+        <div class="col">Web Development</div>
+        <div class="col">The Post</div>
+        <div class="col"></div>
+      </div>
+      <div class="divider"></div>
+      <div class="row">
+        <div class="col"></div>
+        <div class="col">Linkedin</div>
+        <div class="col"></div>
+        <div class="col">Newtok</div>
+        <div class="col"></div>
+      </div>
+      <div class="divider"></div>
+      <div class="row">
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col">Tovala</div>
+        <div class="col"></div>
+      </div>
+      <div class="divider"></div>
+      <div class="row">
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col">LunarCrush</div>
+        <div class="col"></div>
+      </div>
+      <div class="divider"></div>
+    </div>
+    <script>
+      gsap.to("#overlay-dark", 2, {
+        top: "-100%",
+        ease: "power3.inOut",
+        delay: 4,
+      });
+      gsap.from(".divider", 3, {
+        scaleX: 0,
+        ease: "power3.inOut",
+        delay: 1,
+        stagger: {
+          amount: 1,
+        },
+      });
+      gsap.from(".row > .col", 2, {
+        opacity: 0,
+        y: 40,
+        ease: "power3.inOut",
+        delay: 2,
+        stagger: {
+          amount: 1.5,
+        },
+      });
+
+      gsap.from(".marquee", 1, {
+        bottom: "-5%",
+        opacity: 0,
+        ease: "power3.inOut",
+        delay: 4.5,
+      });
+    </script>
+  </body>
+</html>

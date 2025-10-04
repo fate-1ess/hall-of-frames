@@ -1,0 +1,29 @@
+/* careers */
+section.careers {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  text-align: center;
+  background: #aeaeae;
+  color: #000;
+}
+
+section.careers .careers-copy {
+  width: 75%;
+  margin: 10em auto 0 auto;
+}
+
+section.careers .careers-copy .careers-copy-h1 {
+  margin-top: 2em;
+}
+
+section.careers .careers-lottie {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 400px;
+  height: 400px;
+}

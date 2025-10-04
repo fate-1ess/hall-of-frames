@@ -1,0 +1,106 @@
+.header {
+  padding: 1em;
+}
+
+.header-1,
+.header-2 {
+  padding: 0.5em 0em;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.header h1 {
+  position: relative;
+  font-family: "Romie Trial";
+  font-size: 80px;
+  font-style: italic;
+  margin: 0;
+  line-height: 100%;
+}
+
+.header h1 span {
+  position: relative;
+  top: 120px;
+}
+
+.intro {
+  width: 100%;
+  padding: 8em 1em;
+  display: flex;
+}
+
+.intro-col {
+  flex: 1;
+}
+
+.intro p {
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 150%;
+}
+
+.intro-col:nth-child(1) {
+  display: flex;
+}
+
+.intro-col:nth-child(1) > div {
+  flex: 1;
+}
+
+p.intro-header {
+  color: rgb(160, 160, 160);
+}
+
+.intro-col:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.intro-img {
+  width: 75px;
+  height: 100px;
+  background-color: gray;
+}
+
+.intro-about {
+  width: 100%;
+  display: flex;
+  gap: 2em;
+}
+
+.intro-about-col {
+  flex: 1;
+}
+
+.intro-about-col p,
+.intro-data p {
+  font-size: 13px;
+  font-family: "Romie Trial";
+  font-weight: 500;
+  text-transform: none;
+}
+
+.intro-data p.intro-header {
+  font-family: "PP Neue Montreal";
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 150%;
+  color: #000;
+}
+
+@media (max-width: 900px) {
+  .header h1 {
+    font-size: 40px;
+  }
+
+  .intro {
+    flex-direction: column-reverse;
+    gap: 4em;
+  }
+
+  .intro-about {
+    flex-direction: column;
+  }
+}

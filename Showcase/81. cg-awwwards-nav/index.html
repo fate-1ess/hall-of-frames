@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codegrid_</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        width: 100%;
+        min-height: 100vh;
+        background: url("./bg.jpg") no-repeat 50% 50%;
+        background-size: cover;
+      }
+
+      p,
+      a {
+        font-family: "Inter";
+        font-size: 14px;
+        text-decoration: none;
+        color: #a2a2a2;
+        transition: 0.5s all;
+        line-height: 100%;
+      }
+
+      i {
+        position: relative;
+        color: #fff;
+        top: 1.5px;
+      }
+
+      .nav {
+        position: fixed;
+        bottom: 5%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 40%;
+        height: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        border-radius: 10px;
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.75);
+        backdrop-filter: blur(20px);
+        border: 1px solid rgba(255, 255, 255, 0.25);
+      }
+
+      .nav-top {
+        position: absolute;
+        width: 100%;
+        height: 300px;
+        border-radius: 10px;
+        display: none;
+        opacity: 0;
+        transform: scale(0.9);
+        padding: 0 10px !important;
+      }
+
+      .nav-bottom {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        height: 60px;
+        display: flex;
+        gap: 5px;
+        padding: 12px 10px 10px 10px;
+      }
+
+      .nav-home {
+        flex: 1;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: 0.5s all;
+        padding: 0 20px !important;
+      }
+
+      .nav-home:hover {
+        background: rgba(0, 0, 0, 0.75);
+      }
+
+      .nav-home .nav-item {
+        gap: 10px;
+      }
+
+      .nav-items {
+        flex: 4;
+        height: 100%;
+      }
+
+      .nav-home .nav-item,
+      .nav-items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .nav-items {
+        gap: 5px;
+      }
+
+      .nav-items > div {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+        transition: 0.5s all;
+      }
+
+      .nav-items .nav-item:hover {
+        color: #fff;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+      }
+
+      .nav-items .nav-item:hover a {
+        color: #fff;
+      }
+
+      .more-links {
+        padding: 20px;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        display: flex;
+      }
+
+      .link a {
+        color: #fff;
+      }
+
+      .col {
+        position: relative;
+        flex: 1;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .col > div {
+        flex: 1;
+        padding: 10px 15px;
+      }
+
+      .col:before {
+        position: absolute;
+        content: "";
+        top: 30px;
+        left: 0;
+        width: 1px;
+        height: 85%;
+        display: block;
+        border-left: 1px solid rgba(255, 255, 255, 0.25);
+        border-style: dashed;
+      }
+
+      .col-title {
+        position: relative;
+        margin-bottom: -25px;
+      }
+
+      .col-title p {
+        position: relative;
+        opacity: 0.75;
+      }
+
+      .col-title p:before {
+        position: absolute;
+        content: "";
+        top: 6px;
+        left: -16px;
+        width: 4px;
+        height: 4px;
+        border-radius: 100%;
+        background: #fff;
+        display: block;
+      }
+
+      @media (max-width: 900px) {
+        .nav {
+          bottom: 0;
+        }
+
+        .nav {
+          width: 100%;
+        }
+        p,
+        a {
+          font-size: 12px;
+        }
+        .nav-home .nav-item {
+          gap: 5px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <div class="nav-top">
+        <div class="more-links">
+          <div class="col">
+            <div class="col-title">
+              <p>Awards</p>
+            </div>
+            <div class="link">
+              <a href="#">Winners</a>
+            </div>
+            <div class="link">
+              <a href="#">Site of the Day</a>
+            </div>
+            <div class="link">
+              <a href="#">Nominees</a>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="col-title">
+              <p>Inspiration</p>
+            </div>
+            <div class="link">
+              <a href="#">Collections</a>
+            </div>
+            <div class="link">
+              <a href="#">Elements</a>
+            </div>
+            <div class="link">
+              <a href="#">Resources</a>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="col-title">
+              <p>Directory</p>
+            </div>
+            <div class="link">
+              <a href="#">Professionals</a>
+            </div>
+            <div class="link">
+              <a href="#">Agencies</a>
+            </div>
+            <div class="link">
+              <a href="#">Freelancers</a>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="col-title">
+              <p>Market</p>
+            </div>
+            <div class="link">
+              <a href="#">Jobs</a>
+            </div>
+            <div class="link">
+              <a href="#">New Events</a>
+            </div>
+            <div class="link">
+              <a href="#">Products</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nav-bottom">
+        <div class="nav-home">
+          <div class="nav-item" id="toggle-btn">
+            <div class="hamburger">
+              <i class="ph-light ph-list"></i>
+            </div>
+            <p href="#">More</p>
+          </div>
+        </div>
+        <div class="nav-items">
+          <div class="nav-item">
+            <a href="#">Home</a>
+          </div>
+          <div class="nav-item">
+            <a href="#">Nominess</a>
+          </div>
+          <div class="nav-item">
+            <a href="#">Directory</a>
+          </div>
+          <div class="nav-item">
+            <a href="#">Collections</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const nav = document.querySelector(".nav");
+        const navHome = document.querySelector(".nav-home");
+        const navTop = document.querySelector(".nav-top");
+        const navItems = document.querySelector(".nav-items");
+        const icon = document.querySelector(".hamburger i");
+
+        let isOpen = false;
+
+        // Setting the initial state for the elements
+        gsap.set(nav, { height: "60px" });
+        gsap.set(navTop, { opacity: 0, scale: 0.9, display: "none" });
+        gsap.set(navItems, { opacity: 1, display: "flex" });
+        gsap.set(navHome, { flexGrow: 0 });
+
+        navHome.addEventListener("click", function () {
+          if (!isOpen) {
+            gsap.to(nav, {
+              height: "370px",
+              duration: 0.75,
+              ease: "power4.inOut",
+              immediateRender: false,
+            });
+
+            gsap.to(navTop, {
+              opacity: 1,
+              scale: 1,
+              duration: 0.3,
+              onStart: function () {
+                gsap.set(navTop, { display: "block" });
+              },
+              delay: 0.5,
+              immediateRender: false,
+            });
+
+            gsap.to(navItems, {
+              opacity: 0,
+              duration: 0.1,
+              onComplete: function () {
+                gsap.set(navItems, { display: "none" });
+              },
+              immediateRender: false,
+            });
+
+            gsap.to(navHome, {
+              flexGrow: 1,
+              duration: 0.2,
+              ease: "power4.inOut",
+              delay: 0,
+              immediateRender: false,
+              onComplete: function () {
+                icon.className = "ph-light ph-x";
+              },
+            });
+          } else {
+            gsap.to(nav, {
+              height: "60px",
+              duration: 0.75,
+              ease: "power4.inOut",
+              delay: 0.2,
+              immediateRender: false,
+            });
+
+            gsap.to(navTop, {
+              opacity: 0,
+              scale: 0.9,
+              duration: 0.2,
+              onComplete: function () {
+                gsap.set(navTop, { display: "none" });
+              },
+              immediateRender: false,
+            });
+
+            gsap.to(navHome, {
+              flexGrow: 0,
+              duration: 0.2,
+              ease: "power4.inOut",
+              immediateRender: false,
+              onComplete: function () {
+                icon.className = "ph-light ph-list";
+              },
+            });
+
+            gsap.to(navItems, {
+              opacity: 1,
+              duration: 0.2,
+              onStart: function () {
+                gsap.set(navItems, { display: "flex" });
+              },
+              delay: 0.5,
+              immediateRender: false,
+            });
+          }
+          isOpen = !isOpen;
+        });
+      });
+    </script>
+  </body>
+</html>

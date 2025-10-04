@@ -1,0 +1,412 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100vh;
+  background: #cabfb8;
+  cursor: none;
+}
+
+/* nav */
+.logo {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 2em;
+  z-index: 10000000;
+  mix-blend-mode: difference;
+}
+
+.logo a {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bolder;
+  color: #c0b1b1;
+  font-family: "Voyage";
+  line-height: 1;
+}
+
+.nav {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #000;
+  font-family: "Neue Montreal";
+  font-size: 14px;
+  padding: 1em 2em;
+}
+
+.nav a#main-branch {
+  text-transform: uppercase;
+  background: #000;
+  margin-left: 2em;
+  margin-right: 2em;
+  color: #fff;
+  border-radius: 40px;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* copy */
+
+.copy {
+  width: 40vw;
+  padding: 2em;
+  display: flex;
+  align-items: center;
+}
+
+.copy-wrapper {
+  width: 90%;
+}
+
+.copy-wrapper h1 {
+  font-family: "Morgenwalsh";
+  text-transform: none;
+  font-size: 4rem;
+  line-height: 1;
+  padding: 0 0 1em 0;
+  font-weight: 500;
+}
+
+.copy-wrapper p {
+  font-family: "Neue Montreal";
+  width: 75%;
+  line-height: 1.5;
+}
+
+/* actual stuff */
+
+.items {
+  width: 20vw;
+  padding: 2em;
+}
+
+.item {
+  margin: 2rem 0;
+  line-height: 0.8;
+}
+
+button {
+  position: relative;
+  padding: 0;
+  background: none;
+  border: none;
+  outline: none;
+  font-family: "Formula Condensed";
+  font-size: 4rem;
+  text-transform: uppercase;
+  display: block;
+  line-height: inherit;
+  cursor: none;
+}
+
+button::after {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 100%;
+  left: 0;
+  transform: translate(0, -50%);
+  width: 0;
+  height: 3px;
+  background: #000;
+  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+button:hover::after {
+  width: 100%;
+}
+
+/* overlay (form) */
+
+.overlay {
+  position: absolute;
+  width: 50vw;
+  height: 100vh;
+  top: 0;
+  right: -50%;
+  background: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: none;
+}
+
+.overlay-copy {
+  width: 75%;
+}
+
+.close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 2em;
+  padding: 1em;
+  background: #fff;
+  color: #000;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+#subtitle {
+  font-family: "Wremena";
+  line-height: 2;
+}
+
+.titlebar {
+  position: relative;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-family: "Formula Condensed";
+  text-transform: uppercase;
+  font-size: 3rem;
+  z-index: 0;
+}
+
+.titlebar #flag {
+  position: relative;
+  top: -0.2rem;
+  margin: 0 0.4em;
+}
+
+.nav-item {
+  position: relative;
+  top: 70px;
+}
+
+.nav-item-wrapper:after {
+  content: "";
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 500px;
+  height: 120px;
+  background: #000;
+  margin: 0 auto;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 2em 0;
+}
+
+.form > * {
+  position: relative;
+}
+
+.form-action > * {
+  position: relative;
+}
+
+.form input,
+textarea {
+  background: none;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 0.8em;
+  color: #fff;
+  margin: 1em 0;
+  font-size: 1.2rem;
+  cursor: none;
+}
+
+::placeholder,
+textarea {
+  font-family: "Neue Montreal";
+}
+
+.form input:hover,
+textarea:hover {
+  cursor: none;
+}
+
+.form-action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.submit-btn button {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.submit-btn button::after {
+  background: #fff;
+}
+
+#cursor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: red;
+  z-index: 9999;
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+/* checkmark styling from w3school */
+
+.checkmark-wrapper {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-family: "Neue Montreal";
+  user-select: none;
+  cursor: none;
+}
+
+.checkmark-wrapper span {
+  margin-top: -3px;
+  font-size: 16px;
+  color: gray;
+}
+
+.checkmark-wrapper input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+  cursor: none;
+}
+
+.checkmark-wrapper input:hover {
+  cursor: none;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border-radius: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  transition: 0.05s all ease-in;
+}
+
+.checkmark-wrapper input:checked ~ .checkmark {
+  background-color: #fff;
+  transition: 0.05s all ease-in;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkmark-wrapper input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkmark-wrapper .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid #000;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  transition: 0.05s all ease-in;
+}
+
+@media (max-width: 900px) {
+  .nav {
+    display: none;
+  }
+
+  html,
+  body {
+    height: 100%;
+  }
+
+  .container {
+    height: 100%;
+    flex-direction: column;
+    justify-content: normal;
+  }
+
+  .copy,
+  .items {
+    width: 100vw !important;
+  }
+
+  .items {
+    padding: 0 1em;
+    align-items: center;
+  }
+
+  .item {
+    align-items: center;
+  }
+
+  .copy {
+    justify-content: center;
+    align-items: center;
+    background: #b2a7a1;
+    padding: 0;
+  }
+
+  .copy-wrapper {
+    width: 100%;
+  }
+
+  .copy-wrapper h1 {
+    display: none;
+  }
+
+  .copy-wrapper p {
+    width: 100%;
+    text-align: center;
+    padding: 6em 0;
+  }
+
+  button {
+    width: 100%;
+    font-size: 2rem;
+  }
+
+  button::after {
+    display: none;
+  }
+
+  .overlay {
+    width: 100vw;
+    right: -100%;
+  }
+}

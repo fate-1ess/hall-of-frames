@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/index-assets/showcase-52-react-responsive-full-screen-navigation-main/static/css/main.c0e895e1.css",
+    "main.js": "/index-assets/showcase-52-react-responsive-full-screen-navigation-main/static/js/main.b6b57e5d.js",
+    "static/js/787.5b225a2d.chunk.js": "/index-assets/showcase-52-react-responsive-full-screen-navigation-main/static/js/787.5b225a2d.chunk.js",
+    "index.html": "/index-assets/showcase-52-react-responsive-full-screen-navigation-main/index.html",
+    "main.c0e895e1.css.map": "/index-assets/showcase-52-react-responsive-full-screen-navigation-main/static/css/main.c0e895e1.css.map",
+    "main.b6b57e5d.js.map": "/index-assets/showcase-52-react-responsive-full-screen-navigation-main/static/js/main.b6b57e5d.js.map",
+    "787.5b225a2d.chunk.js.map": "/index-assets/showcase-52-react-responsive-full-screen-navigation-main/static/js/787.5b225a2d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c0e895e1.css",
+    "static/js/main.b6b57e5d.js"
+  ]
+}

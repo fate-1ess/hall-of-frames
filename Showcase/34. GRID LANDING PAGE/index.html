@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OPEN DAY - LANDING PAGE</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- row #1 -->
+      <div class="row row-1 border-bottom">
+        <div class="brand-name flex-center border-right">
+          <div class="header">
+            <h1><span>o</span>pen day</h1>
+          </div>
+        </div>
+
+        <div class="brand-contact flex-center">
+          <div class="contact-container">
+            <p>Sunday</p>
+            <p>16:00</p>
+            <p>31 Atonelli Street</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- row #2 -->
+      <div class="row row-2 border-bottom">
+        <div class="hero-copy border-right">
+          <!-- inner rows -->
+          <div class="i-row i-row1">
+            <div class="col projects">
+              <div class="project-list">
+                <p>Irakli</p>
+                <p>Berikashvill</p>
+                <p>Aka</p>
+                <p>BERIKA</p>
+                <p>SPACEJAM 92</p>
+              </div>
+              <div class="h-stripe"><span>303_hz</span></div>
+            </div>
+            <div class="col circle-text flex-center">
+              <div class="text">
+                <svg viewBox="0 0 100 100" width="200" height="200">
+                  <defs>
+                    <path
+                      id="circle"
+                      d="
+                        M 50, 50
+                        m -37, 0
+                        a 37,37 0 1,1 74,0
+                        a 37,37 0 1,1 -74,0"
+                    />
+                  </defs>
+                  <text font-size="14">
+                    <textPath xlink:href="#circle">
+                      sunday sunday sunday sunday sunday sunday lol
+                    </textPath>
+                  </text>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="i-row i-row2">
+            <div class="col lets-talk flex-center">
+              <p>Let's talk about <span>Mixing</span></p>
+            </div>
+            <div class="col stripe">
+              <div class="line"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-img">
+          <div class="img-container border-right">
+            <div class="box"></div>
+            <div>
+              <img class="image" src="./hero.jpg" />
+            </div>
+          </div>
+
+          <div class="empty-rows">
+            <div class="white-space border-bottom"></div>
+            <div class="white-space"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="marquee">
+      <span>
+        &nbsp; discuss your ideas &nbsp; / &nbsp; unexpected time &nbsp; /
+        &nbsp; spatial experiences &nbsp; / &nbsp; best specialists &nbsp; /
+        &nbsp; impulse &nbsp; / &nbsp; independent online store &nbsp; / &nbsp;
+        you can't download the experience &nbsp;
+      </span>
+    </div>
+  </body>
+  <script>
+    gsap.to(".row-1, .row-2", 1, {
+      top: 0,
+      ease: "power4.out",
+      delay: 1,
+      stagger: {
+        amount: 0.5,
+      },
+    });
+
+    gsap.to(".brand-name", 1, {
+      left: 0,
+      ease: "power4.out",
+      delay: 2.5,
+      stagger: {
+        amount: 0.5,
+      },
+    });
+
+    gsap.from(".lets-talk p", 0.1, {
+      opacity: 0,
+      ease: "power4.out",
+      delay: 2,
+    });
+
+    gsap.from(".text", 2, {
+      scale: 0,
+      ease: "power4.out",
+      delay: 2,
+    });
+
+    gsap.to(".text", 20, {
+      rotation: "360",
+      ease: Linear.easeNone,
+      repeat: -1,
+    });
+
+    gsap.to(".box", 1, {
+      top: "100%",
+      ease: "power4.out",
+      delay: 2,
+    });
+
+    gsap.to("h1, p", 1, {
+      top: 0,
+      ease: "power4.out",
+      delay: 2,
+      stagger: {
+        amount: 0.5,
+      },
+    });
+
+    gsap.from(".h-stripe", 1, {
+      top: "500%",
+      ease: "power4.out",
+      delay: 3.5,
+    });
+
+    gsap.from(".h-stripe span", 1, {
+      top: "300px",
+      ease: "power4.out",
+      delay: 4,
+    });
+
+    gsap.from(".line", 1, {
+      scaleX: 0,
+      ease: "power4.out",
+      delay: 3.5,
+    });
+
+    gsap.from(".marquee", 1, {
+      bottom: "-10em",
+      ease: "power4.out",
+      delay: 3,
+    });
+  </script>
+</html>

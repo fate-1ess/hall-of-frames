@@ -1,0 +1,97 @@
+.project-info {
+  width: 100%;
+  padding: 1em;
+  position: fixed;
+  top: 25vh;
+  display: flex;
+  z-index: 100000;
+}
+
+.project-info p {
+  font-size: 13px;
+}
+
+.project-index {
+  flex: 1;
+}
+
+.project-name {
+  flex: 3;
+}
+
+.project-duration {
+  flex: 3;
+}
+
+.project-description {
+  flex: 6;
+}
+
+/* .project-description p {
+  text-transform: none !important;
+} */
+
+.project-year {
+  flex: 1;
+  text-align: right;
+}
+
+.whitespace-35vh {
+  width: 100%;
+  height: 35vh;
+}
+
+.project-preview {
+  padding: 0 1em;
+  width: 100%;
+  display: flex;
+  gap: 1em;
+}
+
+.project-preview-col {
+  flex: 1;
+}
+
+.project-preview-col .work-video {
+  height: 400px;
+}
+
+.sample-images {
+  width: 100%;
+  padding: 1em;
+}
+
+.sample-images .s-row {
+  display: flex;
+  gap: 1em;
+  margin-bottom: 1em;
+}
+
+.project-nav {
+  width: 100%;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 900px) {
+  .project-info {
+    flex-direction: column;
+  }
+
+  .project-index {
+    margin-bottom: 1em;
+  }
+
+  .project-year {
+    text-align: left;
+  }
+
+  .project-description {
+    margin-bottom: 0.5em;
+  }
+
+  .d-only.project-preview-col {
+    display: none;
+  }
+}

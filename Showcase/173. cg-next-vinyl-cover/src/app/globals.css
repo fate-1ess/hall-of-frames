@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #000;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: visible;
+}
+
+path {
+  fill: transparent;
+}
+
+textPath {
+  fill: #fff;
+}
+
+text {
+  text-transform: uppercase;
+  fill: #fff;
+}
+
+#text-primary {
+  font-family: "Tusker Grotesk", sans-serif;
+  font-size: 46px;
+}
+
+#text-secondary {
+  font-family: "PP Neue Montreal", sans-serif;
+  font-size: 20px;
+}
+
+.disk {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 550px;
+  height: 550px;
+  border-radius: 100%;
+}
+
+.cover-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+  overflow: hidden;
+}

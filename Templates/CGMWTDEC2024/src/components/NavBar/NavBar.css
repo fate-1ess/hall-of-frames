@@ -1,0 +1,106 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 2;
+}
+
+.navbar-container {
+  width: 75%;
+  margin: 0 auto;
+  padding: 3em 1em;
+  display: flex;
+}
+
+.logo {
+  flex: 3;
+}
+
+.nav-items {
+  flex: 2;
+}
+
+.nav-items {
+  display: flex;
+}
+
+.nav-items > div {
+  flex: 1;
+}
+
+.langs {
+  display: flex;
+  gap: 2em;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1em;
+}
+
+.logo a {
+  text-decoration: none;
+  display: flex;
+  gap: 0.25em;
+  align-items: center;
+}
+
+.logo a h3 {
+  color: var(--light);
+  letter-spacing: 0.15em;
+}
+
+.logo a span {
+  position: relative;
+  top: 0.75px;
+  font-family: "Roobert";
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--light);
+}
+
+.nav-links a {
+  text-decoration: none;
+}
+
+.langs p,
+.nav-links a p {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: var(--light2);
+}
+
+p.current-lang {
+  color: var(--light);
+}
+
+.navbar .logo a h3,
+.navbar p.current-lang {
+  transition: color 0.5s ease;
+}
+
+.navbar.dark .logo a h3,
+.navbar.dark .logo a span {
+  color: var(--dark);
+}
+
+.navbar.dark p.current-lang {
+  color: var(--dark);
+}
+
+@media (max-width: 900px) {
+  .navbar-container .langs {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .navbar-container {
+    width: 100%;
+    padding: 2em 1em;
+  }
+}

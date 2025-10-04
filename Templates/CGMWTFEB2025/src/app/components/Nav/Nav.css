@@ -1,0 +1,125 @@
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+
+nav a,
+nav p,
+.menu-overlay-bar a,
+.menu-overlay-bar p,
+.showreel a,
+.media-link a {
+  position: relative;
+  color: var(--copy);
+  display: block;
+  will-change: transform;
+  user-select: none;
+}
+
+.logo,
+.menu-toggle-open,
+.menu-toggle-close,
+.showreel,
+.media-link {
+  position: relative;
+  width: max-content;
+  height: 16px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  cursor: pointer;
+}
+
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100svh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0f0f0f;
+  clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+  will-change: clip-path;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.menu-overlay-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.socials {
+  display: flex;
+  gap: 1em;
+}
+
+nav a,
+.menu-toggle-open p {
+  transform: translateY(0px);
+}
+
+.menu-overlay-bar a,
+.menu-toggle-close p,
+.showreel a,
+.media-link a {
+  transform: translateY(20px);
+}
+
+.menu-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-link {
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.menu-link a {
+  position: relative;
+  display: inline-block;
+  transform: translateY(100%);
+  will-change: transform;
+}
+
+.menu-overlay h1 {
+  text-transform: uppercase;
+  font-family: "dh";
+  font-weight: lighter;
+  font-size: 8vw;
+  line-height: 0.85;
+  color: var(--copy);
+}
+
+@media (max-width: 900px) {
+  .menu-overlay h1 {
+    font-size: 20vw;
+  }
+}

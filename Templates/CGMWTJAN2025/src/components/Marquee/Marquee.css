@@ -1,0 +1,34 @@
+.marquee {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 120px 0;
+  background: transparent;
+}
+
+.marquee-wrapper {
+  display: flex;
+  position: relative;
+  width: fit-content;
+  will-change: transform;
+}
+
+.marquee h1 {
+  text-transform: uppercase;
+  font-family: "Nippo";
+  font-weight: 400;
+  font-size: 8rem;
+  line-height: 90%;
+  letter-spacing: -0.5rem;
+  white-space: nowrap;
+  padding-right: 50px;
+  will-change: transform;
+  color: var(--foreground, #f3ede2);
+}
+
+.marquee,
+.marquee-wrapper {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: translate3d(0, 0, 0);
+}

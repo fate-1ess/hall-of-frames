@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  font-family: "Neue Montreal";
+}
+
+.website-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+nav {
+  position: relative;
+  top: -100px;
+  width: 100%;
+  padding: 2em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo,
+.menu-icon {
+  width: 50px;
+}
+
+.header {
+  width: 100%;
+  padding: 2em;
+  display: flex;
+}
+
+.header .col:nth-child(1) {
+  flex: 3;
+}
+
+.header .col:nth-child(2) {
+  flex: 2;
+  margin-top: 2em;
+}
+
+.header .col p {
+  position: relative;
+  left: 20px;
+  opacity: 0;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.ml12 {
+  padding-right: 0.5em;
+  font-size: 5.2em;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+}
+
+.ml12 .letter {
+  display: inline-block;
+  line-height: 50%;
+}
+
+.hero-img {
+  width: 100%;
+  padding: 2em;
+  height: 700px;
+  clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.loader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.finder-container {
+  width: 80%;
+  height: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.finder-container img {
+  position: absolute;
+  transform: scale(0);
+}
+
+.bar {
+  flex: 1;
+  width: 100%;
+  background: rgb(211, 211, 211);
+  padding: 1.5em 0;
+  margin-top: -1px;
+  clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
+}
+
+.bar.bar-5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.marquee {
+  position: relative;
+  left: 100vw;
+  width: 300vw;
+  display: flex;
+  gap: 5em;
+  font-family: "Neue Montreal";
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.marquee p span {
+  position: relative;
+  top: 0.16em;
+  font-size: 36px;
+  padding-right: 0.25em;
+}
+
+@media (max-width: 900px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .header h1 {
+    font-size: 2em;
+  }
+
+  .marquee {
+    width: 500vw;
+    gap: 2em;
+  }
+
+  .marquee p {
+    font-size: 12px;
+  }
+}

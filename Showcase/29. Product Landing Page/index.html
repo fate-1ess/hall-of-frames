@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>product landing page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="site-info">elevated</div>
+      <div class="site-menu">
+        <div class="menu-item">projects</div>
+        <div class="menu-item">about</div>
+        <div class="menu-item">contact</div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="hero-img">
+        <img src="./images/drone-hero.png" alt="" />
+      </div>
+    </div>
+    <p class="title">Reach The Fullest</p>
+    <div class="info">
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil,
+        accusantium. Eveniet cupiditate at quae molestias, ipsa cumque quidem
+        vitae quas nam iusto fugit id accusantium tenetur nesciunt ducimus?
+      </p>
+    </div>
+    <div class="buy-now-cta">
+      <button>Buy Now</button>
+    </div>
+    <div class="prev-imgs">
+      <div class="prev-img prev-1"></div>
+      <div class="prev-img prev-2"></div>
+      <div class="prev-img prev-3"></div>
+    </div>
+    <div class="marquee">
+      <span>
+        how we work ↗ try now ↗ how we work ↗ try now ↗ how we work ↗ try now ↗
+        how we work ↗ try now ↗ how we work ↗ try now ↗ how we work ↗ try now ↗
+        how we work ↗ try now ↗ how we work ↗ try now ↗ how we work ↗ try now ↗
+        how we work ↗ try now ↗ how we work ↗ try now ↗
+      </span>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script>
+      var textWrapper = document.querySelector(".title");
+      textWrapper.innerHTML = textWrapper.textContent.replace(
+        /\S/g,
+        "<span class='letter'>$&</span>"
+      );
+
+      anime.timeline().add({
+        targets: ".title .letter",
+        translateY: [-200, 0],
+        easing: "easeOutExpo",
+        duration: 1500,
+        delay: (el, i) => 3500 + 50 * i,
+      });
+
+      TweenMax.to(".container", 2, {
+        top: "50vh",
+        ease: Expo.easeInOut,
+        delay: 0.5,
+      });
+
+      TweenMax.to(".container", 2, {
+        scale: "1",
+        top: "25vh",
+        ease: Expo.easeInOut,
+        delay: 3,
+      });
+
+      TweenMax.staggerFrom(
+        ".navbar > div",
+        1.6,
+        {
+          opacity: 0,
+          y: -100,
+          ease: Expo.easeInOut,
+          delay: 3,
+        },
+        0.08
+      );
+      TweenMax.staggerFrom(
+        ".site-menu > div",
+        1,
+        {
+          opacity: 0,
+          y: -100,
+          ease: Power2.easeOut,
+          delay: 2.5,
+        },
+        0.2
+      );
+
+      TweenMax.staggerFrom(
+        ".info, .buy-now-cta, .prev-imgs > div, .marquee",
+        1,
+        {
+          opacity: 0,
+          y: 100,
+          ease: Power2.easeOut,
+          delay: 4,
+        },
+        0.1
+      );
+    </script>
+  </body>
+</html>

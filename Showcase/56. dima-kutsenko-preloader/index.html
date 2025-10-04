@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dima-kutsenko-preloader</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <div class="logo"><p>codegrid</p></div>
+        <div class="menu"><p>menu</p></div>
+      </nav>
+      <h1>your site content goes here</h1>
+    </div>
+    <div class="loader">
+      <div class="img">
+        <img src="./images/1.png" alt="" />
+      </div>
+      <div class="img">
+        <img src="./images/2.png" alt="" />
+      </div>
+      <div class="img">
+        <img src="./images/3.png" alt="" />
+      </div>
+      <div class="img">
+        <img src="./images/4.png" alt="" />
+      </div>
+      <div class="img">
+        <img src="./images/5.png" alt="" />
+      </div>
+      <div class="img">
+        <img src="./images/6.png" alt="" />
+      </div>
+      <div class="img reveal">
+        <img src="./images/7.png" alt="" />
+      </div>
+    </div>
+    <div class="overlay">
+      <div class="col">
+        <h2><div>An portugese</div></h2>
+        <h2><div>visual photographer</div></h2>
+        <h2><div>based in spain</div></h2>
+      </div>
+      <div class="col">
+        <h2>
+          <div><span>click</span> anywhere to continue</div>
+        </h2>
+      </div>
+    </div>
+    <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+    <script>
+      gsap.from("h2 div", 1.5, {
+        yPercent: 100,
+        ease: "power4.inOut",
+        stagger: {
+          amount: 0.5,
+        },
+      });
+      gsap.to(
+        "h2",
+        1.5,
+        {
+          clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
+          ease: "power4.inOut",
+          stagger: {
+            amount: 0.5,
+          },
+        },
+        0
+      );
+
+      document.addEventListener("DOMContentLoaded", function () {
+        let overlay = document.querySelector(".overlay");
+        overlay.addEventListener("click", function () {
+          gsap.to("h2 div", 1.5, {
+            yPercent: -100,
+            ease: "power4.inOut",
+            stagger: {
+              amount: 0.5,
+            },
+          });
+          gsap.to(
+            "h2",
+            1.5,
+            {
+              clipPath: "polygon(0 85%, 100% 85%, 100% 100%, 0% 100%)",
+              ease: "power4.inOut",
+              stagger: {
+                amount: 0.5,
+              },
+            },
+            0
+          );
+
+          gsap.to(".overlay", 2, {
+            clipPath: "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)",
+            ease: "power4.inOut",
+          });
+
+          gsap.to(".img", 2, {
+            clipPath: "polygon(0 100%, 100% 100%, 100% 0%, 0 0%)",
+            ease: "power4.inOut",
+            stagger: {
+              amount: 1.5,
+            },
+          });
+
+          gsap.to(".loader", 2, {
+            clipPath: "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)",
+            ease: "power4.inOut",
+            delay: 2,
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

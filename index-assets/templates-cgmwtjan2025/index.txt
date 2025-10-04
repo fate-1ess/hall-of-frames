@@ -1,0 +1,22 @@
+1:"$Sreact.fragment"
+2:"$Sreact.suspense"
+3:I[3354,["592","static/chunks/c15bf2b0-2e5094ff64f4d456.js","173","static/chunks/173-2f3c69f529756c58.js","478","static/chunks/478-f0260501d6589411.js","177","static/chunks/app/layout-05656366b77c0fb9.js"],"default"]
+4:I[1388,["592","static/chunks/c15bf2b0-2e5094ff64f4d456.js","173","static/chunks/173-2f3c69f529756c58.js","478","static/chunks/478-f0260501d6589411.js","177","static/chunks/app/layout-05656366b77c0fb9.js"],"default"]
+5:I[5244,[],""]
+6:I[3866,[],""]
+7:I[8173,["173","static/chunks/173-2f3c69f529756c58.js","345","static/chunks/app/not-found-031a5173f510abb4.js"],""]
+8:I[7033,[],"ClientPageRoot"]
+9:I[5652,["592","static/chunks/c15bf2b0-2e5094ff64f4d456.js","479","static/chunks/795d4814-678221bc7937d4ab.js","173","static/chunks/173-2f3c69f529756c58.js","478","static/chunks/478-f0260501d6589411.js","130","static/chunks/130-b933738f7741fb0f.js","974","static/chunks/app/page-5cdbc41caef64c72.js"],"default"]
+c:I[6213,[],"OutletBoundary"]
+e:I[6213,[],"MetadataBoundary"]
+10:I[6213,[],"ViewportBoundary"]
+12:I[4835,[],""]
+:HL["/index-assets/templates-cgmwtjan2025/_next/static/css/785ed854fd0cb213.css","style"]
+:HL["/index-assets/templates-cgmwtjan2025/_next/static/css/de8f35c5e0efde2a.css","style"]
+:HL["/index-assets/templates-cgmwtjan2025/_next/static/css/96c11d0281dbc1c5.css","style"]
+0:{"P":null,"b":"0VSl5ez2oGhdv2MRfRJ19","p":".","c":["",""],"i":false,"f":[[["",{"children":["__PAGE__",{}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/index-assets/templates-cgmwtjan2025/_next/static/css/785ed854fd0cb213.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"children":[["$","$2",null,{"children":["$","$L3",null,{}]}],["$","$L4",null,{}],["$","$L5",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[],["$","div",null,{"children":[["$","h2",null,{"children":"Not Found"}],["$","p",null,{"children":"Could not find requested resource"}],["$","$L7",null,{"href":"/index-assets/templates-cgmwtjan2025/index.html","prefetch":false,"children":"Return Home"}]]}]],"forbidden":"$undefined","unauthorized":"$undefined"}]]}]}]]}],{"children":["__PAGE__",["$","$1","c",{"children":[["$","$L8",null,{"Component":"$9","searchParams":{},"params":{},"promises":["$@a","$@b"]}],[["$","link","0",{"rel":"stylesheet","href":"/index-assets/templates-cgmwtjan2025/_next/static/css/de8f35c5e0efde2a.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/index-assets/templates-cgmwtjan2025/_next/static/css/96c11d0281dbc1c5.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$Lc",null,{"children":"$Ld"}]]}],{},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","kK_r9dkOECz0_gNBCU9Oq",{"children":[["$","$Le",null,{"children":"$Lf"}],["$","$L10",null,{"children":"$L11"}],null]}]]}],false]],"m":"$undefined","G":["$12","$undefined"],"s":false,"S":true}
+a:{}
+b:{}
+11:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+f:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"ALGORA — Your AI art portal"}],["$","meta","2",{"name":"description","content":"CGMWT JAN 2025 by Codegrid"}],["$","link","3",{"rel":"icon","href":"/index-assets/templates-cgmwtjan2025/icon.ico?834c8eeeea5b22fe","type":"image/x-icon","sizes":"32x32"}]]
+d:null

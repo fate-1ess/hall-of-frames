@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 550;
+  letter-spacing: -0.1rem;
+  line-height: 1.1;
+}
+
+h3 {
+  font-size: 2.25rem;
+  font-weight: 550;
+  letter-spacing: -0.05rem;
+  line-height: 1.25;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100svh;
+  padding: 1rem;
+}
+
+.hero img,
+.banner-img img {
+  border-radius: 1rem;
+}
+
+.about,
+.outro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.about h1 {
+  width: 65%;
+  margin: 0 auto 1.5rem auto;
+}
+
+.about p {
+  width: 35%;
+  margin: 0 auto;
+}
+
+.services {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.service {
+  width: 100%;
+  height: 100svh;
+  padding: 1rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.service-copy {
+  width: 75%;
+}
+
+.char {
+  transition: color 150ms ease-out;
+}
+
+@media (max-width: 1000px) {
+  .about h1,
+  .about p {
+    width: 100%;
+  }
+
+  .about {
+    padding: 2rem;
+  }
+
+  .services {
+    gap: 2rem;
+  }
+
+  .service {
+    height: max-content;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 0;
+  }
+
+  .service:nth-child(2),
+  .service:nth-child(4) {
+    flex-direction: column-reverse;
+  }
+
+  .service-copy {
+    width: 100%;
+    padding: 1rem;
+  }
+}

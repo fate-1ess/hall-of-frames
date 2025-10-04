@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sample Project Page | Null Studio | MWT by @Codegrid</title>
+    <link rel="stylesheet" href="../main.css" />
+    <link rel="stylesheet" href="../styles/index.css" />
+    <link rel="stylesheet" href="../styles/work-sample.css" />
+  </head>
+  <body>
+    <div class="menu-toggle">
+      <div class="toggle-icon">
+        <span>+</span>
+      </div>
+    </div>
+    <div class="menu">
+      <div class="menu-link">
+        <a href="../index.html">Index</a><span>+</span>
+      </div>
+      <div class="menu-link">
+        <a href="./work.html">Projects</a><span>+</span>
+      </div>
+      <div class="menu-link">
+        <a href="./about.html">About Us</a><span>+</span>
+      </div>
+      <div class="menu-link">
+        <a href="./contact.html">Contact</a><span>+</span>
+      </div>
+      <div class="menu-link">
+        <a href="./careers.html">Careers</a><span>+</span>
+      </div>
+    </div>
+    <div class="container">
+      <div class="header">
+        <div class="hero-logo">
+          <a href="../index.html">Null</a>
+        </div>
+      </div>
+
+      <div class="work-video">
+        <div class="video-wrapper">
+          <div class="video-container" id="video-container">
+            <video
+              controls
+              id="video"
+              preload="metadata"
+              poster="../assets/work/project-4.jpg"
+            >
+              <source
+                src="//cdn.jsdelivr.net/npm/big-buck-bunny-1080p@0.0.6/video.mp4"
+                type="video/mp4"
+              />
+            </video>
+
+            <div class="play-button-wrapper">
+              <div title="Play video" class="play-gif" id="circle-play-b">
+                <!-- SVG Play Button -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80">
+                  <path
+                    d="M40 0a40 40 0 1040 40A40 40 0 0040 0zM36 48V32L54 40z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="article-copy" id="article-work-copy">
+        <div class="article-title">
+          <p><a href="https://www.youtube.com/@codegrid">Check Live</a></p>
+          <span>(Est 2021)</span>
+        </div>
+        <div class="article-text">
+          <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+          <div class="collapsible slow">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus sed
+              iste quisquam ipsa accusantium ipsam non harum minus voluptatum,
+              soluta commodi, praesentium, provident vero quam?
+            </p>
+            <br />
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Laudantium asperiores, dolore saepe at earum labore? Voluptatum
+              quaerat velit, quo iste eius dolor voluptate nisi dicta delectus
+              possimus et deleniti consequuntur, error, ut pariatur nam
+              veritatis. Officiis, quis nihil. Porro, repudiandae?
+            </p>
+            <br />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+              expedita illum neque? Harum reprehenderit delectus quasi
+              repellendus voluptate modi possimus quae, molestiae blanditiis
+              assumenda quisquam!
+            </p>
+          </div>
+
+          <div class="article-link toggler">
+            <a>Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-images">
+        <div class="img-row">
+          <div class="i-col">
+            <div class="project-img">
+              <img src="../assets/work/project-2.jpg" alt="" />
+            </div>
+          </div>
+          <div class="i-col">
+            <div class="project-img">
+              <img src="../assets/work/project-2.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="img-row">
+          <div class="project-img">
+            <img src="../assets/work/project-2.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="img-row">
+          <div class="i-col">
+            <div class="project-img">
+              <img src="../assets/work/project-2.jpg" alt="" />
+            </div>
+          </div>
+          <div class="i-col">
+            <div class="project-img">
+              <img src="../assets/work/project-2.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="img-row">
+          <div class="project-img">
+            <img src="../assets/work/project-2.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="work-page">
+        <h1><a href="work.html">View All Work</a></h1>
+      </div>
+
+      <footer>
+        <p>&copy; whitespace 2023</p>
+        <p id="address">2489 Westwood Avenue, Two Harbors, MN 55616</p>
+        <p><a href="https://www.instagram.com/codegridweb/">Instagram</a></p>
+      </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="../script.js"></script>
+    <script>
+      const video = document.getElementById("video");
+      const circlePlayButton = document.getElementById("circle-play-b");
+
+      function togglePlay() {
+        if (video.paused || video.ended) {
+          video.play();
+        } else {
+          video.pause();
+        }
+      }
+
+      circlePlayButton.addEventListener("click", togglePlay);
+      video.addEventListener("playing", function () {
+        circlePlayButton.style.opacity = 0;
+      });
+      video.addEventListener("pause", function () {
+        circlePlayButton.style.opacity = 1;
+      });
+
+      const getContainerHeight = (el) =>
+        window.getComputedStyle(el).getPropertyValue("height");
+
+      document.querySelectorAll(".collapsible.slow").forEach((current) => {
+        // Get the toggler that's directly below the current collapsible element.
+        let toggler = current.nextElementSibling.querySelector("a");
+
+        current.dataset.initial = getContainerHeight(current);
+
+        current.classList.add("open");
+        current.dataset.final = getContainerHeight(current);
+        current.classList.remove("open");
+
+        current.style.height = current.dataset.initial;
+        current.classList.add("ready");
+
+        toggler.addEventListener(
+          "click",
+          (e) => {
+            const isOpen = current.classList.toggle("open");
+            current.style.height = isOpen
+              ? current.dataset.final
+              : current.dataset.initial;
+
+            // Change text of the toggler based on the state.
+            toggler.textContent = isOpen ? "Read Less" : "Read More";
+          },
+          false
+        );
+      });
+    </script>
+  </body>
+</html>

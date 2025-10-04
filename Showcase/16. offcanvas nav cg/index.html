@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>offcanvas nav</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>offcanvas style &#128293; your content goes here</h1>
+    </div>
+    <div class="nav-toggle">
+      <div id="toggle"></div>
+    </div>
+    <div class="nav">
+      <div class="nav-container">
+        <div class="nav-wrapper">
+          <div class="nav-link">
+            <a href="#">editorial <sup>17</sup></a>
+            <div class="nav-item-wrapper"></div>
+          </div>
+          <div class="nav-link">
+            <a href="#">artwork <sup>7</sup></a>
+            <div class="nav-item-wrapper"></div>
+          </div>
+          <div class="nav-link">
+            <a href="#">commercial <sup>6</sup></a>
+            <div class="nav-item-wrapper"></div>
+          </div>
+        </div>
+        <div class="nav-wrapper yo">
+          <a href="#">index</a>
+          <a href="#">journal</a>
+          <a href="#">about</a>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const tl = gsap.timeline({ paused: true });
+
+      function openNav() {
+        animateOpenNav();
+        const navBtn = document.getElementById("toggle");
+        navBtn.onclick = function (e) {
+          tl.reversed(!tl.reversed());
+        };
+      }
+
+      openNav();
+
+      function animateOpenNav() {
+        tl.to(".container", 1, {
+          top: "70vh",
+          scale: 0.925,
+          ease: "power4.out",
+        });
+
+        tl.to(
+          ".nav-link > a",
+          1,
+          {
+            top: 0,
+            ease: "power3.out",
+            stagger: {
+              amount: 0.2,
+            },
+          },
+          "-=1"
+        );
+
+        tl.to(
+          ".yo > a",
+          0.6,
+          {
+            opacity: 1,
+            top: 0,
+            ease: "power3.out",
+            stagger: {
+              amount: 0.1,
+            },
+          },
+          "-=1"
+        ).reverse();
+      }
+    </script>
+  </body>
+</html>

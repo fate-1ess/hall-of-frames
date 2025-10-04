@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CG Clip Menu | @Codegrid</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="menu">
+        <div class="row r-1">
+          <div class="link"><a href="#">Realities</a></div>
+        </div>
+        <div class="row r-2">
+          <div class="link"><a href="#">Artists</a></div>
+        </div>
+        <div class="row r-3">
+          <div class="link"><a href="#">Film</a></div>
+        </div>
+        <div class="row r-4">
+          <div class="link"><a href="#">Over Ones</a></div>
+          <div class="link"><a href="#">Publications</a></div>
+        </div>
+        <div class="row r-5">
+          <div class="link"><a href="#">Team</a></div>
+          <div class="link"><a href="#">Inspirations</a></div>
+        </div>
+      </div>
+
+      <div class="website-content">
+        <h1>Your website content begins here.</h1>
+      </div>
+
+      <nav>
+        <div class="logo">OffCanvas</div>
+        <button class="toggle">Menu</button>
+      </nav>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+          const toggleButton = document.querySelector('.toggle');
+          let isOpen = false;
+
+          const timeline = gsap.timeline({ paused: true });
+
+          timeline.to(".website-content", {
+              duration: 2,
+              ease: "power4.inOut",
+              clipPath: "polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%)",
+              scale: 0.5
+          });
+
+          timeline.to(".row", {
+            duration: 3,
+              left: "0%",
+              ease: "power4.inOut",
+              stagger: 0.1
+          }, "-=2.5");
+
+          toggleButton.addEventListener('click', function() {
+              if (isOpen) {
+                  timeline.reverse();
+              } else {
+                  timeline.play();
+              }
+          isOpen = !isOpen;
+          });
+      });
+    </script>
+  </body>
+</html>

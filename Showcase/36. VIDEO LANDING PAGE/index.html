@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SEAMIRROR LANDING PAGE</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <!-- ion icons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="pre-loader block">
+        <div class="loader-wrapper">
+          <div class="loader"></div>
+        </div>
+      </div>
+      <div class="sidebar-nav">
+        <div class="logo"><a href="#">Sea</a></div>
+        <ion-icon name="chevron-down-sharp"></ion-icon>
+      </div>
+      <div class="clipper-left">
+        <div class="loader-text">Sea</div>
+      </div>
+      <div class="clipper-right">
+        <div class="loader-text">Mirror</div>
+      </div>
+      <div class="site-content">
+        <div class="site-nav">
+          <div class="site-logo"><a href="#">Mirror</a></div>
+          <div class="menu-toggle">Menu</div>
+        </div>
+
+        <div class="video-container" id="video-container">
+          <video src="./hero.mp4" loop muted autoplay></video>
+        </div>
+
+        <div class="play">
+          <div class="play-icon">
+            <ion-icon name="play-sharp"></ion-icon>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    gsap.to(".clipper-left", 2, {
+      delay: 2,
+      clipPath: "inset(0 100% 0 0)",
+      ease: "power4.inOut",
+    });
+
+    gsap.to(".clipper-right", 2, {
+      delay: 2,
+      clipPath: "inset(0 0 0 100%)",
+      ease: "power4.inOut",
+    });
+
+    gsap.from(".loader-wrapper", 2, {
+      scale: 0.9,
+      ease: "power1.inOut",
+    });
+
+    gsap.from(".loader", 2.5, {
+      top: "100%",
+      ease: "power3.inOut",
+    });
+
+    gsap.to(
+      ".loader-wrapper, .pre-loader",
+      0.2,
+      {
+        opacity: 0,
+        display: "none",
+        ease: "power3.inOut",
+        delay: 2.1,
+      },
+      "-=1"
+    );
+
+    gsap.from(".play", 2, {
+      delay: 3,
+      scale: 0,
+      ease: "power4.inOut",
+    });
+
+    gsap.from(".sidebar-nav > *, .site-nav > *", 1, {
+      opacity: 0,
+      delay: 3,
+      x: 40,
+      ease: "power4.inOut",
+      stagger: {
+        amount: 0.5,
+      },
+    });
+  </script>
+</html>

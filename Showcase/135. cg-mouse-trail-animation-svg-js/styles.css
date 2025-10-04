@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #ffb503;
+}
+
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+}
+
+path {
+  fill: none;
+  stroke-width: 50;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}

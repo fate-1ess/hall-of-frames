@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Basier Square Mono";
+  background: #000;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+#toggle-btn {
+  position: absolute;
+  top: 2em;
+  right: 2em;
+  background: none;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: "Basier Square Mono";
+  padding: 0.5em 1em;
+  cursor: pointer;
+  color: #000;
+  mix-blend-mode: difference;
+  z-index: 2;
+}
+
+.item {
+  position: absolute;
+  width: 90px;
+  height: 60px;
+  border: 2px solid #000;
+}
+
+.item-1 {
+  top: 50%;
+  left: 5%;
+}
+
+.item-2 {
+  top: 15%;
+  left: 10%;
+}
+
+.item-3 {
+  top: 25%;
+  left: 15%;
+}
+
+.item-4 {
+  top: 5%;
+  left: 37.5%;
+}
+
+.item-5 {
+  top: 35%;
+  left: 40%;
+}
+
+.item-6 {
+  top: 30%;
+  left: 52.5%;
+}
+
+.item-7 {
+  top: 40%;
+  left: 50%;
+}
+
+.item-8 {
+  top: 20%;
+  left: 60%;
+}
+
+.item-9 {
+  top: 60%;
+  left: 65%;
+}
+
+.item-10 {
+  top: 27.5%;
+  left: 75%;
+}
+
+.item-11 {
+  top: 37.5%;
+  left: 85%;
+}
+
+.item-12 {
+  top: 65%;
+  left: 82.5%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 1em;
+  background: #aaaaa0;
+  z-index: 0;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.overlay h1 {
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  padding: 1em;
+  font-family: "Segment A Key Trial";
+  text-transform: uppercase;
+  line-height: 100%;
+}
+
+.overlay h1 span {
+  font-size: 10vw;
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+
+.col {
+  flex: 1;
+  padding: 2em;
+  gap: 2em;
+}
+
+.col .line:nth-child(1) {
+  margin-bottom: 1em;
+  opacity: 0.5;
+}
+
+.line {
+  position: relative;
+  width: 100%;
+  height: 24px;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  opacity: 0.75;
+}
+
+.line p {
+  position: absolute;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #fff;
+  transform: translateY(30px);
+}

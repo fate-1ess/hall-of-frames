@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sidebar Slide Out Menu Animation | @Codegrid</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="website-content">
+        <nav>
+          <div class="logo">Codegrid</div>
+          <div class="cta">Subscribe</div>
+          <div class="links">
+            <a href="#">About</a>
+            <a href="#">Infos</a>
+            <a href="#">Contact</a>
+          </div>
+        </nav>
+
+        <div class="hero">
+          <h1>Elite web designs</h1>
+          <p>
+            An extensive grid being forged in real-time with elite web designs,
+            block by block. The ambition is to equip coders, from beginners to
+            pros, with the resources
+          </p>
+        </div>
+      </div>
+
+      <div class="overlay-toggle">
+        <p>Get the Overlay</p>
+        <p><i class="ph ph-arrow-right"></i></p>
+      </div>
+    </div>
+    <div class="sidebar">
+      <div class="card">
+        <div class="card-title">
+          <div>Showreel</div>
+          <div class="close-btn"><i class="ph-thin ph-x"></i></div>
+        </div>
+        <div class="card-copy">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+            impedit repellat.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-title">Community</div>
+        <div class="card-copy">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+            impedit repellat, nulla quasi.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-title">Catalog</div>
+        <div class="card-copy">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+            impedit repellat.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const container = document.querySelector(".container");
+        const sidebar = document.querySelector(".sidebar");
+        const cards = gsap.utils.toArray(".card");
+        const overlayToggle = document.querySelector(".overlay-toggle");
+
+        function animateCardsIn() {
+          gsap.to(overlayToggle, {
+            right: "-500px",
+            duration: 1,
+            ease: "power4.out",
+          });
+
+          gsap.to(
+            cards,
+            {
+              right: "0%",
+              stagger: 0.075,
+              duration: 1,
+              ease: "power4.out",
+            },
+            "<"
+          );
+
+          gsap.to(
+            container,
+            {
+              filter: "blur(15px)",
+              duration: 1,
+              immediateRender: false,
+            },
+            "<"
+          );
+        }
+
+        function animateCardsOut() {
+          gsap.to(overlayToggle, {
+            right: "0px",
+            duration: 1,
+            ease: "power4.out",
+          });
+
+          gsap.to(cards, {
+            right: "-110%",
+            stagger: 0.075,
+            duration: 1,
+            ease: "power4.out",
+          });
+
+          gsap.to(
+            container,
+            {
+              filter: "blur(0px)",
+              duration: 1,
+              immediateRender: false,
+            },
+            "<"
+          );
+        }
+
+        overlayToggle.addEventListener("click", () => {
+          sidebar.style.pointerEvents = "all";
+          animateCardsIn();
+        });
+
+        cards.forEach((card) => {
+          card.addEventListener("click", () => {
+            sidebar.style.pointerEvents = "none";
+            animateCardsOut();
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

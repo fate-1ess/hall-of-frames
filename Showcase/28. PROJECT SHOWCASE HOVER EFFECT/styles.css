@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: #0a0a0a;
+  padding: 4em;
+  overflow: hidden;
+}
+
+.menu {
+  position: absolute;
+  left: 2em;
+  bottom: 2em;
+}
+
+.menu__item {
+  display: inline-block;
+}
+
+.menu__item-image_wrapper {
+  position: fixed;
+  top: 2em;
+  right: 2em;
+  /* transform: translate(-50%, -50%); */
+  width: 600px;
+  height: 400px;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.menu__item-image_inner .menu__item-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.menu__item-text {
+  position: relative;
+  font-family: "Neue World", sans-serif;
+  font-weight: 400;
+  font-size: 4vw;
+  line-height: 1;
+  color: #d1ccbc;
+  opacity: 1;
+  transition: opacity 350ms ease;
+  white-space: nowrap;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.menu__item:hover .menu__item-text {
+  color: #c24628;
+}
+
+.menu__item:hover .menu__item-image_wrapper {
+  z-index: -2;
+}

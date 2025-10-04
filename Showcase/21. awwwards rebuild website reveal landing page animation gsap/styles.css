@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100vh;
+  background: #e5e3dc;
+}
+
+.website-content {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  font-family: "Roslindale Display Condensed";
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em 4em;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  line-height: 90%;
+}
+
+.navbar > * {
+  position: relative;
+}
+
+.site-header {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12vw;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: -0.4vw;
+}
+
+.header-row {
+  position: relative;
+  line-height: 75%;
+  top: 150px;
+  transition: 1s;
+}
+
+.header-row-wrapper {
+  content: "";
+  position: absolute;
+  top: 140px;
+  left: -20px;
+  width: 110%;
+  height: 150px;
+  background: #e5e3dc;
+  margin: 0 auto;
+}
+
+.row:nth-child(1) {
+  width: 80%;
+  right: 0;
+}
+
+.row:nth-child(2) {
+  position: absolute;
+  width: 90%;
+  right: 0;
+}
+
+.row span {
+  text-transform: lowercase;
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 4vw;
+  padding: 0 2em 0 1em;
+}
+
+.row:nth-child(2) span {
+  font-size: 9vw;
+}
+
+.footer {
+  position: absolute;
+  bottom: 1em;
+  width: 100%;
+  font-size: 1.8em;
+  padding: 2em 6em;
+}
+
+.pre-loader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #0a0a0a;
+  color: #e5e3dc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.pre-loader-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pre-loader-container .header {
+  position: relative;
+  width: max-content;
+  margin: 0 auto;
+}
+
+.concat {
+  display: flex;
+}
+
+.header h1 {
+  position: relative;
+  top: 125px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Roslindale Display Condensed";
+  font-weight: 500;
+  font-size: 7vw;
+  line-height: 90%;
+  color: #0a0a0a;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.6);
+}
+
+.header h1::before {
+  content: attr(data-text);
+  position: absolute;
+  color: #e5e3dc;
+  overflow: hidden;
+  width: 0%;
+  transition: 1s;
+  animation: fill 2s cubic-bezier(0.6, 0, 0.4, 1) forwards;
+  animation-delay: 2s;
+}
+
+@keyframes fill {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+.header-wrapper:after {
+  content: "";
+  position: absolute;
+  top: 120px;
+  left: -20px;
+  width: 110%;
+  height: 120px;
+  background: #0a0a0a;
+  margin: 0 auto;
+}
+
+.pre-loader-btn {
+  position: relative;
+  margin: 3em 0 1em 0;
+  font-family: "Neue Montreal";
+  font-size: 1.2rem;
+  cursor: pointer;
+  z-index: 2;
+  opacity: 0;
+}
+
+.pre-loader-btn svg {
+  position: relative;
+  width: 80px;
+  top: 0px;
+  padding: 0 0.4em;
+}

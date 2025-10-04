@@ -1,0 +1,157 @@
+.blog-list .container {
+  margin-top: 6em;
+  background: #fff;
+  border-radius: 4em;
+  padding: 2em 6em 2em 6em;
+}
+
+.blog-list h2 {
+  color: #000;
+  margin-bottom: 1em;
+}
+
+.blog-main {
+  margin: 1em 0 2em 0;
+  display: flex;
+}
+
+.blog-main > div {
+  flex: 1;
+}
+
+.blog-main-img {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.blog-main-copy {
+  padding: 2em;
+}
+
+.blog-main-copy h2 {
+  margin: 0.5em 0 0.25em 0;
+  font-size: 46px;
+}
+
+.blog-main-copy h2 a {
+  font-family: "Chillax-Medium", sans-serif;
+
+  text-decoration: none;
+  color: #000;
+}
+
+.blog-main-copy p {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.blog-main-tag {
+  margin-top: 1em;
+  width: max-content;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 4px 12px;
+  border-radius: 24px;
+}
+
+.blog-main-author {
+  margin: 2em 0;
+}
+
+.blog-main-author p {
+  display: flex;
+  align-items: center;
+  gap: 0.25em;
+}
+
+.blog-main-author p i {
+  color: #000;
+  font-size: 24px;
+}
+
+.blog-tags {
+  display: flex;
+  gap: 0.5em;
+  margin: 4em 0 2em 0;
+}
+
+.tag {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+
+.tag p {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.blog-row {
+  display: flex;
+  gap: 2em;
+  margin: 3em 0;
+}
+
+.blog {
+  flex: 1;
+}
+
+.blog-img {
+  position: relative;
+  height: 250px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.blog-img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.blog-img .tag {
+  position: absolute;
+  z-index: 2;
+  bottom: 1em;
+  left: 1em;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+}
+
+.blog-img .tag p {
+  color: #fff;
+}
+
+.blog-info p {
+  color: rgba(0, 0, 0, 0.5);
+  margin: 1.5em 0 0.5em 0;
+}
+
+.blog-info h2 {
+  margin: 0;
+  font-size: 30px;
+  line-height: 120%;
+}
+
+.blog-info h2 a {
+  font-family: "Chillax-Medium", sans-serif;
+  text-decoration: none;
+  color: #000;
+}
+
+@media (max-width: 900px) {
+  .blog-list .container {
+    padding: 2em;
+  }
+  .blog-main {
+    flex-direction: column;
+    gap: 2em;
+  }
+
+  .blog-main-copy {
+    padding: 0;
+  }
+
+  .blog-row {
+    flex-direction: column;
+    gap: 3em;
+  }
+}

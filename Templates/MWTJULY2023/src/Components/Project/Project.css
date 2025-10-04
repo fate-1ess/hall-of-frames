@@ -1,0 +1,112 @@
+.project-wrapper section.project-type .project-type-copy {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  height: 400px;
+}
+
+.project-wrapper section.project-hero {
+  padding: 0;
+  width: 100%;
+  height: 700px;
+}
+
+.project-wrapper section.project-hero .project-hero-img {
+  width: 100%;
+  height: 100%;
+}
+
+.project-wrapper section.project-hero .project-hero-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-wrapper section.project-overview .project-overview-copy {
+  width: 100%;
+  height: 300px;
+  display: flex;
+}
+
+.project-wrapper section.project-overview .project-overview-copy > div {
+  flex: 1;
+}
+
+.project-wrapper section.project-img-full {
+  width: 100%;
+  height: 800px;
+}
+
+.project-wrapper section.project-img-full .project-img-full-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.project-wrapper section.project-img-full .project-img-full-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-wrapper section.project-info {
+  display: flex;
+  gap: 2em;
+  padding-top: 0;
+}
+
+.project-wrapper section.project-info > div {
+  flex: 1;
+}
+
+.project-wrapper section.project-info .project-info-img {
+  height: 700px;
+}
+
+.project-wrapper section.project-info .project-info-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-overview-copy-h1 h1 a {
+  color: #fff;
+}
+
+section.discover {
+  padding-top: 0;
+}
+
+@media (max-width: 900px) {
+  .project-wrapper section.project-type .project-type-copy {
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+
+  .project-wrapper section.project-overview .project-overview-copy {
+    flex-direction: column;
+  }
+
+  .project-wrapper
+    section.project-overview
+    .project-overview-copy
+    .project-overview-ws {
+    display: none;
+  }
+
+  .project-wrapper section.project-overview .project-overview-copy {
+    height: max-content;
+  }
+
+  .project-wrapper
+    section.project-overview
+    .project-overview-copy
+    .project-overview-copy-h1 {
+    margin-bottom: 1em;
+  }
+
+  .project-wrapper section.project-info {
+    flex-direction: column;
+  }
+}

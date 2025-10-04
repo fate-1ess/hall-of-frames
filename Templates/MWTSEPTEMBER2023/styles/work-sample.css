@@ -1,0 +1,112 @@
+.video-container {
+  width: 100%;
+  margin: 2rem auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.video-container .video-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+}
+
+.play-button-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  pointer-events: none;
+}
+
+.play-button-wrapper #circle-play-b {
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.play-button-wrapper #circle-play-b svg {
+  width: 100px;
+  height: 100px;
+  fill: #fff;
+  stroke: #fff;
+  cursor: pointer;
+  border-radius: 50%;
+  opacity: 1;
+}
+
+@media (max-width: 900px) {
+  .play-button-wrapper #circle-play-b svg {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.article-text h3 {
+  font-weight: 500;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#article-work-copy {
+  width: 90%;
+}
+
+#article-work-copy .article-title {
+  margin-right: 4rem;
+}
+
+.collapsible.slow {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 0.5em;
+  transition: height 0.5s ease-out;
+}
+.collapsible.slow > * {
+  display: none;
+}
+.collapsible.slow > p:first-child,
+.collapsible.slow.open > *,
+.collapsible.slow.ready > * {
+  display: revert;
+}
+
+.article-link {
+  cursor: pointer;
+}
+
+.img-row {
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.img-row > div {
+  flex: 1;
+}
+
+.work-page {
+  margin-bottom: 4rem;
+}
+
+.work-page h1 a {
+  line-height: 100%;
+  text-transform: uppercase;
+  font-family: var(--font-accent);
+  font-weight: 400;
+  font-size: 4rem;
+}

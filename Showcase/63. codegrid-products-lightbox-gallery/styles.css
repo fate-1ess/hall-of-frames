@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  font-family: "Neue Montreal";
+}
+
+h1 {
+  margin: 5px 0;
+  font-size: 26px;
+  font-weight: 500;
+}
+
+p {
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-top: -15px;
+  color: gray;
+}
+
+img {
+  width: 100%;
+  height: 80%;
+  object-fit: contain;
+}
+
+ion-icon {
+  position: relative;
+  top: 1.5px;
+  font-size: 18px;
+}
+
+#container {
+  width: 2080px;
+  height: 2880px;
+  background-color: #ccc;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box {
+  width: 240px;
+  height: 240px;
+  background-color: #f4efef;
+  border: 1px solid #dadada;
+  float: left;
+  margin: 0;
+  padding: 10px;
+}
+
+.modal {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: #f4efef;
+  z-index: 2;
+  display: none;
+}
+
+.col {
+  height: 100%;
+  padding: 2em;
+}
+
+.close-btn {
+  position: absolute;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  color: #fff;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.product-view {
+  position: relative;
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-info {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 5em;
+}
+
+.product-img {
+  flex: 5;
+  padding-top: 60px;
+}
+
+.product-name {
+  width: 100%;
+  height: 100%;
+  flex: 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.product-name h1 {
+  font-size: 60px;
+  letter-spacing: -2px;
+}
+
+.product-name p {
+  margin: 10px 0;
+  font-size: 15px;
+}
+
+.cart-btn button {
+  background: #000;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 15px 40px;
+  border-radius: 4px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.product-info p {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 20px;
+  text-transform: none;
+  color: #555555;
+  line-height: 100%;
+  font-weight: 400;
+}
+
+.suggestions p {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 500;
+  color: #7a7a7a;
+}
+
+.suggestions .box p {
+  margin: -15px 0 0 0;
+}

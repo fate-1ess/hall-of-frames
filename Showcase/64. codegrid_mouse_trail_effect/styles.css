@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #1f6edd;
+  font-family: "Arame Mono", sans-serif;
+}
+
+.cursor,
+.circle {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: #fff;
+  border: 4px solid #000;
+  border-radius: 100%;
+}
+
+.cursor#main {
+  background: #000;
+  color: #fff;
+  font-size: 20px;
+  line-height: 110%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 10000;
+}

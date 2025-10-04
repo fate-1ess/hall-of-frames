@@ -1,0 +1,54 @@
+.services h3,
+.services p {
+  color: var(--text-light);
+}
+
+.service {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5em;
+  border-top: 1px solid var(--border);
+  padding-top: 2em;
+  padding-bottom: 4em;
+}
+
+.service .line {
+  position: relative;
+  transform: translateY(20px);
+  will-change: transform, opacity;
+}
+
+.service .index {
+  flex: 1;
+}
+
+.service .title {
+  flex: 8;
+}
+
+.service .copy {
+  flex: 4;
+}
+
+.service .copy p {
+  text-transform: none;
+  color: var(--text-secondary);
+  font-family: "PP Editorial New";
+  font-size: 1rem;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (max-width: 900px) {
+  .service {
+    flex-direction: column;
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+
+  .service .index {
+    display: none;
+  }
+}

@@ -1,0 +1,131 @@
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  padding: 1rem;
+  color: var(--light);
+  display: flex;
+  justify-content: space-between;
+  mix-blend-mode: difference;
+  z-index: 2;
+}
+
+nav p {
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100svh;
+  overflow: hidden;
+  background-color: var(--dark);
+  color: var(--light);
+  z-index: 1;
+  will-change: clip-path;
+}
+
+.menu-content {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  will-change: transform, opacity;
+}
+
+.menu-col:nth-child(2) {
+  text-align: right;
+}
+
+.menu-img {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  will-change: transform, opacity;
+}
+
+.menu-links-wrapper {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: max-content;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  will-change: transform;
+}
+
+.menu-link {
+  position: relative;
+  will-change: transform;
+  overflow: hidden;
+}
+
+.menu-link a {
+  position: relative;
+  color: var(--light);
+  font-family: "Anton";
+  font-size: 10rem;
+  font-weight: 500;
+  letter-spacing: -0.2rem;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.menu-link a span:nth-child(2) {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.link-highlighter {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 400px;
+  height: 0.75rem;
+  background-color: var(--accent);
+  will-change: transform, width;
+}
+
+.menu-overlay {
+  clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+}
+
+.char {
+  position: relative;
+  display: inline-block;
+  will-change: transform;
+}
+
+@media (max-width: 1000px) {
+  .menu-content {
+    top: 25%;
+  }
+
+  .menu-img,
+  .link-highlighter {
+    display: none;
+  }
+
+  .menu-links-wrapper {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .menu-link a {
+    font-size: 4rem;
+    letter-spacing: -0.05rem;
+  }
+}

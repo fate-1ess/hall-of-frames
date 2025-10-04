@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>gsap-scrolltrigger-exp</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+      <div>Codegrid</div>
+      <div>2023</div>
+      <div>Work, &nbsp;Agency, &nbsp;Careers, &nbsp;Store</div>
+      <div>Let's Talk</div>
+    </nav>
+    <footer>
+      <div>Forging the grid where elite web designs reside.</div>
+      <div>Youtube Channel</div>
+    </footer>
+    <div class="slider">
+      <div class="slide" id="slide-1">
+        <img src="./img-1.jpg" class="slide-img" alt="Description of Image 1" />
+      </div>
+      <div class="slide" id="slide-2">
+        <img src="./img-2.jpg" class="slide-img" alt="Description of Image 2" />
+      </div>
+      <div class="slide" id="slide-3">
+        <img src="./img-3.jpg" class="slide-img" alt="Description of Image 3" />
+      </div>
+      <div class="slide" id="slide-4">
+        <img src="./img-4.jpg" class="slide-img" alt="Description of Image 4" />
+      </div>
+      <div class="slide" id="slide-5">
+        <img src="./img-5.jpg" class="slide-img" alt="Description of Image 5" />
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const totalSlides = 5;
+        const sectionHeight =
+          (document.body.scrollHeight - window.innerHeight) / totalSlides;
+
+        const slides = document.querySelectorAll(".slide");
+
+        slides.forEach((slide, index) => {
+          gsap.to(slide, {
+            zIndex: (progress) => {
+              return progress < 0.5 ? 1 : 5 - index;
+            },
+            scrollTrigger: {
+              start: sectionHeight * index + " top",
+              end: sectionHeight * (index + 1) + " top",
+              scrub: 1,
+            },
+          });
+
+          // Slide scaling
+          gsap.fromTo(
+            slide,
+            { scale: index === 0 ? 1 : 0 },
+            {
+              scale: 1,
+              scrollTrigger: {
+                start: sectionHeight * index + " top",
+                end: sectionHeight * (index + 1) + " top",
+                scrub: 1,
+              },
+            }
+          );
+
+          if (index !== 0) {
+            gsap.fromTo(
+              slide.querySelector(".slide-img"),
+              { scale: 2 },
+              {
+                scale: 1,
+                top: "0%",
+                scrollTrigger: {
+                  start: sectionHeight * index + " top",
+                  end: sectionHeight * (index + 1) + " top",
+                  scrub: 1,
+                },
+              }
+            );
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

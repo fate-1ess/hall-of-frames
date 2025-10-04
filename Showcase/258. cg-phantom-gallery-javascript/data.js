@@ -1,0 +1,155 @@
+const assetPrefix = import.meta.env.BASE_URL;
+const withBase = (path) => `${assetPrefix}${path.replace(/^\/+/, "")}`;
+
+export const projects = [
+  {
+    title: "Motion Study",
+    image: withBase("img1.jpeg"),
+    year: 2024,
+    href: "#",
+  },
+  {
+    title: "Idle Form",
+    image: withBase("img2.jpeg"),
+    year: 2023,
+    href: "#",
+  },
+  {
+    title: "Blur Signal",
+    image: withBase("img3.jpeg"),
+    year: 2024,
+    href: "#",
+  },
+  {
+    title: "Still Drift",
+    image: withBase("img4.jpeg"),
+    year: 2023,
+    href: "#",
+  },
+  {
+    title: "Tidewalk",
+    image: withBase("img5.jpeg"),
+    year: 2024,
+    href: "#",
+  },
+  {
+    title: "Core Motion",
+    image: withBase("img6.jpeg"),
+    year: 2022,
+    href: "#",
+  },
+  {
+    title: "White Bloom",
+    image: withBase("img7.jpeg"),
+    year: 2024,
+    href: "#",
+  },
+  {
+    title: "Backrun",
+    image: withBase("img8.jpeg"),
+    year: 2023,
+    href: "#",
+  },
+  {
+    title: "Rushline",
+    image: withBase("img9.jpeg"),
+    year: 2024,
+    href: "#",
+  },
+  {
+    title: "Afterimage",
+    image: withBase("img10.jpeg"),
+    year: 2023,
+    href: "#",
+  },
+  {
+    title: "Shadowhead",
+    image: withBase("img11.jpeg"),
+    year: 2022,
+    href: "#",
+  },
+  {
+    title: "Opal Lace",
+    image: withBase("img12.jpeg"),
+    year: 2024,
+    href: "#",
+  },
+  {
+    title: "Glassprint",
+    image: withBase("img13.jpeg"),
+    year: 2024,
+    href: "#",
+  },
+  {
+    title: "Redshift",
+    image: withBase("img14.jpeg"),
+    year: 2023,
+    href: "#",
+  },
+  {
+    title: "White Noise",
+    image: withBase("img15.jpeg"),
+    year: 2023,
+    href: "#",
+  },
+  {
+    title: "Twin Field",
+    image: withBase("img16.jpeg"),
+    year: 2024,
+    href: "#",
+  },
+  {
+    title: "Petalloop",
+    image: withBase("img17.jpeg"),
+    year: 2023,
+    href: "#",
+  },
+  {
+    title: "Ghostwalk",
+    image: withBase("img18.jpeg"),
+    year: 2024,
+    href: "#",
+  },
+  {
+    title: "Heatwave",
+    image: withBase("img19.jpeg"),
+    year: 2023,
+    href: "#",
+  },
+  {
+    title: "Sky Drift",
+    image: withBase("img20.jpeg"),
+    year: 2024,
+    href: "#",
+  },
+  {
+    title: "Spindle",
+    image: withBase("img21.jpeg"),
+    year: 2022,
+    href: "#",
+  },
+  {
+    title: "Pacer",
+    image: withBase("img22.jpeg"),
+    year: 2023,
+    href: "#",
+  },
+  {
+    title: "Stride",
+    image: withBase("img23.jpeg"),
+    year: 2024,
+    href: "#",
+  },
+  {
+    title: "Cryo Pulse",
+    image: withBase("img24.jpeg"),
+    year: 2022,
+    href: "#",
+  },
+  {
+    title: "Velvet Blur",
+    image: withBase("img25.jpeg"),
+    year: 2024,
+    href: "#",
+  },
+];

@@ -1,0 +1,155 @@
+.pricing-page .hero-header h1 {
+    font-size: 60px;
+    margin-top: 30px;
+    line-height: 1.25;
+}
+
+.pricing-page .hero-copy p {
+    margin: 10px auto 20px auto;
+    width: 75%;
+}
+
+.container.pricing-section {
+    max-width: 1200px;
+    margin-bottom: 100px;
+}
+
+.pricing {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.price-card {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex: 1;
+    height: 700px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 20px 20px 40px 20px;
+}
+
+.price-card.bestseller {
+    border: 1px solid var(--color-brand-bg);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.price-card .btn {
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 20px;
+    background: var(--color-brand-bg);
+    font-weight: 500;
+}
+
+.price-card.price-free .btn {
+    background: none;
+    border: 1px solid var(--color-border);
+}
+
+.price-card.price-plus .btn {
+    background: #fff;
+    color: #000;
+    border: 1px solid var(--color-border);
+}
+
+.price-name {
+    margin-top: 30px;
+}
+
+.price-name p {
+    font-weight: 500;
+    color: #b4bcd0;
+}
+
+.price-amount {
+    margin-top: 25px;
+}
+
+.price-amount p {
+    font-size: 21px;
+    font-weight: 500;
+}
+
+.price-option {
+    margin: 25px 0 40px 0;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.35);
+}
+
+.price-duration {
+    margin-top: 25px;
+    position: relative;
+    text-align: center;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.35);
+}
+
+.price-duration:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    width: 100%;
+    height: 0.5px;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.1) 30%, rgba(255,255,255,0) 31%, rgba(255,255,255,0) 69%, rgba(255,255,255,0.1) 70%, rgba(255,255,255,0.1) 100%);
+}
+
+.price-details {
+    margin-top: 50px;
+    padding-bottom: 100px;
+}
+
+.price-details p {
+    position: relative;
+    width: 80%;
+    margin: 0 auto 10px auto;
+    text-align: left;
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+.price-details p i {
+    position: absolute;
+    left: -10px;
+    color: var( --color-brand-bg);
+}
+
+.cause-cta p {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 14px;
+    width: max-content;
+    background: rgba(255, 255, 255, 0.125);
+    padding: 8px 16px;
+    border-radius: 20px;
+}
+
+.cause-cta p i {
+    color: aquamarine;
+}
+
+.cause-cta p a {
+    font-weight: 500;
+    color: var(--color-brand-bg);
+}
+
+@media(max-width: 800px) {
+    .pricing-page .hero-copy p {
+        width: 100%;
+    }
+    
+    .pricing {
+        flex-direction: column;
+    }
+
+    .cause-cta p {
+        padding: 20px 20px;
+        width: 100%;
+    }
+}

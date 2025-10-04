@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CODEGRID | lp-reveal</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="pre-loader block">
+      <div class="loader-wrapper">
+        <div class="loader"></div>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- logo -->
+      <div class="logo">
+        <a href="#">Codegrid</a>
+        <div class="logo-revealer"></div>
+      </div>
+
+      <div class="contact">
+        <a href="#">Get PRO</a>
+        <div class="contact-revealer"></div>
+      </div>
+
+      <div class="hero">
+        <!-- left -->
+        <div class="header">
+          <div class="row">
+            <h1>One Subscription</h1>
+            <div class="h1-revealer"></div>
+          </div>
+          <div class="row">
+            <h1>Endless Web Design</h1>
+            <div class="h1-revealer"></div>
+          </div>
+        </div>
+
+        <!-- right -->
+        <div class="copy">
+          <!-- copy-top -->
+          <div class="copy-top">
+            <div class="row">
+              <p><b>Exclusive Source Code Access</b></p>
+              <div class="p-revealer"></div>
+            </div>
+            <div class="row">
+              <p>Delve into coding without clutter</p>
+              <div class="p-revealer"></div>
+            </div>
+            <div class="row">
+              <p>Access the source code for each tutorial</p>
+              <div class="p-revealer"></div>
+            </div>
+            <div class="row">
+              <p>and build elegant website components</p>
+              <div class="p-revealer"></div>
+            </div>
+            <div class="row">
+              <p>effortlessly. Take the fast lane</p>
+              <div class="p-revealer"></div>
+            </div>
+          </div>
+
+          <!-- copy bottom -->
+          <div class="copy-bottom">
+            <br />
+            <div class="row">
+              <p><b>Monthly Website Templates</b></p>
+              <div class="p-revealer"></div>
+            </div>
+            <div class="row">
+              <p>Each month, you'll receive a fresh</p>
+              <div class="p-revealer"></div>
+            </div>
+            <div class="row">
+              <p>complete responsive website template,</p>
+              <div class="p-revealer"></div>
+            </div>
+            <div class="row">
+              <p>built with html/css/js or React.</p>
+              <div class="p-revealer"></div>
+            </div>
+            <br />
+            <br />
+            <br />
+
+            <div class="row">
+              <p><u>Sign up for PRO</u></p>
+              <div class="p-revealer"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bubbles"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script>
+      let pageRevealDelay = 2;
+      gsap.from(".logo a, .contact a", 1.5, {
+        top: "25px",
+        ease: "power4.inOut",
+        stagger: {
+          amount: 0.1,
+        },
+        delay: pageRevealDelay,
+      });
+
+      gsap.from(
+        "h1",
+        1.5,
+        {
+          y: 150,
+          ease: "power4.inOut",
+          stagger: {
+            amount: 0.1,
+          },
+        },
+        "<"
+      );
+      gsap.from(
+        "p",
+        1.75,
+        {
+          y: 30,
+          ease: "power3.inOut",
+          stagger: {
+            amount: 0.25,
+          },
+        },
+        "<"
+      );
+
+      gsap.from(".loader-wrapper", 2, {
+        scale: 0.8,
+        ease: "power1.inOut",
+      });
+
+      gsap.from(".loader", 2, {
+        top: "100%",
+        ease: "power3.inOut",
+      });
+
+      gsap.to(
+        ".loader-wrapper, .pre-loader",
+        1,
+        {
+          top: "-100%",
+          ease: "power3.inOut",
+          delay: 2,
+        },
+        "-=1"
+      );
+
+      document.addEventListener("mousemove", function (e) {
+        let normX = e.clientX / window.innerWidth - 0.5;
+        let normY = e.clientY / window.innerHeight - 0.5;
+
+        let moveX = normX * 100;
+        let moveY = normY * 50;
+
+        let rotateZ = normX * 25;
+
+        gsap.to(".bubbles", {
+          x: moveX,
+          y: moveY,
+          rotationZ: rotateZ,
+          ease: "power2.out",
+          duration: 1.5,
+        });
+      });
+    </script>
+  </body>
+</html>

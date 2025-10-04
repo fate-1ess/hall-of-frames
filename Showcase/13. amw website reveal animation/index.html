@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>amw landing page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  </head>
+  <body>
+    <div class="hero-img">
+      <img src="./hero.jpeg" alt="" />
+    </div>
+    <div class="container">
+      <div class="cols">
+        <div class="col col-left">
+          <div class="copy">
+            <div class="header">Editorial - 2023</div>
+            <div class="sub-header">
+              A new collection of outdoor photography
+            </div>
+            <div class="img-wrapper">
+              <img src="/header.jpg" alt="" />
+            </div>
+            <div class="info">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+              quia quas consequuntur quam eveniet rerum facere! Odio, unde
+              minima? Commodi dolorem est veniam atque.
+            </div>
+            <div class="footer">
+              <div class="footer-item">check social media</div>
+              <div class="footer-item">
+                <img
+                  src="https://storage.googleapis.com/studio-design-asset-files/projects/BXaxK3jMq7/s-61x9_2c6bd15e-43e5-4ebf-bf39-a6ff23fb93dd.svg"
+                  alt=""
+                />
+              </div>
+              <div class="footer-item">get started</div>
+            </div>
+          </div>
+        </div>
+        <div class="col col-right">
+          <div class="header">
+            Emotion <br />
+            from the <br />
+            photo day <br />
+            No.8
+          </div>
+        </div>
+      </div>
+      <nav>
+        <div class="nav-items">
+          <div class="nav-item">
+            <a href="#">starting presentation</a>
+          </div>
+          <div class="nav-item">
+            <a href="#">collections</a>
+          </div>
+        </div>
+        <div class="nav-items">
+          <div class="nav-item">
+            <a href="#" id="logo">amw-soon &copy;</a>
+          </div>
+        </div>
+        <div class="nav-items">
+          <div class="nav-item">
+            <a href="#">branding universal</a>
+          </div>
+          <div class="nav-item">
+            <a href="#">contact models</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="loader-text-wrapper block">
+      <h1 class="loader-text">amw-soon</h1>
+    </div>
+    <div class="revealer"></div>
+    <div class="pre-loader block">
+      <div class="loader-wrapper">
+        <div class="loader"></div>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <script>
+    var textWrapper = document.querySelector(".loader-text");
+    textWrapper.innerHTML = textWrapper.textContent.replace(
+      /\S/g,
+      "<span class='letter'>$&</span>"
+    );
+
+    anime.timeline().add({
+      targets: ".loader-text .letter",
+      translateX: [40, 0],
+      translateZ: 0,
+      opacity: [0, 1],
+      easing: "easeOutExpo",
+      duration: 1200,
+      delay: (el, i) => 2400 + 30 * i,
+    });
+
+    gsap.from(".loader-wrapper", 2, {
+      scale: 0.8,
+      ease: "power1.inOut",
+    });
+
+    gsap.from(".loader", 2, {
+      top: "100%",
+      ease: "power3.inOut",
+    });
+
+    gsap.to(
+      ".loader-wrapper, .pre-loader",
+      1,
+      {
+        scale: 1.5,
+        opacity: 0,
+        display: "none",
+        ease: "power3.inOut",
+        delay: 2,
+      },
+      "-=1"
+    );
+
+    gsap.from(".revealer", 1, {
+      width: "0%",
+      ease: "power3.inOut",
+      delay: 3,
+    });
+
+    gsap.to(".revealer", 0.8, {
+      left: "100%",
+      ease: "power3.inOut",
+      delay: 4,
+    });
+
+    gsap.to(".loader-text-wrapper", 0.2, {
+      opacity: 0,
+      display: "none",
+      ease: "power3.inOut",
+      delay: 4,
+    });
+
+    gsap.from(".col-left", 1, {
+      left: "-100%",
+      ease: "power3.inOut",
+      delay: 4.5,
+    });
+
+    gsap.from(".col-left .copy > div", 1.5, {
+      x: "-40",
+      opacity: 0,
+      ease: "power3.inOut",
+      delay: 5,
+      stagger: {
+        amount: 0.3,
+      },
+    });
+
+    gsap.from(".col-right .header", 1, {
+      x: "-20",
+      opacity: 0,
+      ease: "power3.inOut",
+      delay: 5.5,
+    });
+  </script>
+</html>

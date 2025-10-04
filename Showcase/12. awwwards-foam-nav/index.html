@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>foam nav - awwwards style | @codegrid</title>
+    <meta name="author" content="Harnish Mistry" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- icons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <div class="primary-nav">
+          <div class="primary-nav-container">
+            <div class="nav-items">
+              <div class="nav-item toggle">
+                  <span>
+                        <div id="menu-toggle-btn">
+                        <span></span>
+                        </div>
+                  </span>
+              </div>
+              <div class="nav-item logo"><span>foam</span></div>
+              <div class="nav-item search">
+                <span><ion-icon name="search-sharp"></ion-icon></span>
+              </div>
+            </div>
+          </div>
+          <div class="nav-links">
+            <div class="nav-info">closed until tomorrow 10:00</div>
+
+            <div class="nav-links-wrapper">
+              <div class="nav-link">
+                <a href="#"
+                  >programme
+                  <span
+                    ><ion-icon name="calendar-clear-outline"></ion-icon></span
+                ></a>
+              </div>
+              <div class="nav-link">
+                <a href="#"
+                  >buy tickets
+                  <span
+                    ><ion-icon name="ticket-outline"></ion-icon>
+                  </a>
+              </div>
+              <div class="nav-link">
+                <a href="#"
+                  >visit us
+                  <span
+                    ><ion-icon name="help-circle-outline"></ion-icon></a>
+              </div>
+              <div class="nav-link">
+                <a href="#"
+                  >learn
+                  <span
+                    ><ion-icon name="eye-outline"></ion-icon></a>
+              </div>
+
+              <br />
+
+              <div class="nav-link">
+                <a href="#">explore </a>
+              </div>
+
+              <div class="nav-link">
+                <a href="#">magazine </a>
+              </div>
+
+              <div class="nav-link">
+                <a href="#">collection <sup>24</sup></a>
+              </div>
+
+              <br />
+
+              <div class="nav-link">
+                <a href="#">shop</a>
+              </div>
+              <div class="nav-link">
+                <a href="#">support us</a>
+              </div>
+              <div class="nav-link">
+                <a href="#">about</a>
+              </div>
+            </div>
+
+            <br />
+
+            <div class="nav-socials">
+              <div class="nav-social">
+                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+              </div>
+              <div class="nav-social">
+                <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+              </div>
+              <div class="nav-social">
+                <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+              </div>
+              <div class="nav-social">
+                <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+              </div>
+              <div class="nav-social">
+                <a href="#"><ion-icon name="logo-github"></ion-icon></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-nav">
+          <div class="bottom-nav-item">
+            <div class="bottom-nav-item-wrapper">
+                  programme<ion-icon name="calendar-clear-outline"></ion-icon>
+            </div>
+          </div>
+          <div class="bottom-nav-item">
+            <div class="bottom-nav-item-wrapper">
+                  plan your visit <ion-icon name="information-circle-outline"></ion-icon>
+            </div>
+          </div>
+          <div class="bottom-nav-item">
+            <div class="bottom-nav-item-wrapper">
+                  tickets <ion-icon name="eye-outline"></ion-icon>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <script>
+      
+      const tl = gsap.timeline({reversed: true, paused:true})
+      .to(".bottom-nav", {top: "-10%", duration: 0.4, ease: "power2.inOut"})
+      .to(".primary-nav", {height: "auto", duration: 0.4, ease: "power3.inOut"}, "-=0.4")
+      .from(".nav-links", {autoAlpha:0, duration:0.2}, "-=0.2")
+
+      function openNav() {
+            const navBtn = document.getElementById("menu-toggle-btn");
+            navBtn.onclick = function (e) {
+            navBtn.classList.toggle("active");
+            tl.reversed() ? tl.play() : tl.reverse();
+      };
+      }
+
+    openNav();
+
+
+    </script>
+  </body>
+</html>

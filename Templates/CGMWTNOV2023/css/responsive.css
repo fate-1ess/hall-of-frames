@@ -1,0 +1,100 @@
+@media(max-width: 800px) {
+    .divider {
+        margin: 50px 0;
+    }
+    h1 {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 17px;
+    }
+
+    .hero {
+        padding: 150px 0 25px 0;
+    }
+
+    .hero-header, .hero-copy {
+        width: 100%;
+    }
+
+    .hero-img {
+        margin: 25px 0;
+    }
+
+    .logo {
+        min-width: calc((100% - 20px) / 2); 
+     }
+
+     .logo-row:nth-child(2) {
+        display: none;
+     }
+
+     .tools h1, .tools p {
+        width: 100%;
+     }
+
+     .cards {
+        flex-direction: column;
+        height: 900px;
+     }
+
+    .cards .card.large {
+        flex: 1;
+     }
+
+    .cards .card.small {
+        flex: 1;
+     }
+
+     .task h1, .task-img, .task-copy p {
+        width: 100%;
+     }
+
+     .task-items {
+        flex-direction: column;
+     }
+
+     .task-item {
+        flex: 1;
+     }
+
+     .task-cards .container {
+        height: 900px;
+        flex-direction: column;
+     }
+
+     .discover-copy p {
+        width: 100%;
+     }
+
+     .icon {
+        width: 60px;
+        height: 60px;
+     }
+
+     .icon#main-icon {
+        width: 70px;
+        height: 70px;
+     }
+
+     .icon i {
+        font-size: 14px;
+     }
+
+     .icon:nth-child(1),
+     .icon:nth-child(7) {
+        display: none;
+     }
+
+     .icon:nth-child(2),
+     .icon:nth-child(6) {
+        width: 50px;
+        height: 50px;
+      }
+
+      .download h1 {
+        width: 100%;
+      }
+}
+

@@ -1,0 +1,102 @@
+:root {
+  --accent: #1b21f9;
+  --bg: #e3e3e3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--bg);
+  font-family: "Arame Mono";
+}
+
+.logo {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  color: var(--accent);
+  font-size: 100px;
+}
+
+.dummy-img {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 400px;
+  background: url("../assets/img-2.jpg") no-repeat 50% 50%;
+  background-size: cover;
+  border: 2px solid var(--accent);
+}
+
+.dummy-text {
+  position: absolute;
+  top: 30%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.menu-container {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  width: 200px;
+  height: 240px;
+  overflow: hidden;
+  height: 35px;
+}
+
+.menu-container .col {
+  position: absolute;
+  width: 200px;
+  cursor: pointer;
+}
+
+.menu-container .col:nth-child(1) {
+  left: 0;
+}
+
+.menu-container .col:nth-child(2) {
+  left: 200px;
+}
+
+.menu-container .col .menu-item {
+  background: var(--accent);
+  color: var(--bg);
+  margin: 0.075rem;
+  padding: 0.75rem;
+  font-size: 12px;
+}
+
+.menu-container .col-2 .menu-item {
+  position: relative;
+  left: 200px;
+}
+
+.marquee-container {
+  position: absolute;
+  right: 0;
+  width: 200px;
+  padding: 0.5rem;
+  background-color: var(--bg);
+  color: var(--accent);
+  overflow: hidden;
+  border: 2px solid var(--accent);
+  display: none;
+  pointer-events: none;
+  transform: scale(0);
+}
+
+.marquee-container .marquee {
+  width: 1000px;
+}

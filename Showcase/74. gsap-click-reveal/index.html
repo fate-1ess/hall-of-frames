@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sliding-cards-drawer-gsap</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="site-content">
+      <div class="content-wrapper">
+        <div class="row">
+          <h1>Learn to</h1>
+          <h1>Code</h1>
+        </div>
+        <div class="row">
+          <h1>dope</h1>
+          <h1>web designs</h1>
+        </div>
+        <div class="row">
+          <h1>using html</h1>
+          <h1>css</h1>
+        </div>
+        <div class="row">
+          <h1>and</h1>
+          <h1>Javascript</h1>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="cards">
+        <div class="card" id="card-1">
+          <div class="card-img">
+            <img src="./assets/logo-1.png" alt="" />
+          </div>
+          <div class="card-text">
+            <div class="card-title">Plause Studio</div>
+            <div class="card-info">
+              Agency — Crafting for a minimal experience
+            </div>
+          </div>
+        </div>
+        <div class="card" id="card-2">
+          <div class="card-img">
+            <img src="./assets/logo-2.png" alt="" />
+          </div>
+          <div class="card-text">
+            <div class="card-title">Awkward</div>
+            <div class="card-info">Design for a better future</div>
+          </div>
+        </div>
+        <div class="card" id="card-3">
+          <div class="card-img">
+            <img src="./assets/logo-3.png" alt="" />
+          </div>
+          <div class="card-text">
+            <div class="card-title">Syne</div>
+            <div class="card-info">Showcase — Prove for a better website</div>
+          </div>
+        </div>
+
+        <div class="toggle">
+          <button>Show less</button>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script>
+      const card3 = document.querySelector("#card-3");
+      const toggleButton = document.querySelector(".toggle button");
+      const cards = document.querySelectorAll(".card");
+      const toggleDiv = document.querySelector(".toggle");
+      const siteContent = document.querySelector(".site-content");
+
+      let isCardsOpen = false;
+
+      card3.addEventListener("click", () => {
+        if (!isCardsOpen) {
+          gsap.to(cards, { top: "0px", duration: 1, ease: "power4.inOut" });
+
+          gsap.to(toggleDiv, {
+            delay: 0.4,
+            display: "flex",
+            opacity: 1,
+            duration: 0.4,
+            ease: "power4.inOut",
+          });
+
+          gsap.to(siteContent, {
+            filter: "blur(20px)",
+            duration: 0.75,
+            ease: "power4.inOut",
+          });
+
+          isCardsOpen = true;
+        }
+      });
+
+      toggleButton.addEventListener("click", () => {
+        if (isCardsOpen) {
+          gsap.to("#card-1", { top: "0px", duration: 1, ease: "power4.inOut" });
+
+          gsap.to("#card-2", {
+            top: "-100px",
+            duration: 1,
+            ease: "power4.inOut",
+          });
+
+          gsap.to("#card-3", {
+            top: "-200px",
+            duration: 1,
+            ease: "power4.inOut",
+          });
+
+          gsap.to(toggleDiv, {
+            delay: 0,
+            display: "none",
+            opacity: 0,
+            duration: 0.4,
+            ease: "power4.inOut",
+          });
+
+          gsap.to(siteContent, {
+            filter: "blur(0px)",
+            duration: 1,
+            ease: "power4.inOut",
+          });
+
+          isCardsOpen = false;
+        }
+      });
+    </script>
+  </body>
+</html>

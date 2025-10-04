@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/index-assets/showcase-54-react-page-transition/static/css/main.ab6009c0.css",
+    "main.js": "/index-assets/showcase-54-react-page-transition/static/js/main.177182a5.js",
+    "static/js/787.f4e11ee6.chunk.js": "/index-assets/showcase-54-react-page-transition/static/js/787.f4e11ee6.chunk.js",
+    "index.html": "/index-assets/showcase-54-react-page-transition/index.html",
+    "main.ab6009c0.css.map": "/index-assets/showcase-54-react-page-transition/static/css/main.ab6009c0.css.map",
+    "main.177182a5.js.map": "/index-assets/showcase-54-react-page-transition/static/js/main.177182a5.js.map",
+    "787.f4e11ee6.chunk.js.map": "/index-assets/showcase-54-react-page-transition/static/js/787.f4e11ee6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ab6009c0.css",
+    "static/js/main.177182a5.js"
+  ]
+}

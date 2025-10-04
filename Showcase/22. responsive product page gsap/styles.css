@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background: #ecebec;
+  font-family: "Neue Montreal";
+  line-height: 110%;
+}
+
+/* nav */
+
+.nav {
+  position: fixed;
+  width: 100%;
+  padding: 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav > * {
+  position: relative;
+}
+
+/* hero */
+
+.product-hero {
+  position: absolute;
+  bottom: 15vh;
+  width: 100%;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-hero > * {
+  position: relative;
+}
+
+.product-hero p {
+  font-size: 40px;
+  width: 70%;
+  margin-bottom: 2em;
+  line-height: 100%;
+}
+
+.product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product > * {
+  position: relative;
+}
+
+.product-title h1 {
+  font-weight: 400;
+  font-size: 100px;
+  padding: 0.4em 0;
+}
+
+.product-title {
+  font-size: 30px;
+}
+
+.product-title span {
+  text-decoration: underline;
+}
+
+.product-look {
+  position: relative;
+}
+
+.product-look img {
+  width: 600px;
+}
+
+@media (max-width: 900px) {
+  .product-hero p {
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .product-title h1 {
+    font-size: 40px;
+    padding: 0;
+  }
+
+  .product-title {
+    font-size: 16px;
+  }
+
+  .product-look img {
+    width: 50vw;
+  }
+}
+
+/* overlay */
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+  opacity: 0;
+}
+
+/* footer */
+
+.product-info {
+  position: absolute;
+  background: #ecebec;
+  bottom: 0;
+  width: 100%;
+  padding: 1em;
+  border-top: 1px solid #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-nav,
+.product-cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-nav > * {
+  margin: 0 1em;
+}
+
+.product-img {
+  width: 100px;
+}
+
+.product-img img {
+  width: 100%;
+}
+
+.product-name {
+  font-size: 24px;
+}
+
+.product-name span {
+  font-size: 12px;
+}
+
+.product-variants {
+  background: #fff;
+  padding: 0.5em 1em;
+  border-radius: 40px;
+  font-size: 14px;
+}
+
+.product-nav-links {
+  margin: 0 4em;
+}
+
+.product-nav-links > button {
+  background: none;
+  border: none;
+  outline: none;
+  margin: 0 1em;
+  cursor: pointer;
+}
+
+.product-btn button {
+  border: none;
+  outline: none;
+  background: #000;
+  color: #fff;
+  padding: 1.4em 2.8em;
+  border-radius: 40px;
+  margin-left: 2em;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .product-name,
+  .product-img,
+  .product-variants,
+  .product-nav-links > button:nth-child(2) {
+    display: none;
+  }
+
+  .product-nav-links {
+    margin: 0;
+  }
+}
+
+/* product-description */
+
+.product-description {
+  position: fixed;
+  width: 100%;
+  height: 50vh;
+  bottom: -50vh;
+  background: #ecebec;
+  border-top: 1px solid #000;
+  padding-bottom: 15vh;
+  display: flex;
+}
+
+.close-desc {
+  padding: 2em;
+  cursor: pointer;
+}
+
+.desc {
+  flex: 1;
+  padding: 2em;
+}
+
+.link {
+  margin: 2em 0;
+}
+
+.link span::after {
+  position: relative;
+  top: 0;
+  left: 0;
+  content: "";
+  display: block;
+  width: 100px;
+  height: 2px;
+  background: #000;
+}
+
+.front-view,
+.side-view {
+  flex: 2;
+}
+
+.view {
+  padding: 2em 4em;
+}
+
+.product-description img {
+  width: 400px;
+}
+
+.sketch-title span {
+  font-weight: 500;
+}
+
+@media (max-width: 900px) {
+  .front-view,
+  .side-view {
+    display: none;
+  }
+}

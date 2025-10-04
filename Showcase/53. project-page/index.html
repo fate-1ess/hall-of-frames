@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CG: PROJECT PAGE CONCEPT | IMAGE HOVER EFFECT</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <button>view all projects</button>
+      <div class="images">
+        <div class="img img-1">
+          <img id="main-img" src="./assets/img-1-1.jpg" alt="" />
+          <div class="hovered-img">
+            <img src="./assets/img-12-1.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="img img-2">
+          <img id="main-img" src="./assets/img-2-1.jpg" alt="" />
+          <div class="hovered-img">
+            <img src="./assets/img-11-1.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="img img-3">
+          <img id="main-img" src="./assets/img-3-1.jpg" alt="" />
+          <div class="hovered-img">
+            <img src="./assets/img-10-1.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="img img-4">
+          <img id="main-img" src="./assets/img-4-1.jpg" alt="" />
+          <div class="hovered-img">
+            <img src="./assets/img-9-1.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="img img-5">
+          <img id="main-img" src="./assets/img-5-1.jpg" alt="" />
+          <div class="hovered-img">
+            <img src="./assets/img-8-1.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="img img-6">
+          <img id="main-img" src="./assets/img-6-1.jpg" alt="" />
+          <div class="hovered-img">
+            <img src="./assets/img-7-1.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="img img-7">
+          <img id="main-img" src="./assets/img-7-1.jpg" alt="" />
+          <div class="hovered-img">
+            <img src="./assets/img-6-1.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="img img-8">
+          <img id="main-img" src="./assets/img-8-1.jpg" alt="" />
+          <div class="hovered-img">
+            <img src="./assets/img-5-1.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="img img-9">
+          <img id="main-img" src="./assets/img-9-1.jpg" alt="" />
+          <div class="hovered-img">
+            <img src="./assets/img-4-1.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="img img-10">
+          <img id="main-img" src="./assets/img-10-1.jpg" alt="" />
+          <div class="hovered-img">
+            <img src="./assets/img-3-1.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="img img-11">
+          <img id="main-img" src="./assets/img-11-1.jpg" alt="" />
+          <div class="hovered-img">
+            <img src="./assets/img-2-1.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="img img-12">
+          <img id="main-img" src="./assets/img-12-1.jpg" alt="" />
+          <div class="hovered-img">
+            <img src="./assets/img-1-1.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      let btn = document.querySelector("button");
+
+      let clipPathAnimation = gsap.to(".hovered-img", 1, {
+        paused: true,
+        clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
+        ease: "power4.inOut",
+        stagger: {
+          from: "random",
+          amount: 0.75,
+        },
+      });
+
+      btn.addEventListener("mouseenter", () => {
+        clipPathAnimation.play();
+      });
+
+      btn.addEventListener("mouseleave", () => {
+        clipPathAnimation.reverse();
+      });
+    </script>
+  </body>
+</html>

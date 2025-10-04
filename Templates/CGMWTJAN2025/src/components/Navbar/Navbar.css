@@ -1,0 +1,99 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  padding: 2em 4em;
+  z-index: 100000000;
+  mix-blend-mode: difference;
+  display: flex;
+  gap: 2em;
+}
+
+.navbar-col {
+  flex: 1;
+  display: flex;
+  gap: 2emc;
+}
+
+.navbar-sub-col {
+  flex: 1;
+}
+
+.logo h3 {
+  font-family: "Nippo";
+  font-weight: 400;
+  font-size: 2.5rem;
+  color: var(--foreground);
+}
+
+.time p,
+.nav-items p {
+  position: relative;
+  top: 0.075rem;
+  font-family: "Nippo";
+  font-weight: 400;
+  font-size: 1.125rem;
+  color: var(--foreground);
+  -webkit-text-stroke: 0.25px var(--foreground);
+}
+
+.nav-items p {
+  text-transform: none;
+  margin-bottom: 0.5rem;
+}
+
+.music-toggle-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.music-toggle-btn {
+  width: 100px;
+  height: 40px;
+  background-color: var(--foreground-secondary);
+  border-radius: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.sound-bars {
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.music-toggle-btn {
+  display: flex;
+  align-items: center;
+}
+
+.music-toggle-btn p {
+  font-family: "Nippo";
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--foreground);
+  -webkit-text-stroke: 0.25px var(--foreground);
+}
+
+.sound-bars svg path {
+  stroke: var(--foreground);
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    padding: 2em;
+  }
+
+  .time,
+  .music-toggle-wrapper {
+    display: none;
+  }
+
+  .nav-items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}

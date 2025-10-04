@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Neue Montreal";
+}
+
+html,
+body {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+}
+
+video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+
+.copy {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.blocks {
+  width: 100%;
+  height: 100vh;
+}
+
+.block {
+  position: fixed;
+  width: 50%;
+  height: 100vh;
+  z-index: 0;
+  background: #fff;
+}
+
+.block-left {
+  left: 0;
+}
+
+.block-right {
+  right: 0;
+}
+
+.letter {
+  position: absolute;
+  z-index: 10000;
+  padding: 0em 0.2em;
+  font-size: 8em;
+  color: #fff;
+  mix-blend-mode: difference;
+}
+
+.row {
+  width: 100%;
+  height: 50vh;
+}
+
+.top-left,
+.top-right,
+.bottom-right {
+  position: absolute;
+  z-index: 10000;
+}
+
+.top-left {
+  top: 32%;
+  left: 42%;
+}
+
+.top-right {
+  top: 32%;
+  right: 42%;
+}
+
+.bottom-right {
+  bottom: 32%;
+  right: 42%;
+}
+
+@media (max-width: 900px) {
+  .letter {
+    font-size: 2em;
+  }
+}

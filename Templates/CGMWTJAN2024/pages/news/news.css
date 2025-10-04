@@ -1,0 +1,35 @@
+.news-page {
+  min-width: 100vw;
+  min-height: 100vh;
+  background: var(--color-bg);
+}
+
+.news-row {
+  width: 100%;
+  padding: 1em;
+  display: flex;
+  gap: 2em;
+}
+
+.news {
+  flex: 1;
+}
+
+.news-img {
+  height: 400px;
+  margin-bottom: 1em;
+}
+
+.news-date {
+  margin-bottom: 0.5em;
+}
+
+.news-row {
+  padding-bottom: 2em;
+}
+
+@media (max-width: 900px) {
+  .news-row {
+    flex-direction: column;
+  }
+}

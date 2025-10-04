@@ -1,0 +1,12 @@
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 1em;
+}
+
+.footer-links {
+  display: flex;
+  gap: 1em;
+}

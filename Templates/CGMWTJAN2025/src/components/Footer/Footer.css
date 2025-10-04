@@ -1,0 +1,108 @@
+section.footer-area {
+  position: relative;
+  width: 100vw;
+  height: 100svh;
+  pointer-events: none !important;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100svh;
+  overflow: hidden;
+  background-color: var(--background);
+  color: var(--foreground);
+  z-index: 0;
+}
+
+footer .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.footer-pattern {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-pattern p {
+  font-size: 2rem;
+}
+
+footer h1 {
+  font-size: 26vw;
+  text-align: center;
+}
+
+footer h1,
+footer h3,
+footer p,
+footer a {
+  color: var(--foreground-secondary);
+}
+
+footer p {
+  font-family: "Nippo";
+  line-height: 1.75;
+}
+
+p.footer-col-header {
+  color: var(--foreground);
+  text-transform: uppercase;
+  margin-bottom: 0.25em;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+footer h3 {
+  text-transform: none;
+  font-family: "Suisse Intl";
+  font-weight: 400;
+  font-size: 2.25rem;
+  width: 75%;
+  line-height: 1.25;
+}
+
+.footer-content {
+  display: flex;
+  gap: 1em;
+  margin-bottom: 4em;
+}
+
+.footer-col {
+  display: flex;
+  width: 100%;
+}
+
+.footer-col:nth-child(2) {
+  display: flex;
+}
+
+.footer-sub-col {
+  flex: 1;
+}
+
+@media (max-width: 900px) {
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .footer-col h3 {
+    width: 100%;
+    margin-bottom: 1em;
+    font-size: 1.75rem;
+  }
+
+  footer h1 {
+    font-size: 25vw;
+  }
+}

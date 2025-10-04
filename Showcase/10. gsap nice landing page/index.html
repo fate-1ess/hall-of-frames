@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>nice landing page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  </head>
+  <body>
+    <div class="wrapper-img">
+      <div class="box"></div>
+      <div>
+        <img class="image" src="hero.jpg" />
+      </div>
+    </div>
+    <div class="container">
+      <nav>
+        <div class="nav-items">
+          <div id="logo">
+            <a href="#">Nicescale</a>
+          </div>
+          <div>
+            <a href="#">Shop</a>
+          </div>
+          <div>
+            <a href="#">Portfolio</a>
+          </div>
+          <div>
+            <a href="#">About us</a>
+          </div>
+        </div>
+        <div class="menu-toggle">Menu</div>
+      </nav>
+      <section class="hero">
+        <div class="white-space"></div>
+        <div class="header">nice</div>
+        <div class="slider">
+          <div class="slider-copy">
+            <div class="index">01</div>
+            <div class="arrow-prev">
+              <ion-icon name="chevron-back-sharp"></ion-icon>
+            </div>
+            <div class="copy">
+              A collection of <br />
+              the most popular <br />photos.
+            </div>
+            <div class="arrow-next">
+              <ion-icon name="chevron-forward-sharp"></ion-icon>
+            </div>
+          </div>
+          <div class="slider-hr"></div>
+        </div>
+      </section>
+      <section class="bottom-nav">
+        <div class="about">
+          <a href="#"
+            >Login to the <br />
+            <span>customer</span> <br />
+            panel</a
+          >
+          <p>
+            This is a scientific platform showing interesting documentaries in
+            the world. A collection of inspirations.
+          </p>
+        </div>
+        <div class="location">
+          <div class="country">
+            <span>Country</span>
+            <span>New Zealand</span>
+          </div>
+          <div class="year">
+            <span>Year</span>
+            <span>2023</span>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+  <script>
+    gsap.from(".nav-items > *", 1.4, {
+      opacity: 0,
+      x: 40,
+      ease: "power3.inOut",
+      stagger: 0.2,
+    });
+
+    gsap.from(".header", 1.4, {
+      opacity: 0,
+      x: 80,
+      ease: "power3.inOut",
+      delay: 0.2,
+    });
+
+    gsap.from(".slider-copy > *", 1.4, {
+      opacity: 0,
+      x: 40,
+      ease: "power3.inOut",
+      stagger: 0.2,
+    });
+
+    gsap.from(".slider-hr", 1.4, {
+      x: "120%",
+      ease: "power3.inOut",
+      delay: 0.4,
+    });
+
+    gsap.from(".bottom-nav > .about > *", 1.4, {
+      opacity: 0,
+      x: 40,
+      ease: "power3.inOut",
+      stagger: 0.2,
+    });
+
+    gsap.from(".bottom-nav > .location > .country > *", 1.4, {
+      opacity: 0,
+      x: 40,
+      ease: "power3.inOut",
+      delay: 0.4,
+      stagger: 0.2,
+    });
+
+    gsap.from(".bottom-nav > .location > .year > *", 1.4, {
+      opacity: 0,
+      x: 40,
+      ease: "power3.inOut",
+      delay: 0.8,
+      stagger: 0.2,
+    });
+
+    gsap.to(".box", 1.2, {
+      x: "-100%",
+      ease: "power4.inOut",
+      delay: 1,
+    });
+  </script>
+</html>

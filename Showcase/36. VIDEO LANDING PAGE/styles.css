@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Monument Extended";
+  text-transform: uppercase;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.sidebar-nav {
+  position: absolute;
+  width: 10.5vw;
+  height: 100%;
+  padding: 4em 0;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sidebar-nav > *,
+.site-nav > * {
+  position: relative;
+}
+
+.sidebar-nav a {
+  text-decoration: none;
+  color: #000;
+}
+
+.sidebar-nav ion-icon {
+  font-size: 24px;
+}
+
+.clipper-left {
+  position: absolute;
+  top: 0;
+  left: 10vw;
+  width: 40vw;
+  height: 100vh;
+  background: #fff;
+  overflow: clip;
+  clip-path: inset(0 0 0 0);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.loader-text {
+  width: max-content;
+  height: 100%;
+  padding: 4em;
+  display: flex;
+  align-items: center;
+}
+
+.clipper-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50vw;
+  height: 100vh;
+  background: #fff;
+  overflow: clip;
+  clip-path: inset(0 0 0 0);
+  display: flex;
+  justify-content: flex-start;
+}
+
+.site-content {
+  position: relative;
+  left: 10vw;
+  width: 90vw;
+  height: 100vh;
+  z-index: -2;
+  overflow: hidden;
+}
+
+video {
+  position: absolute;
+  top: 0;
+  min-width: 100%;
+  min-height: 100vh;
+  z-index: -1;
+}
+
+.site-nav {
+  position: absolute;
+  background: transparent;
+  padding: 4em;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.site-content a,
+.menu-toggle {
+  text-decoration: none;
+  color: #fff;
+}
+
+.pre-loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100000;
+  background: #fff;
+}
+
+.loader-wrapper {
+  position: relative;
+  width: 2px;
+  height: 140px;
+  background: rgb(240, 240, 240);
+  border-radius: 2px;
+  overflow: hidden;
+  /* transform: rotate(90deg); */
+}
+
+.loader {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #0f0f0f;
+}
+
+.play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 100%;
+  color: #fff;
+}
+
+@media (max-width: 900px) {
+  .sidebar-nav {
+    display: none;
+  }
+
+  .site-content {
+    width: 100vw;
+    left: 0;
+  }
+
+  .clipper-left {
+    left: 0;
+    width: 50vw;
+  }
+}
